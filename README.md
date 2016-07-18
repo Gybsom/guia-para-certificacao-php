@@ -2,7 +2,7 @@
 
 Olá, esse e um repositório a qual eu gostaria de falar sobre [PHP](http://www.php.net/), uma especie de blog ou livro, onde eu irei postar sobre conteúdo que acredito que seja importante a todo programador PHP. Então como esse repositório é focado em PHP, tentarei seguir a ementa de estudo para quem quer se torna um [ZCE](http://www.zend.com/en/services/certification/php-5-certification).
 
-* PHP Basics
+* [PHP Basics](php-basics/README.md)
   * Syntax
   * Operators
   * Variables
@@ -12,14 +12,14 @@ Olá, esse e um repositório a qual eu gostaria de falar sobre [PHP](http://www.
   * Extensions
   * Config
   * Performance/bytecode caching
-* Functions
+* [Functions](functions/README.md)
   * Arguments
   * Variables
   * References
   * Returns
   * Variable Scope
   * Anonymous Functions, closures
-* Data Format & Types
+* [Data Format & Types](data-format-&-types/README.md)
   * XML Basics
   * SimpleXML
   * XML Extension
@@ -28,7 +28,7 @@ Olá, esse e um repositório a qual eu gostaria de falar sobre [PHP](http://www.
   * JSON 
   * DateTime 
   * DOMDocument
-* Web Features
+* [Web Features](web-features/README.md)
   * Sessions
   * Forms
   * GET and POST data
@@ -36,7 +36,7 @@ Olá, esse e um repositório a qual eu gostaria de falar sobre [PHP](http://www.
   * HTTP Headers
   * HTTP Authentication
   * HTTP Status Codes 
-* Object Oriented Programming
+* [Object Oriented Programming](object-oriented-programming/README.md)
   * Instantiation
   * Modifiers/Inheritance
   * Interfaces
@@ -50,7 +50,7 @@ Olá, esse e um repositório a qual eu gostaria de falar sobre [PHP](http://www.
   * Instance Methods & Properties
   * SPL
   * Traits 
-* Security
+* [Security](security/README.md)
   * Configuration
   * Session Security
   * Cross-Site Scripting
@@ -64,14 +64,14 @@ Olá, esse e um repositório a qual eu gostaria de falar sobre [PHP](http://www.
   * File uploads
   * PHP Configuration
   * Password hashing API 
-* I/O
+* [I/O](io/README.md)
   * Files
   * Reading
   * Writing
   * File System Functions
   * Streams
   * Contexts
-* Strings & Patterns
+* [Strings & Patterns](strings-&-patterns/README.md)
   * Quoting
   * Matching
   * Extracting
@@ -81,13 +81,13 @@ Olá, esse e um repositório a qual eu gostaria de falar sobre [PHP](http://www.
   * PCRE
   * NOWDOC
   * Encodings
-* Databases & SQL
+* [Databases & SQL](databases-&-slq/README.md)
   * SQL
   * Joins
   * Prepared Statements
   * Transactions
   * PDO
-* Arrays
+* [Arrays](arrays/README.md)
   * Associative Arrays
   * Array Iteration
   * Array Functions
