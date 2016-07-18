@@ -81,7 +81,7 @@ Olá, esse e um repositório a qual eu gostaria de falar sobre [PHP](http://www.
   * PCRE
   * NOWDOC
   * Encodings
-* [Databases & SQL](databases-&-slq/README.md)
+* [Databases & SQL](databases-&-sql/README.md)
   * SQL
   * Joins
   * Prepared Statements
