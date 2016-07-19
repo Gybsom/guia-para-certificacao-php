@@ -1,8 +1,8 @@
 # PHP Basics
 
 * [Syntax](syntax.md)
-* Operators
 * Variables
+* Operators
 * Control Structures
 * Language Constructs and Functions
 * Namespaces 
