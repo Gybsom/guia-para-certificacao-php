@@ -6,8 +6,8 @@ Aqui está um [link com a minha motivação](motivacao.md) e por que acredito qu
 
 * [PHP Basics](php-basics/README.md)
   * [Syntax](php-basics/syntax.md)
+  * [Variables](php-basics/variables.md)
   * Operators
-  * Variables
   * Control Structures
   * Language Constructs and Functions
   * Namespaces 
