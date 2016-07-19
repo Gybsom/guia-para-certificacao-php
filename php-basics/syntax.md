@@ -40,4 +40,44 @@ Isso só é possível por que o PHP outros tipos de tags a qual o interpretador 
 ## Problema com as Tags
 Ao criar arquivos PHP que não se misturam com HTML ou arquivos de template, geralmente em arquivos de classes, configurações e etc, recomenda-se não usar tag de fechamento `?>`. Pois caso exista um espaço ou quebra de linha após a tag de fechamento, essa espaço ou quebra de linha será exibido na resposta da requisição, e é algo bem difícil de se acha quando se tem um projeto com muitos arquivos, e isso pode trazer algumas horas de dor de cabeça.
 
+## Aspas
+No PHP para exibir um texto qualquer, você pode usar tanto aspas duplas `"` quanto aspas simples `'`, exemplo:
+* `<?="PHP BOOK"?>` saida: `PHP BOOK`
+* `<?='PHP BOOK'?>` saida: `PHP BOOK`
+
+A diferença acontece quando você tenta mescla esse texto com uma variavel, exemplo:
+```php
+<?php 
+
+$variael = "texto qualquer";
+
+print "variavel: $variael";
+print 'variavel: $variael';
+```
+Saida:
+```
+variavel: texto qualquer
+variavel: $variael
+```
+Repare que na primeira exibição, a variavel foi reconhecida e seu valor foi impesso na resposta junto com o texto, já na segunda exibição, foi impresso o texto puro e a variavel não foi reconhecida, quando se usa aspas duplas, você consegue mesclar variveis em strings. O PHP consegue indenficar a variavel fazendo com que seu valor seja retornado na exibição, assim evitando está concatenando string com variaveis. 
+
+Outra forma valida e a mais usada é quando se usa chaves envolvendo a variavel
+
+```php
+<?php 
+
+$variael = "texto qualquer";
+
+print "variavel: {$variael}";
+print 'variavel: {$variael}';
+```
+Saida:
+```
+variavel: texto qualquer
+variavel: {$variael}
+```
+
+
+> As palavas resevadas `pritn` e `echo` são as mais usadas para exibir algo na resposta da requisição.
+
 Proximo assunto: [Variables](variables.md)
