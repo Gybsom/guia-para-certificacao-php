@@ -5,7 +5,7 @@ Olá, esse e um repositório a qual eu gostaria de falar sobre [PHP](http://www.
 Aqui está um [link com a minha motivação](motivacao.md) e por que acredito que vale pena tirar certificação.
 
 * [PHP Basics](php-basics/README.md)
-  * Syntax
+  * [Syntax](php-basics/syntax.md)
   * Operators
   * Variables
   * Control Structures
