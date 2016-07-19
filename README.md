@@ -12,13 +12,22 @@ Olá, esse e um repositório a qual eu gostaria de falar sobre [PHP](http://www.
   * Extensions
   * Config
   * Performance/bytecode caching
-* [Functions](functions/README.md)
-  * Arguments
-  * Variables
-  * References
-  * Returns
-  * Variable Scope
-  * Anonymous Functions, closures
+* [Strings & Patterns](strings-&-patterns/README.md)
+  * Quoting
+  * Matching
+  * Extracting
+  * Searching
+  * Replacing
+  * Formatting
+  * PCRE
+  * NOWDOC
+  * Encodings
+* [Arrays](arrays/README.md)
+  * Associative Arrays
+  * Array Iteration
+  * Array Functions
+  * SPL, Objects as arrays 
+  * Casting
 * [Data Format & Types](data-format-&-types/README.md)
   * XML Basics
   * SimpleXML
@@ -36,6 +45,20 @@ Olá, esse e um repositório a qual eu gostaria de falar sobre [PHP](http://www.
   * HTTP Headers
   * HTTP Authentication
   * HTTP Status Codes 
+* [Functions](functions/README.md)
+  * Arguments
+  * Variables
+  * References
+  * Returns
+  * Variable Scope
+  * Anonymous Functions, closures
+* [I/O](io/README.md)
+  * Files
+  * Reading
+  * Writing
+  * File System Functions
+  * Streams
+  * Contexts
 * [Object Oriented Programming](object-oriented-programming/README.md)
   * Instantiation
   * Modifiers/Inheritance
@@ -50,6 +73,12 @@ Olá, esse e um repositório a qual eu gostaria de falar sobre [PHP](http://www.
   * Instance Methods & Properties
   * SPL
   * Traits 
+* [Databases & SQL](databases-&-sql/README.md)
+  * SQL
+  * Joins
+  * Prepared Statements
+  * Transactions
+  * PDO
 * [Security](security/README.md)
   * Configuration
   * Session Security
@@ -64,34 +93,5 @@ Olá, esse e um repositório a qual eu gostaria de falar sobre [PHP](http://www.
   * File uploads
   * PHP Configuration
   * Password hashing API 
-* [I/O](io/README.md)
-  * Files
-  * Reading
-  * Writing
-  * File System Functions
-  * Streams
-  * Contexts
-* [Strings & Patterns](strings-&-patterns/README.md)
-  * Quoting
-  * Matching
-  * Extracting
-  * Searching
-  * Replacing
-  * Formatting
-  * PCRE
-  * NOWDOC
-  * Encodings
-* [Databases & SQL](databases-&-sql/README.md)
-  * SQL
-  * Joins
-  * Prepared Statements
-  * Transactions
-  * PDO
-* [Arrays](arrays/README.md)
-  * Associative Arrays
-  * Array Iteration
-  * Array Functions
-  * SPL, Objects as arrays 
-  * Casting
 
 A idéia final é ter um estudo e compartilhamento de conteúdo, para todos aqueles que gostaria de focar o aprendizado rápido do PHP, e também fazer um estudo para quem quer tirar certificação, assim como eu.
