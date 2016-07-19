@@ -14,7 +14,7 @@ Exemplo:
   </body>
 </html>
 ```
-A saída desse código interpretado é: 
+A saída desse código é: 
 
 ```HTML
 <!DOCTYPE html>
