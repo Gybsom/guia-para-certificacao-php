@@ -2,6 +2,8 @@
 
 Olá, esse e um repositório a qual eu gostaria de falar sobre [PHP](http://www.php.net/), uma especie de blog ou livro, onde eu irei postar sobre conteúdo que acredito que seja importante a todo programador PHP. Então como esse repositório é focado em PHP, tentarei seguir a ementa de estudo para quem quer se torna um [ZCE](http://www.zend.com/en/services/certification/php-5-certification).
 
+Aqui está um [link com a minha motivação](motivacao.md) e por que acredito que vale pena tirar certificação.
+
 * [PHP Basics](php-basics/README.md)
   * Syntax
   * Operators
