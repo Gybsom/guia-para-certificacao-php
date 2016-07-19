@@ -45,39 +45,41 @@ No PHP para exibir um texto qualquer, você pode usar tanto aspas duplas `"` qua
 * `<?="PHP BOOK"?>` saida: `PHP BOOK`
 * `<?='PHP BOOK'?>` saida: `PHP BOOK`
 
-A diferença acontece quando você tenta mescla esse texto com uma variavel, exemplo:
+A diferença acontece quando você tenta mescla esse texto com uma variável, exemplo:
 ```php
 <?php 
 
 $variael = "texto qualquer";
 
-print "variavel: $variael";
-print 'variavel: $variael';
+print "variável: $variavel";
+print 'variável: $variavel';
 ```
-Saida:
+Saída:
 ```
-variavel: texto qualquer
-variavel: $variael
+variável: texto qualquer
+variável: $variavel
 ```
-Repare que na primeira exibição, a variavel foi reconhecida e seu valor foi impesso na resposta junto com o texto, já na segunda exibição, foi impresso o texto puro e a variavel não foi reconhecida, quando se usa aspas duplas, você consegue mesclar variveis em strings. O PHP consegue indenficar a variavel fazendo com que seu valor seja retornado na exibição, assim evitando está concatenando string com variaveis. 
+Repare que na primeira exibição, a variável foi reconhecida e seu valor foi impresso na resposta junto com o texto, já na segunda exibição, foi impresso o texto puro e a variável não foi reconhecida. Quando se usa aspas duplas, você consegue mesclar variáveis em strings.
 
-Outra forma valida e a mais usada é quando se usa chaves envolvendo a variavel
+O PHP consegue identificar a variável fazendo com que seu valor seja retornado na exibição, assim evitando está concatenando string com variáveis. 
+
+Outra forma valida e a mais usada é quando se usa chaves envolvendo a variável
 
 ```php
 <?php 
 
-$variael = "texto qualquer";
+$variavel = "texto qualquer";
 
-print "variavel: {$variael}";
-print 'variavel: {$variael}';
+print "variável: {$variavel}";
+print 'variável: {$variavel}';
 ```
-Saida:
+Saída:
 ```
-variavel: texto qualquer
-variavel: {$variael}
+variável: texto qualquer
+variável: {$variavel}
 ```
 
 
-> As palavas resevadas `pritn` e `echo` são as mais usadas para exibir algo na resposta da requisição.
+> As palavas reservadas `print` e `echo` são as mais usadas para exibir algo na resposta da requisição.
 
-Proximo assunto: [Variables](variables.md)
+Próximo assunto: [Variables](variables.md)
