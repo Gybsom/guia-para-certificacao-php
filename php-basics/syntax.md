@@ -1,4 +1,5 @@
 # Syntax
+* [PHP](#php)
 * [Tags](#tags)
 * [Problema com as Tags](#problema-com-as-tags)
 * [Aspas](#aspas)
@@ -6,9 +7,11 @@
 * [Bloco de código](#bloco-de-codigo)
 * [O interpretador PHP](#o-interpretador-php)
 
+## PHP
+O PHP (um acrônimo recursivo para PHP: Hypertext Preprocessor) é uma linguagem de script open source de uso geral, muito utilizada, e especialmente adequada para o desenvolvimento web. A melhor coisa em usar o PHP é que ele é extremamente simples para um iniciante, mas oferece muitos recursos para um programador profissional.
 
 ## Tags
-O PHP tem como sintaxe básica, tags de abertura representado por `<?php` e fechamento `?>` como default do interpretador. O interpretador busca por essas tags dentro do arquivo e se achar ele interpreta esses comandos e retorna a resposta na saida do documento. Com essa forma de interpretar, o PHP possui a possibilidade de ser facilmente incluído em vários tipos de documento.
+O PHP tem como sintaxe básica, tags de abertura representado por `<?php` e fechamento `?>` como default do interpretador. O interpretador busca por essas tags dentro do arquivo e se achar ele interpreta os comandos dentro das tags e retorna a resposta na saida do documento. Com essa forma de interpretar, o PHP possui a possibilidade de ser facilmente incluído em vários tipos de documento.
 
 Exemplo da mesclagem com HTML: 
 ```HTML
@@ -93,7 +96,7 @@ print 'variável: {$variavel}'; // variável: {$variavel}
 
 > As palavas reservadas `print` e `echo` são as mais usadas para exibir algo na resposta da requisição.
 
-## Comentarios
+## Comentários
 Assim como em outras linguagens, o PHP possui dois tipo de comentários, de "uma linha" e de "varias linhas". O PHP suporta comentários no estilo 'C', 'C++' e do Unix shell (estilo Perl). Por exemplo:
 ```php
 <?php
@@ -106,17 +109,16 @@ Assim como em outras linguagens, o PHP possui dois tipo de comentários, de "uma
 ```
 Os comentários de estilo "uma linha" apenas comentam até o final da linha ou do bloco PHP de código corrente
 
-Ao tentar comentar grandes blocos de codigo, podemos cometer o seguinte equivoco:
+Ao tentar comentar grandes blocos de código, podemos cometer o seguinte equivoco:
 ```php
 <?php
  /*
     echo 'Isto é um teste'; /* Este comentário irá causar um problema */
  */
-?>
 ```
 
 ## Bloco de codigo
-O PHP usa como delimitador de bloco de codigo as chaves `{}` exemplo:
+O PHP usa como delimitador de bloco de código as chaves `{}` exemplo:
 ```php
 <?php
 
@@ -131,15 +133,43 @@ class Programador implements ZCE {
 $programador = new Programador();
 
 if($programador instanceof ZCE){
-    print true; # bloco de código
+    # bloco de código
 } else {
-    print false; # bloco de código
+    # bloco de código
 }
 
 ```
 
 ## O interpretador PHP
-Como já foi dito php consegue se mistura com outros tipos de documentos e o interpretador consegue detectar comandos PHP dentro de um documento.
+Como já foi dito PHP consegue se mistura com outros tipos de arquivos ou documentos e o interpretador consegue detectar comandos PHP dentro desse arquivo, até mesmo não sendo um arquivo com a extensão `.php` veja:
 
+usuarios.xml
+```XML
+<?php foreach(['Alef', 'Sara', 'Liana'] as $nome): ?>
+    <usuario nome="<?php print $nome ?>" />
+<?php endforeach; ?>
+```
+index.php
+```XML
+<?php
+header("Content-type: text/xml");
+// Cabeçalho XML
+print "<?xml version=\"1.0\" encoding=\"UTF-8\"?>";
+// Abrindo tag que contém a lista de usuários
+print "<lista-usuarios>";
+// repare que está sendo incluindo um arquivo do tipo XML com código PHP dentro.
+require_once 'usuarios.xml'; 
+// Fechando tag que contém a lista de usuários
+print "</lista-usuarios>";
+```
+Saída:
+```XML
+<?xml version="1.0" encoding="UTF-8"?>
+<lista-usuarios>
+    <usuario nome="Alef" />
+    <usuario nome="Sara" />
+    <usuario nome="Liana" />
+</lista-usuarios>
+```
 
 Próximo assunto: [Variables](variables.md)
