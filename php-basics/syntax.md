@@ -4,7 +4,7 @@
 * [Aspas](#aspas)
 * [Comentários](#comentarios)
 * [Bloco de código](#bloco-de-codigo)
-* [O interpretador PHP](#interpretador-php)
+* [O interpretador PHP](#o-interpretador-php)
 
 
 ## Tags
