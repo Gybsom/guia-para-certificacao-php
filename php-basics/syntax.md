@@ -2,15 +2,15 @@
 * [Tags](#tags)
 * [Problema com as Tags](#problema-com-as-tags)
 * [Aspas](#aspas)
-* [Comentarios](#comentarios)
-* [Bloco de codigo](#bloco-de-codigo)
-* [Espaço e branco e quebra de linha](#espaco-em-branco-e-quebra-de-linha)
+* [Comentários](#comentarios)
+* [Bloco de código](#bloco-de-codigo)
+* [O interpretador PHP](#interpretador-php)
 
 
 ## Tags
-O PHP tem como sintaxe básica, tags de abertura representado por `<?php` e fechamento `?>` como default do interpretador. Com essa forma de interpretar, o PHP possui a possibilidade de ser facilmente incluído em vários tipos de documento.
+O PHP tem como sintaxe básica, tags de abertura representado por `<?php` e fechamento `?>` como default do interpretador. O interpretador busca por essas tags dentro do arquivo e se achar ele interpreta esses comandos e retorna a resposta na saida do documento. Com essa forma de interpretar, o PHP possui a possibilidade de ser facilmente incluído em vários tipos de documento.
 
-Exemplo: 
+Exemplo da mesclagem com HTML: 
 ```HTML
 <!DOCTYPE html>
 <html>
@@ -92,5 +92,54 @@ print 'variável: {$variavel}'; // variável: {$variavel}
 ```
 
 > As palavas reservadas `print` e `echo` são as mais usadas para exibir algo na resposta da requisição.
+
+## Comentarios
+Assim como em outras linguagens, o PHP possui dois tipo de comentários, de "uma linha" e de "varias linhas". O PHP suporta comentários no estilo 'C', 'C++' e do Unix shell (estilo Perl). Por exemplo:
+```php
+<?php
+    echo 'Isto é um teste'; // Estilo de comentário de uma linha em  c++
+    /* Este é um comentário de múltiplas linhas
+       ainda outra linha de comentário */
+    echo 'Isto é ainda outro teste';
+    echo 'Um teste final'; # Este é um comentário de uma linha no estilo shell
+?>
+```
+Os comentários de estilo "uma linha" apenas comentam até o final da linha ou do bloco PHP de código corrente
+
+Ao tentar comentar grandes blocos de codigo, podemos cometer o seguinte equivoco:
+```php
+<?php
+ /*
+    echo 'Isto é um teste'; /* Este comentário irá causar um problema */
+ */
+?>
+```
+
+## Bloco de codigo
+O PHP usa como delimitador de bloco de codigo as chaves `{}` exemplo:
+```php
+<?php
+
+interface ZCE {
+  # bloco de código  
+}
+
+class Programador implements ZCE {
+    # bloco de código
+}
+
+$programador = new Programador();
+
+if($programador instanceof ZCE){
+    print true; # bloco de código
+} else {
+    print false; # bloco de código
+}
+
+```
+
+## O interpretador PHP
+Como já foi dito php consegue se mistura com outros tipos de documentos e o interpretador consegue detectar comandos PHP dentro de um documento.
+
 
 Próximo assunto: [Variables](variables.md)
