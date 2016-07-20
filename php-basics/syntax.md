@@ -105,7 +105,6 @@ Assim como em outras linguagens, o PHP possui dois tipo de comentários, de "uma
        ainda outra linha de comentário */
     echo 'Isto é ainda outro teste';
     echo 'Um teste final'; # Este é um comentário de uma linha no estilo shell
-?>
 ```
 Os comentários de estilo "uma linha" apenas comentam até o final da linha ou do bloco PHP de código corrente
 
@@ -150,7 +149,7 @@ usuarios.xml
 <?php endforeach; ?>
 ```
 index.php
-```XML
+```PHP
 <?php
 header("Content-type: text/xml");
 // Cabeçalho XML
