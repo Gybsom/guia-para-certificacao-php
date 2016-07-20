@@ -1,6 +1,9 @@
 # Syntax
-1. [Tags](#tags)
-2. [Aspas](#aspas)
+* [Tags](#tags)
+* [Aspas](#aspas)
+* [Comentarios](#comentarios)
+* [Bloco de codigo](#bloco-de-codigo)
+* [Espaço e branco e quebra de linha](#espaco-em-branco-e-quebra-de-linha)
 
 ## Tags
 O PHP tem como sintaxe básica, tags de abertura representado por `<?php` e fechamento `?>` como default do interpretador. Com essa forma de interpretar o PHP possui a possibilidade de ser facilmente mesclado com HTML e outras tecnologias.
@@ -33,9 +36,9 @@ A saída desse código é:
 Repare também que foi usado duas formas diferente de exibir uma string na saída do interpretador. A primeira foi `<?php print "Titulo da pagina" ?>` e a segunda foi `<?= "conteúdo do site" ?>`. 
 Isso só é possível por que o PHP outros tipos de tags a qual o interpretador entende que naquele bloco é um código php.
 
-* `<?php ?>` **Open Tags** - O mais usado usado, geralmente em arquivos que só contem PHP.
-* `<? ?>` **Short Open Tags** - Seu uso é desencorajado pois esse recurso só está disponível quando é habilitado a diretiva short_open_tag no php.ini.
-* `<?= ?>` **Echo tag** - Usado em arquivo de template, a parti da versão 5.4.0 sempre estará disponível, independente do da configuração short_open_tag ini..
+* `<?php ?>` **Standard Tags or Open Tags** - O mais usado usado, geralmente em arquivos que só contem PHP.
+* `<? ?>` **Short Open Tags** - Seu uso é desencorajado pois esse recurso só está disponível quando é habilitado a diretiva `short_open_tag` no _php.ini_.
+* `<?= ?>` **Echo tag** - Usado em arquivo de template, a parti da versão 5.4.0 sempre estará disponível, independente do da configuração `short_open_tag` no _php.ini_.
 * `<% %>` **ASP Tags** - Seu uso é desencorajado pois na verão 7 ele foi removido, por motivos de causar conflitos com linguagens de marcação, como XML.
 * `<script language="php"></script>` **Script Tags** - Também foi removido da versão 7 do  PHP.
 
