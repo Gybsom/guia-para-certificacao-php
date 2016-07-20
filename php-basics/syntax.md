@@ -1,4 +1,6 @@
 # Syntax
+1. [Tags](#tags)
+2. [Aspas](#aspas)
 
 ## Tags
 O PHP tem como sintaxe básica, tags de abertura representado por `<?php` e fechamento `?>` como default do interpretador. Com essa forma de interpretar o PHP possui a possibilidade de ser facilmente mesclado com HTML e outras tecnologias.
