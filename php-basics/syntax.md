@@ -43,7 +43,7 @@ Isso só é possível por que o PHP outros tipos de tags a qual o interpretador 
 O mais usado usado, e com certeza a melhor solução, por causa da compatibilidade com versões anteriores, e é garantido que não poderão ser desabilitado alterando o arquivo de configuração do php.
   
 **Short Open Tags**   
-`<? ?>` 
+`<? ?>`   
 Seu uso é desencorajado pois esse recurso só está disponível quando é habilitado a diretiva `short_open_tag` no _php.ini_.
 
 **Echo tag**    
@@ -52,7 +52,7 @@ Comummente usado em arquivo de template. A parti da versão 5.4.0 sempre estará
 
 **ASP Tags**    
 `<% %>`    
-Seu uso é desencorajado pois na verão 7 ele foi removido, por motivos de causar conflitos com linguagens de marcação, como XML.
+É considerado obsoleto, e seu uso é desencorajado pois na verão 7 ele foi removido, por motivos de causar conflitos com linguagens de marcação, como XML.
   
 **Script Tags**   
 `<script language="php"></script>`    
