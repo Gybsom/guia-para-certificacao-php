@@ -4,7 +4,7 @@ Olá, esse e um repositório a qual eu gostaria de falar sobre [PHP](http://www.
 
 Aqui está um [link com a minha motivação](motivacao.md) e por que acredito que vale pena tirar certificação.
 
-Outra coisa que gostaria de deixar claro, e o motivo porque nem tudo aqui deixarei em português, por exemplo: os tópicos que serão abordados na prova, `PHP Basics`, `Control Structures` e etc, pois a prova é totalmente inglês e acredito que no minimo os tópicos devem ser conhecidos em inglês.
+Outra coisa que gostaria de deixar claro, é o motivo porque nem tudo aqui deixarei em português, por exemplo: os tópicos que serão abordados na prova, `PHP Basics`, `Control Structures` e etc. A prova é totalmente inglês e acredito que no minimo os tópicos devem ser conhecidos em inglês.
 
 * [PHP Basics](php-basics/README.md)
   * [Syntax](php-basics/syntax.md)
