@@ -39,7 +39,7 @@ A saída desse código é:
 </html>
 ```
 Repare também que foi usado duas formas diferente de exibir uma string na saída do interpretador. A primeira foi `<?php print "Titulo da pagina" ?>` e a segunda foi `<?= "conteúdo do site" ?>`. 
-Isso só é possível por que o PHP outros tipos de tags a qual o interpretador entende que naquele bloco é um código php.
+Isso só é possível por que o PHP possui outros tipos de tags a qual o interpretador entende que naquele bloco é um código php.
 
 **Standard Tags or Open Tags**  
 `<?php ?>`  
@@ -81,9 +81,8 @@ print 'variável: $variavel'; // variável: $variavel
 
 Repare que na primeira exibição, a variável foi reconhecida e seu valor foi impresso na resposta junto com o texto, já na segunda exibição, foi impresso o texto puro e a variável não foi reconhecida. Quando se usa aspas duplas, você consegue mesclar variáveis em strings.
 
-O PHP consegue identificar a variável fazendo com que seu valor seja retornado na exibição, assim evitando está concatenando string com variáveis. 
-
-Outra forma valida e a mais usada é quando se usa chaves envolvendo a variável
+O PHP consegue identificar a variável fazendo com que seu valor seja retornado na exibição, assim evitando está concatenando string com variáveis.   
+Outra forma valida e a mais usada é quando se usa chaves envolvendo a variável.
 
 ```php
 <?php 
