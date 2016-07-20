@@ -3,7 +3,7 @@
 * [Tags](#tags)
 * [Problema com as Tags](#problema-com-as-tags)
 * [Aspas](#aspas)
-* [Comentários](#comentarios)
+* [Comentários](#comentários)
 * [Bloco de código](#bloco-de-codigo)
 * [O interpretador PHP](#o-interpretador-php)
 
