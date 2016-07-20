@@ -52,7 +52,7 @@ Comummente usado em arquivo de template. A parti da versão 5.4.0 sempre estará
 
 **ASP Tags**    
 `<% %>`    
-É considerado obsoleto, e seu uso é desencorajado pois na verão 7 ele foi removido, por motivos de causar conflitos com linguagens de marcação, como XML.
+É considerado obsoleto, e seu uso é desencorajado pois na verão 7 ele foi removido, por motivos de causar conflitos com linguagens de marcação como XML.
   
 **Script Tags**   
 `<script language="php"></script>`    
