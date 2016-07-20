@@ -1,4 +1,4 @@
-# ZCE BOOK
+# GUIA DE CERTIFICAÇÂO PHP
 
 Olá, esse e um repositório a qual eu gostaria de falar sobre [PHP](http://www.php.net/), uma especie de blog ou livro, onde eu irei postar sobre conteúdo que acredito que seja importante a todo programador PHP. Então como esse repositório é focado em PHP, tentarei seguir a ementa de estudo para quem quer se torna um [ZCE](http://www.zend.com/en/services/certification/php-5-certification).
 
