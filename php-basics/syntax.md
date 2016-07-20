@@ -1,5 +1,6 @@
 # Syntax
 * [Tags](#tags)
+* [Problema com as Tags](#problema-com-as-tags)
 * [Aspas](#aspas)
 * [Comentarios](#comentarios)
 * [Bloco de codigo](#bloco-de-codigo)
