@@ -117,6 +117,7 @@ O PHP possui funções que permite fazer a conversão dessas variavies.
 
 Exemplo: 
 ```php 
+<?php
 $var = 12;
 
 settype($var, "bool");
@@ -131,4 +132,21 @@ var_dump($var); // double(1)
 
 ***
 ## Detectando tipos
+O PHP possui funções que permite detectar o tipo de cada variável. Se a variável possui o tipo especificado a função irá retornar `true`.
+
+
+| Função       | Resultado                               |
+| ------------ |:---------------------------------------:|
+| is_int()     | Verifica se é do tipo `int`             |
+| is_float()   | Verifica se é do tipo `float`           |
+| is_string()  | Verifica se é do tipo `string`          |
+| is_bool()    | Verifica se é do tipo `boolean`         |
+| is_null()    | Verifica se é do tipo `null`            |
+| is_array()   | Verifica se é do tipo `null`            |
+| is_object()  | Verifica se é do tipo `null`            |
+
+***
+##  Variáveis Variáveis
+
+As vezes, é conveniente possuir variáveis com nomes variáveis. Isto é, o nome de uma variável que pode ser definido e utilizado dinamicamente. 
 
