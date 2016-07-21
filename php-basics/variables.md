@@ -8,6 +8,7 @@ $NOME = "Castelo";
 print $nome; // Alef
 print $NOME; // Castelo
 ```
+***
 ## Sintaxe Válida
 As variaveis no php só podem começar com letras e underscore, variaveis que começam com numeros o PHP lançará a seguinte erro `PHP Parse error`.
 ```php
@@ -19,7 +20,7 @@ print $_maçã; // valido
 print $maçã; // valido
 ```
 > $this é uma variável especial que não pode ser atribuída.
-
+***
 ## Tipo de variáveis
 
 O PHP suporta oito tipos primitivos.
@@ -39,7 +40,7 @@ Porém existe pseudo-tipos:
 * Void
 
 Veja mais em http://php.net/manual/pt_BR/language.types.intro.php
-
+***
 ## Passagem de valor
 
 O PHP possui duas formas de atribuir um valor a uma variável, a passagem de por valor e por referência. A passagem por valor continua da forma a qual já virmos anteriormente, porém a passagem por referencia, precisamos colocar o caractere `&` antes do `$` para informa que aquela variavel irá receber uma referência e não a copia do valor.
