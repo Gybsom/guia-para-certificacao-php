@@ -1,5 +1,15 @@
 # Variables
 
+* [Introdução](#introdução)
+* [Sintaxe Válida](#sintaxe-válida)
+* [Tipo de variáveis](#tipo-de-variáveis)
+* [Passagem de valor](#passagem-de-valor)
+* [Conversão de tipos](#conversão-de-tipos)
+* [Detectando tipos](#detectando-tipos)
+* [Variáveis Variáveis](#variáveis-variáveis)
+
+***
+## Introdução
 As variáveis no PHP são representadas por um cifrão ($) seguido pelo nome da variável. Os nomes de variável são case-sensitive (isso significa que as variavies do PHP fazem diferença do maiusculo do minusculo). O PHP é uma linguagem de tipagem dinâmica. Assim sendo, o valor que o programador atribuir a variável é que vai determinar o tipo de dado que ela irá armazenar.
 
 ```php
