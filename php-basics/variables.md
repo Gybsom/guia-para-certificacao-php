@@ -7,6 +7,7 @@
 * [Conversão de tipos](#conversão-de-tipos)
 * [Detectando tipos](#detectando-tipos)
 * [Variáveis Variáveis](#variáveis-variáveis)
+* [Constantes](#constantes)
 
 ***
 ## Introdução
@@ -214,3 +215,21 @@ $var = 'nome';
 $$var = 'Alef Castelo';
 echo ${'nome'}; // Alef Castelo 
 ```
+
+***
+## Constantes
+
+Constante é um identificador para uma variavel a qual seu valor não poderá ser alterado depois de sua declaração. Exceto as constantes mágicas, que não são constantes de verdade. As constantes são case-sensitive por padrão. Por convenção, identificadores de constantes são sempre em maiúsculas. Sua declaração é simples, veja:
+
+```php
+<?php
+define("URL",     "http://google.com");
+define("VERSAO",  "v1");
+
+print URL;     // http://google.com
+print VERCAO;  // v1
+
+```
+
+
+
