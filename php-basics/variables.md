@@ -160,3 +160,40 @@ O PHP possui funções que permite detectar o tipo de cada variável. Se a vari�
 
 As vezes, é conveniente possuir variáveis com nomes variáveis. Isto é, o nome de uma variável que pode ser definido e utilizado dinamicamente. 
 
+```php
+<?php
+
+$nome = 'Alef';
+$$nome = 'Castelo';
+$nomecompleto = "$nome ${$nome}";
+
+print $nomecompleto; // Alef Castelo
+```
+Porém seu uso fica mais claro quando se tenta definir o valor de uma propiedade de uma classe de forma dinamica.
+
+```php
+<?php 
+
+// Você recebeu uma requisição GET com a URI: index.php?var=nome&valor=alef
+
+class Usuario {
+    public $nome;
+    public $sobrenome;
+}
+
+$usuario = new Usuario; 
+
+if(isSet($_GET['var']))
+    $usuario->$_GET['var'] = $_GET['valor'];
+
+var_dump($usuario);
+
+/*
+  A Saida será:
+  object(Usuario)[1]
+    public 'nome' => string 'alef' (length=4)
+    public 'sobrenome' => null
+  
+*/
+
+```
