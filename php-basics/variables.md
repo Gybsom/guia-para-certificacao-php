@@ -6,7 +6,7 @@ As variáveis no PHP são representadas por um cifrão ($) seguido pelo nome da 
 $nome = "Alef";
 $NOME = 4134;
 print $nome; // Alef (string)
-print $NOME; // 4134 (int)
+print $NOME; // 4137 (int)
 ```
 ***
 ## Sintaxe Válida
@@ -69,5 +69,66 @@ print $b; // 2
 ```
 
 ## Conversão de tipos 
+O PHP não obriga (ou suporta) a definição de tipo explícita na declaração de variáveis: o tipo de uma variável é determinado pelo contexto em que a variável é utilizada. Um exemplo da conversão automática do PHP é o operador de adição '+'.
 
+```php
+<?php
+$var = "0";  // $var é string (ASCII 48)
+$var += 2;   // $var é agora um interio (2)
+$var = $var + 1.3;  // $var é agora um float (3.3)
+$var = 5 + "10 pequenos porcos";   // $var é inteiro (15)
+$var = 5 + "10 minúsculos porcos"; // $var é inteiro (15)
+```
+A conversão de tipos no PHP funciona como no C: o nome de um tipo desejado é escrito entre parênteses antes da variável que se deseja converter.
+
+```php
+<?php
+
+print_r( (object) ['esporte' => 'Judô', 'atleta' => 'Alef'] );
+
+/*
+  O resultado da conversão retornará um objeto do tipo stdClass
+  stdClass Object
+  (
+    [esporte] => Judô
+    [atleta] => Alef
+  )
+*/
+```
+
+As conversões permitidas são:
+* (int), (integer) - molde para inteiro
+* (bool), (boolean) - converte para booleano
+* (float), (double), (real) - converte para número de ponto flutuante
+* (string) - converte para string
+* (array) - converte para array
+* (object) - converte para objeto
+* (unset) - converte para NULL (PHP 5)
+
+O PHP possui funções que permite fazer a conversão dessas variavies.
+
+| Função       | Resultado                               |
+| ------------ |:---------------------------------------:|
+| intval()     | Converte para `int`                     |
+| floatval()   | Converte para `float`                   |
+| strval()     | Converte para `string                   |
+| boolval()    | Converte para `boolean`                 |
+| settype()    | Converte a variável para qualquer tipo  |
+
+Exemplo: 
+```php 
+$var = 12;
+
+settype($var, "bool");
+var_dump($var); // bool(true)
+
+settype($var, "int");
+var_dump($var); // int(1)
+
+settype($var, "double");
+var_dump($var); // double(1)
+```
+
+***
+## Detectando tipos
 
