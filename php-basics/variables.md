@@ -20,6 +20,7 @@ print $_maçã; // valido
 print $maçã; // valido
 ```
 > $this é uma variável especial que não pode ser atribuída.
+
 ***
 ## Tipo de variáveis
 
