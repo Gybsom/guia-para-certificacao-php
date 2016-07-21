@@ -174,7 +174,9 @@ Porém seu uso fica mais claro quando se tenta definir o valor de uma propiedade
 ```php
 <?php 
 
-// Você recebeu uma requisição GET com a URI: index.php?var=nome&valor=alef
+// Suponha que Você recebeu uma requisição GET com a URI: index.php?var=nome&valor=alef
+
+<?php
 
 class Usuario {
     public $nome;
@@ -183,8 +185,15 @@ class Usuario {
 
 $usuario = new Usuario; 
 
-if(isSet($_GET['var']))
-    $usuario->$_GET['var'] = $_GET['valor'];
+if(isSet($_GET['var'])) 
+   $var = $_GET['var'];
+    
+$usuario->$var = $_GET['valor'];
+
+/*
+    isso => $usuario->$var = $_GET['valor'];
+    é a mesma coisa disso => $usuario->nome = $_GET['valor']; 
+*/
 
 var_dump($usuario);
 
@@ -196,4 +205,12 @@ var_dump($usuario);
   
 */
 
+```
+Outra forma:
+
+```php
+<?php
+$var = 'nome';
+$$var = 'Alef Castelo';
+echo ${'nome'}; // Alef Castelo 
 ```
