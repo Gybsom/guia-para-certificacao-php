@@ -97,7 +97,7 @@ print 'variável: {$variavel}'; // variável: {$variavel}
 > As palavas reservadas `print` e `echo` são as mais usadas para exibir algo na resposta da requisição.
 
 ## Concatenação de Strings
-Para fazer uso da concatenação (ou junção de strings), você precisa usar o ponto (`.`), sempre colocando entre duas variaveis ou entre duas strings, entre uma string e o retorno de uma função/método.
+Para fazer uso da concatenação (ou junção de strings), você precisa usar o ponto (`.`), sempre colocando entre duas variáveis ou entre duas strings, entre uma string e o retorno de uma função/método.
 
 ```php
 <?php 
@@ -188,4 +188,4 @@ Saída:
 </lista-usuarios>
 ```
 
-Próximo assunto: [Variables](variables.md)
+Próximo assunto: [Variables](variables.md) 
