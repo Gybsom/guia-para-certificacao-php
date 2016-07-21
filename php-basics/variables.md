@@ -1,12 +1,12 @@
 # Variables
 
-As variáveis no PHP são representadas por um cifrão ($) seguido pelo nome da variável. Os nomes de variável são case-sensitive (isso significa que as variavies do PHP fazem diferença do maiusculo do minusculo). 
+As variáveis no PHP são representadas por um cifrão ($) seguido pelo nome da variável. Os nomes de variável são case-sensitive (isso significa que as variavies do PHP fazem diferença do maiusculo do minusculo). O PHP é uma linguagem de tipagem dinâmica. Assim sendo, o valor que o programador atribuir a variável é que vai determinar o tipo de dado que ela irá armazenar.
 
 ```php
 $nome = "Alef";
-$NOME = "Castelo";
-print $nome; // Alef
-print $NOME; // Castelo
+$NOME = 4134;
+print $nome; // Alef (string)
+print $NOME; // 4134 (int)
 ```
 ***
 ## Sintaxe Válida
