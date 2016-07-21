@@ -18,6 +18,8 @@ print $_banana; // valido
 print $_maçã; // valido
 print $maçã; // valido
 ```
+> $this é uma variável especial que não pode ser atribuída.
+
 ## Tipo de variáveis
 
 O PHP suporta oito tipos primitivos.
@@ -35,6 +37,8 @@ Porém existe pseudo-tipos:
 * Callback (ou callable)
 * Array | Object
 * Void
+
+Veja mais em http://php.net/manual/pt_BR/language.types.intro.php
 
 ## Passagem de valor
 
