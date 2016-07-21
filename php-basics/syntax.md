@@ -3,6 +3,7 @@
 * [Tags](#tags)
 * [Problema com as Tags](#problema-com-as-tags)
 * [Aspas](#aspas)
+* [Concatenação de Strings](#concatenação-de-strings)
 * [Comentários](#comentários)
 * [Bloco de código](#bloco-de-codigo)
 * [O interpretador PHP](#o-interpretador-php)
@@ -94,6 +95,23 @@ print 'variável: {$variavel}'; // variável: {$variavel}
 ```
 
 > As palavas reservadas `print` e `echo` são as mais usadas para exibir algo na resposta da requisição.
+
+## Concatenação de Strings
+Para fazer uso da concatenação (ou junção de strings), você precisa usar o ponto (`.`), sempre colocando entre duas variaveis ou entre duas strings, entre uma string e o retorno de uma função/método.
+
+```php
+<?php 
+
+$string_1 = "texto";
+$string_2 = " qualquer";
+function funcao(){ return 'texto' . " qualquer"; }
+
+print $string_1 . $string_2; // texto qualquer
+print "texto" . $string_2; // texto qualquer
+print "texto" . " qualquer"; // texto qualquer
+print "retorno: " . funcao(); // retorno: texto qualquer
+
+```
 
 ## Comentários
 Assim como em outras linguagens, o PHP possui dois tipo de comentários, de "uma linha" e de "varias linhas". O PHP suporta comentários no estilo 'C', 'C++' e do Unix shell (estilo Perl). Por exemplo:
