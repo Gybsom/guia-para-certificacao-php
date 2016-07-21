@@ -19,7 +19,10 @@ print $_banana; // valido
 print $_maçã; // valido
 print $maçã; // valido
 ```
-> $this é uma variável especial que não pode ser atribuída.
+
+`$this` é uma variável especial que não pode ser atribuída. Caso queira atribuir um valor para ela, o PHP lançará o seguinte erro: `PHP Fatal error:  Cannot re-assign $this`;
+
+
 
 ***
 ## Tipo de variáveis
