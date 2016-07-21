@@ -33,7 +33,7 @@ Porém existe pseudo-tipos:
 * Mixed
 * Number
 * Callback (ou callable)
-* Array|Object
+* Array | Object
 * Void
 
 O PHP possui duas formas de atribuir um valor a uma variável, a passagem de por valor e por referência. A passagem por valor continua da forma a qual já virmos anteriormente, porém a passagem por referencia, precisamos colocar o caractere `&` antes do `$` para informa que aquela variavel irá receber uma referência e não a copia do valor.
