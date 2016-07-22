@@ -295,4 +295,4 @@ var_dump(ZCEBook::NOME); // string(7) "ZCEBook"
 | **\_\_CLASS\_\_**     | O nome da classe. O nome da classe inclui o namespace em que foi declarado (por exemplo, Foo\Bar). Note que a partir do PHP 5.4, **\_\_CLASS\_\_** também funcionará em traits. Quando utilizada em um método trait, \_\_CLASS\_\_ é o nome da classe que está utilizando a trait. |
 | **\_\_TRAIT\_\_**     | O nome do trait. O nome do trait inclui o namespace em que foi declarado (por exemplo, Foo\Bar).   |
 | **\_\_METHOD\_\_**     | O nome do método da classe.             |
-| **\_\_NAMESPACE\_\_**     | O nome do namespace corrente.             |
+| **\_\_NAMESPACE\_\_**     | O nome do namespace atual.             |
