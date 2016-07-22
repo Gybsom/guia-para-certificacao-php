@@ -122,7 +122,7 @@ O PHP possui funções que permite fazer a conversão dessas variáveis.
 | ------------ |-----------------------------------------|
 | intval()     | Converte para `int`                     |
 | floatval()   | Converte para `float`                   |
-| strval()     | Converte para `string                   |
+| strval()     | Converte para `string`                   |
 | boolval()    | Converte para `boolean`                 |
 | settype()    | Converte a variável para qualquer tipo  |
 
