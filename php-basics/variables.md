@@ -11,7 +11,7 @@
 
 ***
 ## Introdução
-As variáveis no PHP são representadas por um cifrão ($) seguido pelo nome da variável. Os nomes de variável são case-sensitive (isso significa que as variaveis do PHP fazem diferença do maiúsculo do minusculo). O PHP é uma linguagem de tipagem dinâmica. Assim sendo, o valor que o programador atribuir a variável é que vai determinar o tipo de dado que ela irá armazenar.
+As variáveis no PHP são representadas por um cifrão ($) seguido pelo nome da variável. Os nomes de variável são case-sensitive (isso significa que as variaveis fazem diferença do maiúsculo do minusculo). O PHP é uma linguagem de tipagem dinâmica. Assim sendo, o valor que o programador atribuir a variável é que vai determinar o tipo de dado que ela irá armazenar.
 
 ```php
 $nome = "Alef";
@@ -21,9 +21,9 @@ print $NOME; // 4137 (int)
 ```
 ***
 ## Sintaxe Válida
-As variáveis no PHP só podem começar com letras e underscore, variáveis que começam com números o PHP lançará a seguinte erro `PHP Parse error`.
+As variáveis no PHP só podem começar com letras e underscore, variáveis que começam com números o PHP lançará um erro informando que a variavel é invalida.
 ```php
-print $1banana; // invalido
+print $1banana; // PHP Parse error
 print $banana; // valido
 print $_banana; // valido
 print $_banana; // valido
@@ -32,8 +32,6 @@ print $maçã; // valido
 ```
 
 `$this` é uma variável especial que não pode ser atribuída. Caso queira atribuir um valor para ela, o PHP lançará o seguinte erro: `PHP Fatal error:  Cannot re-assign $this`;
-
-
 
 ***
 ## Tipo de variáveis
@@ -55,10 +53,11 @@ Porém existe pseudo-tipos:
 * Void
 
 Veja mais em http://php.net/manual/pt_BR/language.types.intro.php
+
 ***
 ## Passagem de valor
 
-O PHP possui duas formas de atribuir um valor a uma variável, a passagem de por valor e por referência. A passagem por valor continua da forma a qual já virmos anteriormente, porém a passagem por referencia, precisamos colocar o caractere `&` antes do `$` para informa que aquela variável irá receber uma referência e não a copia do valor.
+Você pode usar duas formas de atribuir um valor a uma variável, a passagem por valor e por referência. A passagem por valor continua da forma a qual já virmos anteriormente, porém a passagem por referencia, precisamos colocar o caractere `&` antes do `$` para informa que aquela variável irá receber uma referência e não a copia do valor.
 
 ```php
 // Passagem por valor
@@ -76,9 +75,8 @@ $b = 8;
 $a = 2;
 print $a; // 2
 print $b; // 2
-
 ```
-
+***
 ## Conversão de tipos 
 O PHP não obriga (ou suporta) a definição de tipo explícita na declaração de variáveis: o tipo de uma variável é determinado pelo contexto em que a variável é utilizada. Um exemplo da conversão automática do PHP é o operador de adição '+'.
 
@@ -116,7 +114,7 @@ As conversões permitidas são:
 * (object) - converte para objeto
 * (unset) - converte para NULL (PHP 5)
 
-O PHP possui funções que permite fazer a conversão dessas variáveis.
+Porém existe outras funções que permite fazer a conversão dessas variáveis.
 
 | Função       | Resultado                               |
 | ------------ |-----------------------------------------|
@@ -158,7 +156,6 @@ O PHP possui funções que permite detectar o tipo de cada variável. Se a vari�
 
 ***
 ##  Variáveis Variáveis
-
 As vezes, é conveniente possuir variáveis com nomes variáveis. Isto é, o nome de uma variável que pode ser definido e utilizado dinamicamente. 
 
 ```php
@@ -170,12 +167,11 @@ $nomecompleto = "$nome ${$nome}";
 
 print $nomecompleto; // Alef Castelo
 ```
-Porém seu uso fica mais claro quando se tenta definir o valor de uma propriedade de uma classe de forma dinâmica.
-
+Porém seu uso fica mais claro, quando se tenta definir o valor de uma propriedade de uma classe de forma dinâmica.
 ```php
 <?php 
 
-// Suponha que Você recebeu uma requisição GET com a URI: index.php?var=nome&valor=alef
+// Suponha que Você recebeu uma requisição GET com a URI: http://localhost/index.php?var=nome&valor=alef
 
 class Usuario {
     public $nome;
@@ -205,19 +201,20 @@ var_dump($usuario);
 */
 
 ```
-Outra forma:
+Outra forma de acessa essas variaveis são:
 
 ```php
 <?php
 $var = 'nome';
 $$var = 'Alef Castelo';
-echo ${'nome'}; // Alef Castelo 
+echo ${'nome'};   // Alef Castelo
+echo "${$var}";   // Alef Castelo
+echo "{${$var}}"; // Alef Castelo
 ```
 
 ***
 ## Constantes
-
-Constante é um identificador para uma variável a qual seu valor não poderá ser alterado depois de sua declaração. Exceto as constantes mágicas, que não são constantes de verdade. As constantes são case-sensitive por padrão. Por convenção, identificadores de constantes são sempre em maiúsculas. Sua declaração é simples, veja:
+Constante, é um identificador para uma variável a qual seu valor não poderá ser alterado depois de sua declaração. Exceto as constantes mágicas, que não são constantes de verdade. As constantes são case-sensitive por padrão. Por convenção, identificadores de constantes são sempre em maiúsculas. Sua declaração é simples, veja:
 
 ```php
 <?php
