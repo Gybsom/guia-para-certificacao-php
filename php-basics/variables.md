@@ -131,7 +131,7 @@ Exemplo:
 <?php
 $var = 12;
 
-settype($var, "bool");
+boolval($var);
 var_dump($var); // bool(true)
 
 settype($var, "int");
