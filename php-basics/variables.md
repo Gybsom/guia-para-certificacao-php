@@ -119,7 +119,7 @@ As conversões permitidas são:
 O PHP possui funções que permite fazer a conversão dessas variavies.
 
 | Função       | Resultado                               |
-| ------------ |:---------------------------------------:|
+| ------------ |-----------------------------------------|
 | intval()     | Converte para `int`                     |
 | floatval()   | Converte para `float`                   |
 | strval()     | Converte para `string                   |
@@ -147,7 +147,7 @@ O PHP possui funções que permite detectar o tipo de cada variável. Se a vari�
 
 
 | Função       | Resultado                               |
-| ------------ |:---------------------------------------:|
+|:------------:|-----------------------------------------|
 | is_int()     | Verifica se é do tipo `int`             |
 | is_float()   | Verifica se é do tipo `float`           |
 | is_string()  | Verifica se é do tipo `string`          |
@@ -223,13 +223,69 @@ Constante é um identificador para uma variavel a qual seu valor não poderá se
 
 ```php
 <?php
-define("URL",     "http://google.com");
-define("VERSAO",  "v1");
+define("URL", "http://google.com");
+define("VERSAO", "v1");
 
-print URL;     // http://google.com
-print VERCAO;  // v1
+print URL;    // http://google.com
+print VERSAO; // v1
+
+define("CONSTANTE", "Constante");
+print CONSTANTE;                // Constante
+print constant("CONSTANTE");    // mesma coisa que a linha anterior
+
+```
+> Você pode definir as constante em caixa baixa, porém por conversão elas devem ser criadas em caixa alta.
+
+Usando "define('CONSTANTE', 'valor da constante')" dentro de uma classe não funciona, você precisa usar a palavra reservada `const`.
+
+```php
+<?php
+
+interface Projeto {
+    const NOME = 'Projeto';
+}
+
+class Livro {
+    const NOME = 'Livro';
+}
+
+$const = 'NOME';
+
+var_dump(constant('Projeto::'. $const)); // string(7) "Projeto"
+var_dump(Projeto::NOME); // string(7) "Projeto"
+var_dump(constant('Livro::'. $const)); // string(5) "Livro"
+var_dump(Livro::NOME); // string(5) "Livro"
 
 ```
 
+O PHP possui oito constantes mágicas, sua caracteristica é que o valor muda de acordo com o contexto que ela é usada. Por exemplo, o valor de __LINE__ depende da linha em que é utilizada em seu script. Essas constantes especiais são case-insentitive:
 
+```php
+<?php
 
+interface IConstante {
+    const NOME = __CLASS__;
+}
+
+class ZCEBook {
+    const NOME = __CLASS__;
+}
+
+$const = 'NOME';
+
+var_dump(constant('IConstante::'. $const)); // string(10) "IConstante"
+var_dump(IConstante::NOME); // string(10) "IConstante"
+var_dump(constant('ZCEBook::'. $const)); // string(7) "ZCEBook"
+var_dump(ZCEBook::NOME); // string(7) "ZCEBook"
+
+```
+| Constante       | Resultado                               |
+|:------------:| --------------------------------------- |
+| __LINE__     | O número da linha corrente do arquivo.             |
+| __FILE__     | O caminho completo e nome do arquivo com links simbólicos resolvidos. Se utilizado dentro de um include, o nome do arquivo incluído será retornado. |
+| __DIR__     |  O diretório do arquivo. Se usado dentro de um include, o diretório do arquivo incluído é retornado. É equivalente a dirname(__FILE__). O nome do diretório não possui barra no final, a não ser que seja o diretório raiz. |
+| __FUNCTION__     | O nome da função. |
+| __CLASS__     | O nome da classe. O nome da classe inclui o namespace em que foi declarado (por exemplo, Foo\Bar). Note que a partir do PHP 5.4, __CLASS__ também funcionará em traits. Quando utilizada em um método trait, __CLASS__ é o nome da classe que está utilizando a trait. |
+| __TRAIT__     | O nome do trait. O nome do trait inclui o namespace em que foi declarado (por exemplo, Foo\Bar).   |
+| __METHOD__     | O nome do método da classe.             |
+| __NAMESPACE__     | O nome do namespace corrente.             |
