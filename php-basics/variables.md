@@ -177,8 +177,6 @@ Porém seu uso fica mais claro quando se tenta definir o valor de uma propriedad
 
 // Suponha que Você recebeu uma requisição GET com a URI: index.php?var=nome&valor=alef
 
-<?php
-
 class Usuario {
     public $nome;
     public $sobrenome;
