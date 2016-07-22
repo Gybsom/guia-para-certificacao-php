@@ -11,7 +11,7 @@
 
 ***
 ## Introdução
-As variáveis no PHP são representadas por um cifrão ($) seguido pelo nome da variável. Os nomes de variável são case-sensitive (isso significa que as variavies do PHP fazem diferença do maiusculo do minusculo). O PHP é uma linguagem de tipagem dinâmica. Assim sendo, o valor que o programador atribuir a variável é que vai determinar o tipo de dado que ela irá armazenar.
+As variáveis no PHP são representadas por um cifrão ($) seguido pelo nome da variável. Os nomes de variável são case-sensitive (isso significa que as variaveis do PHP fazem diferença do maiúsculo do minusculo). O PHP é uma linguagem de tipagem dinâmica. Assim sendo, o valor que o programador atribuir a variável é que vai determinar o tipo de dado que ela irá armazenar.
 
 ```php
 $nome = "Alef";
@@ -21,7 +21,7 @@ print $NOME; // 4137 (int)
 ```
 ***
 ## Sintaxe Válida
-As variaveis no php só podem começar com letras e underscore, variaveis que começam com numeros o PHP lançará a seguinte erro `PHP Parse error`.
+As variáveis no PHP só podem começar com letras e underscore, variáveis que começam com números o PHP lançará a seguinte erro `PHP Parse error`.
 ```php
 print $1banana; // invalido
 print $banana; // valido
@@ -58,7 +58,7 @@ Veja mais em http://php.net/manual/pt_BR/language.types.intro.php
 ***
 ## Passagem de valor
 
-O PHP possui duas formas de atribuir um valor a uma variável, a passagem de por valor e por referência. A passagem por valor continua da forma a qual já virmos anteriormente, porém a passagem por referencia, precisamos colocar o caractere `&` antes do `$` para informa que aquela variavel irá receber uma referência e não a copia do valor.
+O PHP possui duas formas de atribuir um valor a uma variável, a passagem de por valor e por referência. A passagem por valor continua da forma a qual já virmos anteriormente, porém a passagem por referencia, precisamos colocar o caractere `&` antes do `$` para informa que aquela variável irá receber uma referência e não a copia do valor.
 
 ```php
 // Passagem por valor
@@ -116,7 +116,7 @@ As conversões permitidas são:
 * (object) - converte para objeto
 * (unset) - converte para NULL (PHP 5)
 
-O PHP possui funções que permite fazer a conversão dessas variavies.
+O PHP possui funções que permite fazer a conversão dessas variáveis.
 
 | Função       | Resultado                               |
 | ------------ |-----------------------------------------|
@@ -170,7 +170,7 @@ $nomecompleto = "$nome ${$nome}";
 
 print $nomecompleto; // Alef Castelo
 ```
-Porém seu uso fica mais claro quando se tenta definir o valor de uma propiedade de uma classe de forma dinamica.
+Porém seu uso fica mais claro quando se tenta definir o valor de uma propriedade de uma classe de forma dinâmica.
 
 ```php
 <?php 
@@ -219,7 +219,7 @@ echo ${'nome'}; // Alef Castelo
 ***
 ## Constantes
 
-Constante é um identificador para uma variavel a qual seu valor não poderá ser alterado depois de sua declaração. Exceto as constantes mágicas, que não são constantes de verdade. As constantes são case-sensitive por padrão. Por convenção, identificadores de constantes são sempre em maiúsculas. Sua declaração é simples, veja:
+Constante é um identificador para uma variável a qual seu valor não poderá ser alterado depois de sua declaração. Exceto as constantes mágicas, que não são constantes de verdade. As constantes são case-sensitive por padrão. Por convenção, identificadores de constantes são sempre em maiúsculas. Sua declaração é simples, veja:
 
 ```php
 <?php
@@ -236,7 +236,7 @@ print constant("CONSTANTE");    // mesma coisa que a linha anterior
 ```
 > Você pode definir as constante em caixa baixa, porém por conversão elas devem ser criadas em caixa alta.
 
-Usando "define('CONSTANTE', 'valor da constante')" dentro de uma classe não funciona, você precisa usar a palavra reservada `const`.
+Usando **"define('CONSTANTE', 'valor da constante')"** dentro de uma classe não funciona, você precisa usar a palavra reservada `const`.
 
 ```php
 <?php
@@ -257,8 +257,15 @@ var_dump(constant('Livro::'. $const)); // string(5) "Livro"
 var_dump(Livro::NOME); // string(5) "Livro"
 
 ```
+Fora do escopo da classe a palavra reservada `const` também ira criar uma constante.
 
-O PHP possui oito constantes mágicas, sua caracteristica é que o valor muda de acordo com o contexto que ela é usada. Por exemplo, o valor de **\_\_LINE\_\_** depende da linha em que é utilizada em seu script. Essas constantes especiais são case-insentitive:
+```php
+<?php
+const NOME = __LINE__;
+print NOME; // 2
+```
+
+O PHP possui oito constantes mágicas, sua característica é que o valor muda de acordo com o contexto que ela é usada. Por exemplo, o valor de **\_\_LINE\_\_** depende da linha em que é utilizada em seu script. Essas constantes especiais são case-insentitive:
 
 ```php
 <?php
