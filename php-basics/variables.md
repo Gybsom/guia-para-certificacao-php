@@ -236,7 +236,7 @@ print constant("CONSTANTE");    // mesma coisa que a linha anterior
 ```
 > Você pode definir as constante em caixa baixa, porém por conversão elas devem ser criadas em caixa alta.
 
-Usando **"define('CONSTANTE', 'valor da constante')"** dentro de uma classe não funciona, você precisa usar a palavra reservada `const`.
+Usando `define('CONSTANTE', 'valor da constante')` dentro de uma classe não funciona, você precisa usar a palavra reservada `const`.
 
 ```php
 <?php
