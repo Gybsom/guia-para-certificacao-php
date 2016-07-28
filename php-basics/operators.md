@@ -113,4 +113,14 @@ print -$c; // 1
 
 ```
 
+* **Exponencial**  - Introduzido no PHP 5.6, faz uso do sinal de (`**`).
+Exemplo:  
+```php
+<?php
+$a = 3;
+$b = 2;
+$c = $a ** $b;
+print $c; // 9
+```
+
 
