@@ -16,6 +16,11 @@
 
 ## O que são operadores?
 
-Um operador é uma estrutura que recebe um ou mais valores (ou expressões, no jargão de programação) e que devolve outro valor.
+Um operador é uma estrutura que recebe um ou mais valores (ou expressões, no jargão de programação) e que devolve outro valor. O conhecimento desses operadores é de fundamental importancia para todo programador que deseja possuir certificação. E o PHP possui muito desses operadores, os mais usados são:
+* [Operadores de Atribuição](#operadores-de-atribuição)
+* [Operadores Aritméticos](#operadores-aritméticos)
+* [Operadores de String](#operadores-de-string)
+* [Operadores de Comparação](#operadores-de-comparação)
+* [Operadores Lógicos](#operadores-lógicos)
 
 ## Operadores Aritméticos
