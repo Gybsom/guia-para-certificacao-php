@@ -84,23 +84,29 @@ $b = 2;
 $c = $a + -$b;
 
 /*
-Repare que $b possui o sinal (-) entes do sinal ($), isso indica que a variável é negativa fazendo com que o retorno da soma seja 1, diferente do exemplo do operador de adição.
+Repare que $b possui o sinal (-) entes do sinal ($), isso indica
+que a variável é negativa fazendo com que o retorno da soma
+seja 1, diferente do exemplo do operador de adição.
 */
 print $c; // 1
  
 /*
-Mais uma vez se negarmos o valor de $c, ele de positivo ficará negativo
+Mais uma vez se nergamos o valor de $c, ele de positivo ficará negativo
 */
 print -$c; // -1
 
 /*
-Mais uma vez se negarmos o valor de $c o seu resultado continuará negativo.
-Isso acontece por causa do escopo que está sendo usando em print, que não permite que o valor original de $c seja alterado, somente sua saída irá sofrer mudanças.
+Mais uma vez se nergamos o valor de $c o seu resultado continuará
+negativo. Isso acontece por causa do escopo que está sendo usando
+em print, que não permite que o valor original de $c seja alterado,
+somente sua saida irá sofrermudanças.
 */
 print -$c; // -1
 
 /*
-Porém ao fazer isso o valor original será trocado pois o escopo mudou e agora você está informando que está mudando o valor da variável e não da saída dela.
+Porém ao fazer isso o valor original será trocado pois o escopo mudou
+e agora você está informando que está mudando o valor da variável e
+não da saida dela.
 */
 $c = -$c;  
 print -$c; // 1 
