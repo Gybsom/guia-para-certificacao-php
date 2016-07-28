@@ -26,7 +26,7 @@ Um operador é uma estrutura que recebe um ou mais valores (ou expressões, no j
 ## Operadores Aritméticos
 Acredito que a própria explicação matemática já é o suficiente. Com base no Wikipedia: "A aritmética é o ramo da matemática que lida com números e com as operações possíveis entre eles".
 
-* **Adição** - Utiliza do sinal de `+` para expressar que a operação de adição/soma será executada.     
+* **Adição** - Utiliza o sinal de (`+`) para expressar que a operação de adição/soma será executada.     
 Exemplo:  
 ```php
 <?php
@@ -36,7 +36,7 @@ $c = $a + $b;
 print $c; // 5
 ```
 
-* **Subtração** - Faz uso do sinal de `-` para expressar que a operação de subtração será executada.    
+* **Subtração** - Faz uso do sinal de (`-`) para expressar que a operação de subtração será executada.    
 Exemplo:  
 ```php
 <?php
@@ -46,7 +46,7 @@ $c = $a - $b;
 print $c; // 1
 ```
 
-* **Multiplicação** - Faz uso do sinal de `*` para expressar que a operação de multiplicação será executada.  
+* **Multiplicação** - Utiliza o sinal de (`*`) para expressar que a operação de multiplicação será executada.  
 Exemplo:  
 ```php
 <?php
@@ -56,7 +56,7 @@ $c = $a * $b;
 print $c; // 6
 ```
 
-* **Divisão - Frações** - Faz uso do sinal de `/` para expressar que a operação de divisão será executada.  
+* **Divisão - Frações** - Faz uso do sinal de (`/`) para expressar que a operação de divisão será executada.  
 Exemplo:  
 ```php
 <?php
