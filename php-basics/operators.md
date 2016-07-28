@@ -24,8 +24,7 @@ Um operador é uma estrutura que recebe um ou mais valores (ou expressões, no j
 * [Operadores Lógicos](#operadores-lógicos)
 
 ## Operadores Aritméticos
-Acredito que a propria explicação matematica já é o suficiente. Com base no Wikipedia:
-> A aritmética é o ramo da matemática que lida com números e com as operações possíveis entre eles.
+Acredito que a propria explicação matematica já é o suficiente. Com base no Wikipedia: "A aritmética é o ramo da matemática que lida com números e com as operações possíveis entre eles".
 
 * **Adição** - Utilizar-se do sinal de `+` para expresar que a operação de adição/soma será executada. 
   Exemplo:  
