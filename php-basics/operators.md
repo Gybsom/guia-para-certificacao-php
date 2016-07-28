@@ -85,8 +85,8 @@ $c = $a + -$b;
 
 /*
 Repare que $b possui o sinal (-) entes do sinal ($), isso indica
-que a variável é negativa fazendo com que o retorno da soma
-seja 1, diferente do exemplo do operador de adição.
+que a variável inverterá o seu valor fazendo com que o retorno
+da soma seja 1, diferente do exemplo do operador de adição.
 */
 print $c; // 1
  
