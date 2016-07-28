@@ -1,6 +1,6 @@
 # Operators
 
-* [O que são operadores?](#o-que-são-operadores?)
+* [O que são operadores?](#o-que-são-operadores)
 * [Operadores Aritméticos](#operadores-aritméticos)
 * [Operadores de Atribuição](#operadores-de-atribuição)
 * [Operadores de Comparação](#operadores-de-comparação)
