@@ -66,7 +66,7 @@ $c = $a / $b;
 print $c; // 1.5
 ```
 
-* Um outro operador muito usado é o de módulo (`%`), com esse operador é possivel capturar o resto da divisão, diferente do operador de divisão (`/`) que retorna o `quociente da divisão`.   
+* Um outro operador muito usado é o de **Módulo** (`%`), com esse operador é possível capturar o resto da divisão, diferente do operador de divisão (`/`) que retorna o `quociente da divisão`.   
 Exemplo:  
 ```php
 <?php
@@ -75,3 +75,5 @@ $b = 2;
 $c = $a % $b;
 print $c; // 1
 ```
+
+
