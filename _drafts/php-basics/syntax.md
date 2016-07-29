@@ -1,5 +1,6 @@
 ---
 title: Syntax
+layout: default
 categories: php-basics
 ---
 
@@ -25,7 +26,7 @@ O PHP tem como sintaxe básica, tags de abertura representado por `<?php` e fech
 
 Exemplo da mesclagem com HTML:
  
-```HTML
+```php
 <!DOCTYPE html>
 <html>
   <head>
@@ -39,7 +40,7 @@ Exemplo da mesclagem com HTML:
 
 A saída desse código é: 
 
-```HTML
+```html
 <!DOCTYPE html>
 <html>
   <head>
@@ -77,12 +78,15 @@ Também foi removido da versão 7 do  PHP.
 ***
 
 ## Problema com as Tags
+
 Ao criar arquivos PHP que não se misturam com HTML ou arquivos de template, geralmente em arquivos de classes, configurações e etc, recomenda-se não usar tag de fechamento `?>`. Pois caso exista um espaço ou quebra de linha após a tag de fechamento, essa espaço ou quebra de linha será exibido na resposta da requisição, e é algo bem difícil de se acha quando se tem um projeto com muitos arquivos, e isso pode trazer algumas horas de dor de cabeça.
 
 ***
 
 ## Aspas
+
 No PHP para exibir um texto qualquer, você pode usar tanto aspas duplas `"` quanto aspas simples `'`, exemplo:
+
 * `<?="PHP BOOK"?>` saida: `PHP BOOK`
 * `<?='PHP BOOK'?>` saida: `PHP BOOK`
 
@@ -111,12 +115,13 @@ print "variável: {$variavel}"; // variável: texto qualquer
 print 'variável: {$variavel}'; // variável: {$variavel}
 ```
 
+
 > As palavas reservadas `print` e `echo` são as mais usadas para exibir algo na resposta da requisição.
 
 ***
 
 ## Concatenação de Strings
-Para fazer uso da concatenação (ou junção de strings), você precisa usar o ponto (`.`), sempre colocando entre duas variáveis ou entre duas strings, entre uma string e o retorno de uma função/método.
+Para fazer uso da concatenação (ou junção de strings), você precisa usar o ponto `.`, sempre colocando entre duas variáveis ou entre duas strings, entre uma string e o retorno de uma função/método.
 
 ```php
 <?php 
@@ -136,6 +141,7 @@ print "retorno: " . funcao(); // retorno: texto qualquer
 
 ## Comentários
 Assim como em outras linguagens, o PHP possui dois tipo de comentários, de "uma linha" e de "varias linhas". O PHP suporta comentários no estilo 'C', 'C++' e do Unix shell (estilo Perl). Por exemplo:
+
 ```php
 <?php
     echo 'Isto é um teste'; // Estilo de comentário de uma linha em  c++
@@ -159,6 +165,7 @@ Ao tentar comentar grandes blocos de código, podemos cometer o seguinte equivoc
 ***
 
 ## Bloco de codigo
+
 O PHP usa como delimitador de bloco de código as chaves `{}` exemplo:
 
 ```php
@@ -185,6 +192,7 @@ if($programador instanceof ZCE){
 ***
 
 ## O interpretador PHP
+
 Como já foi dito PHP consegue se mistura com outros tipos de arquivos ou documentos e o interpretador consegue detectar comandos PHP dentro desse arquivo, até mesmo não sendo um arquivo com a extensão `.php` veja:
 
 usuarios.xml
