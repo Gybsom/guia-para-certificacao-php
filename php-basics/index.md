@@ -1,3 +1,9 @@
+---
+title: PHP Basics
+categories: php-basics
+---
+
+
 # PHP Basics
 
 * [Syntax](syntax.md)

@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # ZCE BOOK
 
 Olá, esse e um repositório a qual eu gostaria de falar sobre [PHP](http://www.php.net/), uma especie de blog ou livro, onde eu irei postar sobre conteúdo que acredito que seja importante a todo programador PHP. Então como esse repositório é focado em PHP, tentarei seguir a ementa de estudo para quem quer se torna um [ZCE](http://www.zend.com/en/services/certification/php-5-certification).
@@ -6,7 +10,7 @@ Aqui está um [link com a minha motivação](motivacao.md) e por que acredito qu
 
 Outra coisa que gostaria de deixar claro, é o motivo porque nem tudo aqui deixarei em português, por exemplo: os tópicos que serão abordados na prova, `PHP Basics`, `Control Structures` e etc. A prova é totalmente inglês e acredito que no minimo os tópicos devem ser conhecidos em inglês.
 
-* [PHP Basics](php-basics/php-basics.md)
+* [PHP Basics](php-basics/index.md)
   * [Syntax](php-basics/syntax.md)
   * [Variables](php-basics/variables.md)
   * Operators

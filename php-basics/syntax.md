@@ -1,3 +1,8 @@
+---
+title: Syntax
+categories: php-basics
+---
+
 # Syntax
 * [PHP](#php)
 * [Tags](#tags)
@@ -9,14 +14,17 @@
 * [O interpretador PHP](#o-interpretador-php)
 
 ***
+
 ## PHP
 O PHP (um acrônimo recursivo para PHP: Hypertext Preprocessor) é uma linguagem de script open source de uso geral, muito utilizada, e especialmente adequada para o desenvolvimento web. A melhor coisa em usar o PHP é que ele é extremamente simples para um iniciante, mas oferece muitos recursos para um programador profissional.
 
 ***
+
 ## Tags
 O PHP tem como sintaxe básica, tags de abertura representado por `<?php` e fechamento `?>` como default do interpretador. O interpretador busca por essas tags dentro do arquivo e se achar ele interpreta os comandos dentro das tags e retorna a resposta na saida do documento. Com essa forma de interpretar, o PHP possui a possibilidade de ser facilmente incluído em vários tipos de documento.
 
-Exemplo da mesclagem com HTML: 
+Exemplo da mesclagem com HTML:
+ 
 ```HTML
 <!DOCTYPE html>
 <html>
@@ -28,6 +36,7 @@ Exemplo da mesclagem com HTML:
   </body>
 </html>
 ```
+
 A saída desse código é: 
 
 ```HTML
@@ -41,6 +50,7 @@ A saída desse código é:
   </body>
 </html>
 ```
+
 Repare também que foi usado duas formas diferente de exibir uma string na saída do interpretador. A primeira foi `<?php print "Titulo da pagina" ?>` e a segunda foi `<?= "conteúdo do site" ?>`. 
 Isso só é possível por que o PHP possui outros tipos de tags a qual o interpretador entende que naquele bloco é um código php.
 
@@ -65,16 +75,19 @@ Comummente usado em arquivo de template. A parti da versão 5.4.0 sempre estará
 Também foi removido da versão 7 do  PHP.
 
 ***
+
 ## Problema com as Tags
 Ao criar arquivos PHP que não se misturam com HTML ou arquivos de template, geralmente em arquivos de classes, configurações e etc, recomenda-se não usar tag de fechamento `?>`. Pois caso exista um espaço ou quebra de linha após a tag de fechamento, essa espaço ou quebra de linha será exibido na resposta da requisição, e é algo bem difícil de se acha quando se tem um projeto com muitos arquivos, e isso pode trazer algumas horas de dor de cabeça.
 
 ***
+
 ## Aspas
 No PHP para exibir um texto qualquer, você pode usar tanto aspas duplas `"` quanto aspas simples `'`, exemplo:
 * `<?="PHP BOOK"?>` saida: `PHP BOOK`
 * `<?='PHP BOOK'?>` saida: `PHP BOOK`
 
 A diferença acontece quando você tenta mescla esse texto com uma variável, exemplo:
+
 ```php
 <?php 
 
@@ -101,6 +114,7 @@ print 'variável: {$variavel}'; // variável: {$variavel}
 > As palavas reservadas `print` e `echo` são as mais usadas para exibir algo na resposta da requisição.
 
 ***
+
 ## Concatenação de Strings
 Para fazer uso da concatenação (ou junção de strings), você precisa usar o ponto (`.`), sempre colocando entre duas variáveis ou entre duas strings, entre uma string e o retorno de uma função/método.
 
@@ -119,6 +133,7 @@ print "retorno: " . funcao(); // retorno: texto qualquer
 ```
 
 ***
+
 ## Comentários
 Assim como em outras linguagens, o PHP possui dois tipo de comentários, de "uma linha" e de "varias linhas". O PHP suporta comentários no estilo 'C', 'C++' e do Unix shell (estilo Perl). Por exemplo:
 ```php
@@ -129,9 +144,11 @@ Assim como em outras linguagens, o PHP possui dois tipo de comentários, de "uma
     echo 'Isto é ainda outro teste';
     echo 'Um teste final'; # Este é um comentário de uma linha no estilo shell
 ```
+
 Os comentários de estilo "uma linha" apenas comentam até o final da linha ou do bloco PHP de código corrente
 
 Ao tentar comentar grandes blocos de código, podemos cometer o seguinte equivoco:
+
 ```php
 <?php
  /*
@@ -140,8 +157,10 @@ Ao tentar comentar grandes blocos de código, podemos cometer o seguinte equivoc
 ```
 
 ***
+
 ## Bloco de codigo
 O PHP usa como delimitador de bloco de código as chaves `{}` exemplo:
+
 ```php
 <?php
 
@@ -164,16 +183,20 @@ if($programador instanceof ZCE){
 ```
 
 ***
+
 ## O interpretador PHP
 Como já foi dito PHP consegue se mistura com outros tipos de arquivos ou documentos e o interpretador consegue detectar comandos PHP dentro desse arquivo, até mesmo não sendo um arquivo com a extensão `.php` veja:
 
 usuarios.xml
+
 ```XML
 <?php foreach(['Alef', 'Sara', 'Liana'] as $nome): ?>
     <usuario nome="<?php print $nome ?>" />
 <?php endforeach; ?>
 ```
+
 index.php
+
 ```PHP
 <?php
 header("Content-type: text/xml");
@@ -186,7 +209,9 @@ require_once 'usuarios.xml';
 // Fechando tag que contém a lista de usuários
 print "</lista-usuarios>";
 ```
+
 Saída:
+
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
 <lista-usuarios>
@@ -195,5 +220,7 @@ Saída:
     <usuario nome="Liana" />
 </lista-usuarios>
 ```
+
 ***
+
 Próximo assunto: [Variables](variables.md) 
