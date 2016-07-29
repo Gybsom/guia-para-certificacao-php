@@ -6,7 +6,7 @@ Aqui está um [link com a minha motivação](motivacao.md) e por que acredito qu
 
 Outra coisa que gostaria de deixar claro, é o motivo porque nem tudo aqui deixarei em português, por exemplo: os tópicos que serão abordados na prova, `PHP Basics`, `Control Structures` e etc. A prova é totalmente inglês e acredito que no minimo os tópicos devem ser conhecidos em inglês.
 
-* [PHP Basics](php-basics/README.md)
+* [PHP Basics](php-basics/php-basics.md)
   * [Syntax](php-basics/syntax.md)
   * [Variables](php-basics/variables.md)
   * Operators
