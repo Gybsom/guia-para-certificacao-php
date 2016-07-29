@@ -1,6 +1,6 @@
 # PHP Basics
 
-* [Syntax](syntax.md)
+* [Syntax](syntax)
 * [Variables](variables.md)
 * Operators
 * Control Structures
