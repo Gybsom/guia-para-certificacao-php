@@ -10,6 +10,7 @@
 * [Constantes](#constantes)
 
 ***
+
 ## Introdução
 As variáveis no PHP são representadas por um cifrão ($) seguido pelo nome da variável. Os nomes de variável são case-sensitive (isso significa que as variaveis fazem diferença do maiúsculo do minusculo). O PHP é uma linguagem de tipagem dinâmica. Assim sendo, o valor que o programador atribuir a variável é que vai determinar o tipo de dado que ela irá armazenar.
 
@@ -19,9 +20,12 @@ $NOME = 4134;
 print $nome; // Alef (string)
 print $NOME; // 4137 (int)
 ```
+
 ***
+
 ## Sintaxe Válida
 As variáveis no PHP só podem começar com letras e underscore, variáveis que começam com números o PHP lançará um erro informando que a variavel é invalida.
+
 ```php
 print $1banana; // PHP Parse error
 print $banana; // valido
@@ -34,8 +38,8 @@ print $maçã; // valido
 `$this` é uma variável especial que não pode ser atribuída. Caso queira atribuir um valor para ela, o PHP lançará o seguinte erro: `PHP Fatal error:  Cannot re-assign $this`;
 
 ***
-## Tipo de variáveis
 
+## Tipo de variáveis    
 O PHP suporta oito tipos primitivos.
 
 | Escalares                                           | Compostos     | Especiais  |
@@ -55,8 +59,8 @@ Porém existe pseudo-tipos:
 Veja mais em http://php.net/manual/pt_BR/language.types.intro.php
 
 ***
-## Passagem de valor
 
+## Passagem de valor
 Você pode usar duas formas de atribuir um valor a uma variável, a passagem por valor e por referência. A passagem por valor continua da forma a qual já virmos anteriormente, porém a passagem por referencia, precisamos colocar o caractere `&` antes do `$` para informa que aquela variável irá receber uma referência e não a copia do valor.
 
 ```php
@@ -76,7 +80,9 @@ $a = 2;
 print $a; // 2
 print $b; // 2
 ```
+
 ***
+
 ## Conversão de tipos 
 O PHP não obriga (ou suporta) a definição de tipo explícita na declaração de variáveis: o tipo de uma variável é determinado pelo contexto em que a variável é utilizada. Um exemplo da conversão automática do PHP é o operador de adição '+'.
 
@@ -120,11 +126,12 @@ Porém existe outras funções que permite fazer a conversão dessas variáveis.
 | ------------ |-----------------------------------------|
 | intval()     | Converte para `int`                     |
 | floatval()   | Converte para `float`                   |
-| strval()     | Converte para `string`                   |
+| strval()     | Converte para `string`                  |
 | boolval()    | Converte para `boolean`                 |
 | settype()    | Converte a variável para qualquer tipo  |
 
 Exemplo: 
+
 ```php 
 <?php
 $var = 12;
@@ -140,6 +147,7 @@ var_dump($var); // double(1)
 ```
 
 ***
+
 ## Detectando tipos
 O PHP possui funções que permite detectar o tipo de cada variável. Se a variável possui o tipo especificado a função irá retornar `true`.
 
@@ -155,6 +163,7 @@ O PHP possui funções que permite detectar o tipo de cada variável. Se a vari�
 | is_object()  | Verifica se é do tipo `null`            |
 
 ***
+
 ##  Variáveis Variáveis
 As vezes, é conveniente possuir variáveis com nomes variáveis. Isto é, o nome de uma variável que pode ser definido e utilizado dinamicamente. 
 
@@ -167,7 +176,9 @@ $nomecompleto = "$nome ${$nome}";
 
 print $nomecompleto; // Alef Castelo
 ```
+
 Porém seu uso fica mais claro, quando se tenta definir o valor de uma propriedade de uma classe de forma dinâmica.
+
 ```php
 <?php 
 
@@ -201,6 +212,7 @@ var_dump($usuario);
 */
 
 ```
+
 Outra forma de acessa essas variaveis são:
 
 ```php
@@ -213,6 +225,7 @@ echo "{${$var}}"; // Alef Castelo
 ```
 
 ***
+
 ## Constantes
 Constante, é um identificador para uma variável a qual seu valor não poderá ser alterado depois de sua declaração. Exceto as constantes mágicas, que não são constantes de verdade. As constantes são case-sensitive por padrão. Por convenção, identificadores de constantes são sempre em maiúsculas. Sua declaração é simples, veja:
 
@@ -229,6 +242,7 @@ print CONSTANTE;                // Constante
 print constant("CONSTANTE");    // mesma coisa que a linha anterior
 
 ```
+
 > Você pode definir as constante em caixa baixa, porém por conversão elas devem ser criadas em caixa alta.
 
 Usando `define('CONSTANTE', 'valor da constante')` dentro de uma classe não funciona, você precisa usar a palavra reservada `const`.
@@ -252,6 +266,7 @@ var_dump(constant('Livro::'. $const)); // string(5) "Livro"
 var_dump(Livro::NOME); // string(5) "Livro"
 
 ```
+
 Fora do escopo da classe a palavra reservada `const` também ira criar uma constante.
 
 ```php
@@ -281,6 +296,7 @@ var_dump(constant('ZCEBook::'. $const)); // string(7) "ZCEBook"
 var_dump(ZCEBook::NOME); // string(7) "ZCEBook"
 
 ```
+
 | Constante       | Resultado                               |
 |:------------:| --------------------------------------- |
 | **\_\_LINE\_\_**     | O número da linha corrente do arquivo.             |
@@ -293,4 +309,5 @@ var_dump(ZCEBook::NOME); // string(7) "ZCEBook"
 | **\_\_NAMESPACE\_\_**     | O nome do namespace atual.             |
 
 ***
+
 Próximo assunto: [Operators](operators)
