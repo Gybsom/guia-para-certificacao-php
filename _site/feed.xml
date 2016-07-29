@@ -2,18 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Guia para cerficação PHP</title>
-    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-</description>
-    <link>alefcastelo.github.io/zce-book/</link>
-    <atom:link href="alefcastelo.github.io/zce-book/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 29 Jul 2016 13:39:26 -0300</pubDate>
-    <lastBuildDate>Fri, 29 Jul 2016 13:39:26 -0300</lastBuildDate>
+    <description>Esse site tem como objetivo diponibilizar conteúdo para certificação PHP</description>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 29 Jul 2016 13:56:26 -0300</pubDate>
+    <lastBuildDate>Fri, 29 Jul 2016 13:56:26 -0300</lastBuildDate>
     <generator>Jekyll v3.2.0</generator>
     
       <item>
+        <title>Readme</title>
+        <description>&lt;h1 id=&quot;web-features&quot;&gt;Web Features&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Sessions&lt;/li&gt;
+  &lt;li&gt;Forms&lt;/li&gt;
+  &lt;li&gt;GET and POST data&lt;/li&gt;
+  &lt;li&gt;Cookies&lt;/li&gt;
+  &lt;li&gt;HTTP Headers&lt;/li&gt;
+  &lt;li&gt;HTTP Authentication&lt;/li&gt;
+  &lt;li&gt;HTTP Status Codes&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Fri, 29 Jul 2016 13:47:59 -0300</pubDate>
+        <link>/README.html</link>
+        <guid isPermaLink="true">/README.html</guid>
+        
+        
+      </item>
+    
+      <item>
         <title>Sumario</title>
-        <description>
-&lt;h1 id=&quot;zce-book&quot;&gt;ZCE BOOK&lt;/h1&gt;
+        <description>&lt;h1 id=&quot;zce-book&quot;&gt;ZCE BOOK&lt;/h1&gt;
 
 &lt;p&gt;Olá, esse e um repositório a qual eu gostaria de falar sobre &lt;a href=&quot;http://www.php.net/&quot;&gt;PHP&lt;/a&gt;, uma especie de blog ou livro, onde eu irei postar sobre conteúdo que acredito que seja importante a todo programador PHP. Então como esse repositório é focado em PHP, tentarei seguir a ementa de estudo para quem quer se torna um &lt;a href=&quot;http://www.zend.com/en/services/certification/php-5-certification&quot;&gt;ZCE&lt;/a&gt;.&lt;/p&gt;
 
@@ -147,287 +166,9 @@
 
 &lt;p&gt;A idéia final é ter um estudo e compartilhamento de conteúdo, para todos aqueles que gostaria de focar o aprendizado rápido do PHP, e também fazer um estudo para quem quer tirar certificação, assim como eu.&lt;/p&gt;
 </description>
-        <pubDate>Fri, 29 Jul 2016 13:39:26 -0300</pubDate>
-        <link>alefcastelo.github.io/zce-book/sumario.html</link>
-        <guid isPermaLink="true">alefcastelo.github.io/zce-book/sumario.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>PHP Basics</title>
-        <description>&lt;h1 id=&quot;php-basics&quot;&gt;PHP Basics&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;./syntax.html&quot;&gt;Syntax&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./variables.html&quot;&gt;Variables&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Operators&lt;/li&gt;
-  &lt;li&gt;Control Structures&lt;/li&gt;
-  &lt;li&gt;Language Constructs and Functions&lt;/li&gt;
-  &lt;li&gt;Namespaces&lt;/li&gt;
-  &lt;li&gt;Extensions&lt;/li&gt;
-  &lt;li&gt;Config&lt;/li&gt;
-  &lt;li&gt;Performance/bytecode caching&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Fri, 29 Jul 2016 13:14:27 -0300</pubDate>
-        <link>alefcastelo.github.io/zce-book/php-basics/index.html</link>
-        <guid isPermaLink="true">alefcastelo.github.io/zce-book/php-basics/index.html</guid>
-        
-        
-        <category>php-basics</category>
-        
-      </item>
-    
-      <item>
-        <title>Syntax</title>
-        <description>&lt;h1 id=&quot;syntax&quot;&gt;Syntax&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;#php&quot;&gt;PHP&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#tags&quot;&gt;Tags&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#problema-com-as-tags&quot;&gt;Problema com as Tags&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#aspas&quot;&gt;Aspas&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#concatenação-de-strings&quot;&gt;Concatenação de Strings&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#comentários&quot;&gt;Comentários&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#bloco-de-codigo&quot;&gt;Bloco de código&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#o-interpretador-php&quot;&gt;O interpretador PHP&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;php&quot;&gt;PHP&lt;/h2&gt;
-&lt;p&gt;O PHP (um acrônimo recursivo para PHP: Hypertext Preprocessor) é uma linguagem de script open source de uso geral, muito utilizada, e especialmente adequada para o desenvolvimento web. A melhor coisa em usar o PHP é que ele é extremamente simples para um iniciante, mas oferece muitos recursos para um programador profissional.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;tags&quot;&gt;Tags&lt;/h2&gt;
-&lt;p&gt;O PHP tem como sintaxe básica, tags de abertura representado por &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;?php&lt;/code&gt; e fechamento &lt;code class=&quot;highlighter-rouge&quot;&gt;?&amp;gt;&lt;/code&gt; como default do interpretador. O interpretador busca por essas tags dentro do arquivo e se achar ele interpreta os comandos dentro das tags e retorna a resposta na saida do documento. Com essa forma de interpretar, o PHP possui a possibilidade de ser facilmente incluído em vários tipos de documento.&lt;/p&gt;
-
-&lt;p&gt;Exemplo da mesclagem com HTML:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-HTML&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;
-&amp;lt;html&amp;gt;
-  &amp;lt;head&amp;gt;
-    &amp;lt;title&amp;gt;&amp;lt;?php print &quot;Titulo da pagina&quot; ?&amp;gt;&amp;lt;/title&amp;gt;
-  &amp;lt;/head&amp;gt;
-  &amp;lt;body&amp;gt;
-    &amp;lt;?= &quot;conteúdo do site&quot; ?&amp;gt;
-  &amp;lt;/body&amp;gt;
-&amp;lt;/html&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;A saída desse código é:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-HTML&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;
-&amp;lt;html&amp;gt;
-  &amp;lt;head&amp;gt;
-    &amp;lt;title&amp;gt;Titulo da pagina&amp;lt;/title&amp;gt;
-  &amp;lt;/head&amp;gt;
-  &amp;lt;body&amp;gt;
-    conteúdo do site
-  &amp;lt;/body&amp;gt;
-&amp;lt;/html&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Repare também que foi usado duas formas diferente de exibir uma string na saída do interpretador. A primeira foi &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;?php print &quot;Titulo da pagina&quot; ?&amp;gt;&lt;/code&gt; e a segunda foi &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;?= &quot;conteúdo do site&quot; ?&amp;gt;&lt;/code&gt;. 
-Isso só é possível por que o PHP possui outros tipos de tags a qual o interpretador entende que naquele bloco é um código php.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Standard Tags or Open Tags&lt;/strong&gt;&lt;br /&gt;
-&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;?php ?&amp;gt;&lt;/code&gt;&lt;br /&gt;
-O mais usado usado, e com certeza a melhor solução, por causa da compatibilidade com versões anteriores, e é garantido que não poderão ser desabilitado alterando o arquivo de configuração do php.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Short Open Tags&lt;/strong&gt; &lt;br /&gt;
-&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;? ?&amp;gt;&lt;/code&gt; &lt;br /&gt;
-Seu uso é desencorajado pois esse recurso só está disponível quando é habilitado a diretiva &lt;code class=&quot;highlighter-rouge&quot;&gt;short_open_tag&lt;/code&gt; no &lt;em&gt;php.ini&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Echo tag&lt;/strong&gt;  &lt;br /&gt;
-&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;?= ?&amp;gt;&lt;/code&gt;  &lt;br /&gt;
-Comummente usado em arquivo de template. A parti da versão 5.4.0 sempre estará disponível, independente do da configuração &lt;code class=&quot;highlighter-rouge&quot;&gt;short_open_tag&lt;/code&gt; no &lt;em&gt;php.ini&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;ASP Tags&lt;/strong&gt;  &lt;br /&gt;
-&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;% %&amp;gt;&lt;/code&gt;  &lt;br /&gt;
-É considerado obsoleto, e seu uso é desencorajado pois na verão 7 ele foi removido, por motivos de causar conflitos com linguagens de marcação como XML.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Script Tags&lt;/strong&gt; &lt;br /&gt;
-&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;script language=&quot;php&quot;&amp;gt;&amp;lt;/script&amp;gt;&lt;/code&gt;  &lt;br /&gt;
-Também foi removido da versão 7 do  PHP.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;problema-com-as-tags&quot;&gt;Problema com as Tags&lt;/h2&gt;
-&lt;p&gt;Ao criar arquivos PHP que não se misturam com HTML ou arquivos de template, geralmente em arquivos de classes, configurações e etc, recomenda-se não usar tag de fechamento &lt;code class=&quot;highlighter-rouge&quot;&gt;?&amp;gt;&lt;/code&gt;. Pois caso exista um espaço ou quebra de linha após a tag de fechamento, essa espaço ou quebra de linha será exibido na resposta da requisição, e é algo bem difícil de se acha quando se tem um projeto com muitos arquivos, e isso pode trazer algumas horas de dor de cabeça.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;aspas&quot;&gt;Aspas&lt;/h2&gt;
-&lt;p&gt;No PHP para exibir um texto qualquer, você pode usar tanto aspas duplas &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;&lt;/code&gt; quanto aspas simples &lt;code class=&quot;highlighter-rouge&quot;&gt;'&lt;/code&gt;, exemplo:
-* &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;?=&quot;PHP BOOK&quot;?&amp;gt;&lt;/code&gt; saida: &lt;code class=&quot;highlighter-rouge&quot;&gt;PHP BOOK&lt;/code&gt;
-* &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;?='PHP BOOK'?&amp;gt;&lt;/code&gt; saida: &lt;code class=&quot;highlighter-rouge&quot;&gt;PHP BOOK&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;A diferença acontece quando você tenta mescla esse texto com uma variável, exemplo:&lt;/p&gt;
-
-&lt;div class=&quot;language-php highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt; 
-
-&lt;span class=&quot;nv&quot;&gt;$variael&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;texto qualquer&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;variável: &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$variavel&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// variável: texto qualquer
-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'variável: $variavel'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// variável: $variavel
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Repare que na primeira exibição, a variável foi reconhecida e seu valor foi impresso na resposta junto com o texto, já na segunda exibição, foi impresso o texto puro e a variável não foi reconhecida. Quando se usa aspas duplas, você consegue mesclar variáveis em strings.&lt;/p&gt;
-
-&lt;p&gt;O PHP consegue identificar a variável fazendo com que seu valor seja retornado na exibição, assim evitando está concatenando string com variáveis. &lt;br /&gt;
-Outra forma valida e a mais usada é quando se usa chaves envolvendo a variável.&lt;/p&gt;
-
-&lt;div class=&quot;language-php highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt; 
-
-&lt;span class=&quot;nv&quot;&gt;$variavel&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;texto qualquer&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;variável: &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$variavel&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// variável: texto qualquer
-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'variável: {$variavel}'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// variável: {$variavel}
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;As palavas reservadas &lt;code class=&quot;highlighter-rouge&quot;&gt;print&lt;/code&gt; e &lt;code class=&quot;highlighter-rouge&quot;&gt;echo&lt;/code&gt; são as mais usadas para exibir algo na resposta da requisição.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;concatenao-de-strings&quot;&gt;Concatenação de Strings&lt;/h2&gt;
-&lt;p&gt;Para fazer uso da concatenação (ou junção de strings), você precisa usar o ponto (&lt;code class=&quot;highlighter-rouge&quot;&gt;.&lt;/code&gt;), sempre colocando entre duas variáveis ou entre duas strings, entre uma string e o retorno de uma função/método.&lt;/p&gt;
-
-&lt;div class=&quot;language-php highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt; 
-
-&lt;span class=&quot;nv&quot;&gt;$string_1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;texto&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$string_2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot; qualquer&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;funcao&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'texto'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot; qualquer&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$string_1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$string_2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// texto qualquer
-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;texto&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$string_2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// texto qualquer
-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;texto&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot; qualquer&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// texto qualquer
-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;retorno: &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;funcao&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// retorno: texto qualquer
-&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;comentrios&quot;&gt;Comentários&lt;/h2&gt;
-&lt;p&gt;Assim como em outras linguagens, o PHP possui dois tipo de comentários, de “uma linha” e de “varias linhas”. O PHP suporta comentários no estilo ‘C’, ‘C++’ e do Unix shell (estilo Perl). Por exemplo:
-&lt;code class=&quot;highlighter-rouge&quot;&gt;php
-&amp;lt;?php
-    echo 'Isto é um teste'; // Estilo de comentário de uma linha em  c++
-    /* Este é um comentário de múltiplas linhas
-       ainda outra linha de comentário */
-    echo 'Isto é ainda outro teste';
-    echo 'Um teste final'; # Este é um comentário de uma linha no estilo shell
-&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Os comentários de estilo “uma linha” apenas comentam até o final da linha ou do bloco PHP de código corrente&lt;/p&gt;
-
-&lt;p&gt;Ao tentar comentar grandes blocos de código, podemos cometer o seguinte equivoco:&lt;/p&gt;
-
-&lt;div class=&quot;language-php highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt;
- &lt;span class=&quot;cm&quot;&gt;/*
-    echo 'Isto é um teste'; /* Este comentário irá causar um problema */&lt;/span&gt;
- &lt;span class=&quot;o&quot;&gt;*/&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;bloco-de-codigo&quot;&gt;Bloco de codigo&lt;/h2&gt;
-&lt;p&gt;O PHP usa como delimitador de bloco de código as chaves &lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;p&quot;&gt;{}&lt;/span&gt;&lt;/code&gt; exemplo:&lt;/p&gt;
-
-&lt;div class=&quot;language-php highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ZCE&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;c1&quot;&gt;# bloco de código  
-&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Programador&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;implements&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ZCE&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;# bloco de código
-&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;nv&quot;&gt;$programador&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Programador&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$programador&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;instanceof&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ZCE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;# bloco de código
-&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;# bloco de código
-&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;o-interpretador-php&quot;&gt;O interpretador PHP&lt;/h2&gt;
-&lt;p&gt;Como já foi dito PHP consegue se mistura com outros tipos de arquivos ou documentos e o interpretador consegue detectar comandos PHP dentro desse arquivo, até mesmo não sendo um arquivo com a extensão &lt;code class=&quot;highlighter-rouge&quot;&gt;.php&lt;/code&gt; veja:&lt;/p&gt;
-
-&lt;p&gt;usuarios.xml&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-XML&quot;&gt;&amp;lt;?php foreach(['Alef', 'Sara', 'Liana'] as $nome): ?&amp;gt;
-    &amp;lt;usuario nome=&quot;&amp;lt;?php print $nome ?&amp;gt;&quot; /&amp;gt;
-&amp;lt;?php endforeach; ?&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;index.php&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-PHP&quot;&gt;&amp;lt;?php
-header(&quot;Content-type: text/xml&quot;);
-// Cabeçalho XML
-print &quot;&amp;lt;?xml version=\&quot;1.0\&quot; encoding=\&quot;UTF-8\&quot;?&amp;gt;&quot;;
-// Abrindo tag que contém a lista de usuários
-print &quot;&amp;lt;lista-usuarios&amp;gt;&quot;;
-// repare que está sendo incluindo um arquivo do tipo XML com código PHP dentro.
-require_once 'usuarios.xml'; 
-// Fechando tag que contém a lista de usuários
-print &quot;&amp;lt;/lista-usuarios&amp;gt;&quot;;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Saída:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-XML&quot;&gt;&amp;lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&amp;gt;
-&amp;lt;lista-usuarios&amp;gt;
-    &amp;lt;usuario nome=&quot;Alef&quot; /&amp;gt;
-    &amp;lt;usuario nome=&quot;Sara&quot; /&amp;gt;
-    &amp;lt;usuario nome=&quot;Liana&quot; /&amp;gt;
-&amp;lt;/lista-usuarios&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Próximo assunto: &lt;a href=&quot;./variables.html&quot;&gt;Variables&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Fri, 29 Jul 2016 13:11:37 -0300</pubDate>
-        <link>alefcastelo.github.io/zce-book/php-basics/syntax.html</link>
-        <guid isPermaLink="true">alefcastelo.github.io/zce-book/php-basics/syntax.html</guid>
-        
-        
-        <category>php-basics</category>
-        
-      </item>
-    
-      <item>
-        <title>Readme</title>
-        <description>&lt;h1 id=&quot;web-features&quot;&gt;Web Features&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Sessions&lt;/li&gt;
-  &lt;li&gt;Forms&lt;/li&gt;
-  &lt;li&gt;GET and POST data&lt;/li&gt;
-  &lt;li&gt;Cookies&lt;/li&gt;
-  &lt;li&gt;HTTP Headers&lt;/li&gt;
-  &lt;li&gt;HTTP Authentication&lt;/li&gt;
-  &lt;li&gt;HTTP Status Codes&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Fri, 29 Jul 2016 13:06:02 -0300</pubDate>
-        <link>alefcastelo.github.io/zce-book/README.html</link>
-        <guid isPermaLink="true">alefcastelo.github.io/zce-book/README.html</guid>
+        <pubDate>Fri, 29 Jul 2016 13:47:59 -0300</pubDate>
+        <link>/sumario.html</link>
+        <guid isPermaLink="true">/sumario.html</guid>
         
         
       </item>
@@ -448,9 +189,9 @@ print &quot;&amp;lt;/lista-usuarios&amp;gt;&quot;;
   &lt;li&gt;Encodings&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Fri, 29 Jul 2016 13:06:02 -0300</pubDate>
-        <link>alefcastelo.github.io/zce-book/README.html</link>
-        <guid isPermaLink="true">alefcastelo.github.io/zce-book/README.html</guid>
+        <pubDate>Fri, 29 Jul 2016 13:47:59 -0300</pubDate>
+        <link>/README.html</link>
+        <guid isPermaLink="true">/README.html</guid>
         
         
       </item>
@@ -475,9 +216,9 @@ print &quot;&amp;lt;/lista-usuarios&amp;gt;&quot;;
   &lt;li&gt;Password hashing API&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Fri, 29 Jul 2016 13:06:02 -0300</pubDate>
-        <link>alefcastelo.github.io/zce-book/README.html</link>
-        <guid isPermaLink="true">alefcastelo.github.io/zce-book/README.html</guid>
+        <pubDate>Fri, 29 Jul 2016 13:47:59 -0300</pubDate>
+        <link>/README.html</link>
+        <guid isPermaLink="true">/README.html</guid>
         
         
       </item>
@@ -910,10 +651,242 @@ print $b; // 2
 
 &lt;p&gt;Próximo assunto: &lt;a href=&quot;operators&quot;&gt;Operators&lt;/a&gt;&lt;/p&gt;
 </description>
-        <pubDate>Fri, 29 Jul 2016 13:06:02 -0300</pubDate>
-        <link>alefcastelo.github.io/zce-book/variables.html</link>
-        <guid isPermaLink="true">alefcastelo.github.io/zce-book/variables.html</guid>
+        <pubDate>Fri, 29 Jul 2016 13:47:59 -0300</pubDate>
+        <link>/variables.html</link>
+        <guid isPermaLink="true">/variables.html</guid>
         
+        
+      </item>
+    
+      <item>
+        <title>Syntax</title>
+        <description>&lt;h1 id=&quot;syntax&quot;&gt;Syntax&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#php&quot;&gt;PHP&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#tags&quot;&gt;Tags&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#problema-com-as-tags&quot;&gt;Problema com as Tags&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#aspas&quot;&gt;Aspas&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#concatenação-de-strings&quot;&gt;Concatenação de Strings&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#comentários&quot;&gt;Comentários&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#bloco-de-codigo&quot;&gt;Bloco de código&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#o-interpretador-php&quot;&gt;O interpretador PHP&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;php&quot;&gt;PHP&lt;/h2&gt;
+&lt;p&gt;O PHP (um acrônimo recursivo para PHP: Hypertext Preprocessor) é uma linguagem de script open source de uso geral, muito utilizada, e especialmente adequada para o desenvolvimento web. A melhor coisa em usar o PHP é que ele é extremamente simples para um iniciante, mas oferece muitos recursos para um programador profissional.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;tags&quot;&gt;Tags&lt;/h2&gt;
+&lt;p&gt;O PHP tem como sintaxe básica, tags de abertura representado por &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;?php&lt;/code&gt; e fechamento &lt;code class=&quot;highlighter-rouge&quot;&gt;?&amp;gt;&lt;/code&gt; como default do interpretador. O interpretador busca por essas tags dentro do arquivo e se achar ele interpreta os comandos dentro das tags e retorna a resposta na saida do documento. Com essa forma de interpretar, o PHP possui a possibilidade de ser facilmente incluído em vários tipos de documento.&lt;/p&gt;
+
+&lt;p&gt;Exemplo da mesclagem com HTML:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-HTML&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html&amp;gt;
+  &amp;lt;head&amp;gt;
+    &amp;lt;title&amp;gt;&amp;lt;?php print &quot;Titulo da pagina&quot; ?&amp;gt;&amp;lt;/title&amp;gt;
+  &amp;lt;/head&amp;gt;
+  &amp;lt;body&amp;gt;
+    &amp;lt;?= &quot;conteúdo do site&quot; ?&amp;gt;
+  &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;A saída desse código é:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-HTML&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html&amp;gt;
+  &amp;lt;head&amp;gt;
+    &amp;lt;title&amp;gt;Titulo da pagina&amp;lt;/title&amp;gt;
+  &amp;lt;/head&amp;gt;
+  &amp;lt;body&amp;gt;
+    conteúdo do site
+  &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Repare também que foi usado duas formas diferente de exibir uma string na saída do interpretador. A primeira foi &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;?php print &quot;Titulo da pagina&quot; ?&amp;gt;&lt;/code&gt; e a segunda foi &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;?= &quot;conteúdo do site&quot; ?&amp;gt;&lt;/code&gt;. 
+Isso só é possível por que o PHP possui outros tipos de tags a qual o interpretador entende que naquele bloco é um código php.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Standard Tags or Open Tags&lt;/strong&gt;&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;?php ?&amp;gt;&lt;/code&gt;&lt;br /&gt;
+O mais usado usado, e com certeza a melhor solução, por causa da compatibilidade com versões anteriores, e é garantido que não poderão ser desabilitado alterando o arquivo de configuração do php.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Short Open Tags&lt;/strong&gt; &lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;? ?&amp;gt;&lt;/code&gt; &lt;br /&gt;
+Seu uso é desencorajado pois esse recurso só está disponível quando é habilitado a diretiva &lt;code class=&quot;highlighter-rouge&quot;&gt;short_open_tag&lt;/code&gt; no &lt;em&gt;php.ini&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Echo tag&lt;/strong&gt;  &lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;?= ?&amp;gt;&lt;/code&gt;  &lt;br /&gt;
+Comummente usado em arquivo de template. A parti da versão 5.4.0 sempre estará disponível, independente do da configuração &lt;code class=&quot;highlighter-rouge&quot;&gt;short_open_tag&lt;/code&gt; no &lt;em&gt;php.ini&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;ASP Tags&lt;/strong&gt;  &lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;% %&amp;gt;&lt;/code&gt;  &lt;br /&gt;
+É considerado obsoleto, e seu uso é desencorajado pois na verão 7 ele foi removido, por motivos de causar conflitos com linguagens de marcação como XML.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Script Tags&lt;/strong&gt; &lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;script language=&quot;php&quot;&amp;gt;&amp;lt;/script&amp;gt;&lt;/code&gt;  &lt;br /&gt;
+Também foi removido da versão 7 do  PHP.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;problema-com-as-tags&quot;&gt;Problema com as Tags&lt;/h2&gt;
+&lt;p&gt;Ao criar arquivos PHP que não se misturam com HTML ou arquivos de template, geralmente em arquivos de classes, configurações e etc, recomenda-se não usar tag de fechamento &lt;code class=&quot;highlighter-rouge&quot;&gt;?&amp;gt;&lt;/code&gt;. Pois caso exista um espaço ou quebra de linha após a tag de fechamento, essa espaço ou quebra de linha será exibido na resposta da requisição, e é algo bem difícil de se acha quando se tem um projeto com muitos arquivos, e isso pode trazer algumas horas de dor de cabeça.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;aspas&quot;&gt;Aspas&lt;/h2&gt;
+&lt;p&gt;No PHP para exibir um texto qualquer, você pode usar tanto aspas duplas &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;&lt;/code&gt; quanto aspas simples &lt;code class=&quot;highlighter-rouge&quot;&gt;'&lt;/code&gt;, exemplo:
+* &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;?=&quot;PHP BOOK&quot;?&amp;gt;&lt;/code&gt; saida: &lt;code class=&quot;highlighter-rouge&quot;&gt;PHP BOOK&lt;/code&gt;
+* &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;?='PHP BOOK'?&amp;gt;&lt;/code&gt; saida: &lt;code class=&quot;highlighter-rouge&quot;&gt;PHP BOOK&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;A diferença acontece quando você tenta mescla esse texto com uma variável, exemplo:&lt;/p&gt;
+
+&lt;div class=&quot;language-php highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt; 
+
+&lt;span class=&quot;nv&quot;&gt;$variael&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;texto qualquer&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;variável: &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$variavel&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// variável: texto qualquer
+&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'variável: $variavel'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// variável: $variavel
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Repare que na primeira exibição, a variável foi reconhecida e seu valor foi impresso na resposta junto com o texto, já na segunda exibição, foi impresso o texto puro e a variável não foi reconhecida. Quando se usa aspas duplas, você consegue mesclar variáveis em strings.&lt;/p&gt;
+
+&lt;p&gt;O PHP consegue identificar a variável fazendo com que seu valor seja retornado na exibição, assim evitando está concatenando string com variáveis. &lt;br /&gt;
+Outra forma valida e a mais usada é quando se usa chaves envolvendo a variável.&lt;/p&gt;
+
+&lt;div class=&quot;language-php highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt; 
+
+&lt;span class=&quot;nv&quot;&gt;$variavel&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;texto qualquer&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;variável: &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$variavel&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// variável: texto qualquer
+&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'variável: {$variavel}'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// variável: {$variavel}
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;As palavas reservadas &lt;code class=&quot;highlighter-rouge&quot;&gt;print&lt;/code&gt; e &lt;code class=&quot;highlighter-rouge&quot;&gt;echo&lt;/code&gt; são as mais usadas para exibir algo na resposta da requisição.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;concatenao-de-strings&quot;&gt;Concatenação de Strings&lt;/h2&gt;
+&lt;p&gt;Para fazer uso da concatenação (ou junção de strings), você precisa usar o ponto (&lt;code class=&quot;highlighter-rouge&quot;&gt;.&lt;/code&gt;), sempre colocando entre duas variáveis ou entre duas strings, entre uma string e o retorno de uma função/método.&lt;/p&gt;
+
+&lt;div class=&quot;language-php highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt; 
+
+&lt;span class=&quot;nv&quot;&gt;$string_1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;texto&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$string_2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot; qualquer&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;funcao&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'texto'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot; qualquer&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$string_1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$string_2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// texto qualquer
+&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;texto&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$string_2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// texto qualquer
+&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;texto&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot; qualquer&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// texto qualquer
+&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;retorno: &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;funcao&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// retorno: texto qualquer
+&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;comentrios&quot;&gt;Comentários&lt;/h2&gt;
+&lt;p&gt;Assim como em outras linguagens, o PHP possui dois tipo de comentários, de “uma linha” e de “varias linhas”. O PHP suporta comentários no estilo ‘C’, ‘C++’ e do Unix shell (estilo Perl). Por exemplo:
+&lt;code class=&quot;highlighter-rouge&quot;&gt;php
+&amp;lt;?php
+    echo 'Isto é um teste'; // Estilo de comentário de uma linha em  c++
+    /* Este é um comentário de múltiplas linhas
+       ainda outra linha de comentário */
+    echo 'Isto é ainda outro teste';
+    echo 'Um teste final'; # Este é um comentário de uma linha no estilo shell
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Os comentários de estilo “uma linha” apenas comentam até o final da linha ou do bloco PHP de código corrente&lt;/p&gt;
+
+&lt;p&gt;Ao tentar comentar grandes blocos de código, podemos cometer o seguinte equivoco:&lt;/p&gt;
+
+&lt;div class=&quot;language-php highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt;
+ &lt;span class=&quot;cm&quot;&gt;/*
+    echo 'Isto é um teste'; /* Este comentário irá causar um problema */&lt;/span&gt;
+ &lt;span class=&quot;o&quot;&gt;*/&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;bloco-de-codigo&quot;&gt;Bloco de codigo&lt;/h2&gt;
+&lt;p&gt;O PHP usa como delimitador de bloco de código as chaves &lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;p&quot;&gt;{}&lt;/span&gt;&lt;/code&gt; exemplo:&lt;/p&gt;
+
+&lt;div class=&quot;language-php highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ZCE&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;# bloco de código  
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Programador&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;implements&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ZCE&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;# bloco de código
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nv&quot;&gt;$programador&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Programador&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$programador&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;instanceof&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ZCE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;# bloco de código
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;# bloco de código
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;o-interpretador-php&quot;&gt;O interpretador PHP&lt;/h2&gt;
+&lt;p&gt;Como já foi dito PHP consegue se mistura com outros tipos de arquivos ou documentos e o interpretador consegue detectar comandos PHP dentro desse arquivo, até mesmo não sendo um arquivo com a extensão &lt;code class=&quot;highlighter-rouge&quot;&gt;.php&lt;/code&gt; veja:&lt;/p&gt;
+
+&lt;p&gt;usuarios.xml&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-XML&quot;&gt;&amp;lt;?php foreach(['Alef', 'Sara', 'Liana'] as $nome): ?&amp;gt;
+    &amp;lt;usuario nome=&quot;&amp;lt;?php print $nome ?&amp;gt;&quot; /&amp;gt;
+&amp;lt;?php endforeach; ?&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;index.php&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-PHP&quot;&gt;&amp;lt;?php
+header(&quot;Content-type: text/xml&quot;);
+// Cabeçalho XML
+print &quot;&amp;lt;?xml version=\&quot;1.0\&quot; encoding=\&quot;UTF-8\&quot;?&amp;gt;&quot;;
+// Abrindo tag que contém a lista de usuários
+print &quot;&amp;lt;lista-usuarios&amp;gt;&quot;;
+// repare que está sendo incluindo um arquivo do tipo XML com código PHP dentro.
+require_once 'usuarios.xml'; 
+// Fechando tag que contém a lista de usuários
+print &quot;&amp;lt;/lista-usuarios&amp;gt;&quot;;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Saída:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-XML&quot;&gt;&amp;lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&amp;gt;
+&amp;lt;lista-usuarios&amp;gt;
+    &amp;lt;usuario nome=&quot;Alef&quot; /&amp;gt;
+    &amp;lt;usuario nome=&quot;Sara&quot; /&amp;gt;
+    &amp;lt;usuario nome=&quot;Liana&quot; /&amp;gt;
+&amp;lt;/lista-usuarios&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Próximo assunto: &lt;a href=&quot;./variables.html&quot;&gt;Variables&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 29 Jul 2016 13:47:59 -0300</pubDate>
+        <link>/php-basics/syntax.html</link>
+        <guid isPermaLink="true">/php-basics/syntax.html</guid>
+        
+        
+        <category>php-basics</category>
         
       </item>
     
@@ -1053,10 +1026,35 @@ print $c; // 9
 &lt;/div&gt;
 
 </description>
-        <pubDate>Fri, 29 Jul 2016 13:06:02 -0300</pubDate>
-        <link>alefcastelo.github.io/zce-book/operators.html</link>
-        <guid isPermaLink="true">alefcastelo.github.io/zce-book/operators.html</guid>
+        <pubDate>Fri, 29 Jul 2016 13:47:59 -0300</pubDate>
+        <link>/operators.html</link>
+        <guid isPermaLink="true">/operators.html</guid>
         
+        
+      </item>
+    
+      <item>
+        <title>PHP Basics</title>
+        <description>&lt;h1 id=&quot;php-basics&quot;&gt;PHP Basics&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;./syntax.html&quot;&gt;Syntax&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./variables.html&quot;&gt;Variables&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Operators&lt;/li&gt;
+  &lt;li&gt;Control Structures&lt;/li&gt;
+  &lt;li&gt;Language Constructs and Functions&lt;/li&gt;
+  &lt;li&gt;Namespaces&lt;/li&gt;
+  &lt;li&gt;Extensions&lt;/li&gt;
+  &lt;li&gt;Config&lt;/li&gt;
+  &lt;li&gt;Performance/bytecode caching&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Fri, 29 Jul 2016 13:47:59 -0300</pubDate>
+        <link>/php-basics/index.html</link>
+        <guid isPermaLink="true">/php-basics/index.html</guid>
+        
+        
+        <category>php-basics</category>
         
       </item>
     
@@ -1080,9 +1078,9 @@ print $c; // 9
   &lt;li&gt;Traits&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Fri, 29 Jul 2016 13:06:02 -0300</pubDate>
-        <link>alefcastelo.github.io/zce-book/README.html</link>
-        <guid isPermaLink="true">alefcastelo.github.io/zce-book/README.html</guid>
+        <pubDate>Fri, 29 Jul 2016 13:47:59 -0300</pubDate>
+        <link>/README.html</link>
+        <guid isPermaLink="true">/README.html</guid>
         
         
       </item>
@@ -1097,9 +1095,9 @@ print $c; // 9
 * Acredito que terei mais credibilidade quando irei dar um opinião ou expressar um pensamento sobre PHP.
 * E acho que por essa certificação ser tão difícil creio que é um ótimo desafio.&lt;/p&gt;
 </description>
-        <pubDate>Fri, 29 Jul 2016 13:06:02 -0300</pubDate>
-        <link>alefcastelo.github.io/zce-book/motivacao.html</link>
-        <guid isPermaLink="true">alefcastelo.github.io/zce-book/motivacao.html</guid>
+        <pubDate>Fri, 29 Jul 2016 13:47:59 -0300</pubDate>
+        <link>/motivacao.html</link>
+        <guid isPermaLink="true">/motivacao.html</guid>
         
         
       </item>
