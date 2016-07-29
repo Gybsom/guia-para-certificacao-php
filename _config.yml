@@ -1,0 +1,13 @@
+title: Guia para cerficação PHP
+email: alefaraujocastelo@gmail.com
+description: "Esse site tem como objetivo diponibilizar conteúdo para certificação PHP"
+baseurl: "/"
+twitter_username: alefcastelo
+github_username:  alefcastelo
+permalink: /:categories/:title.html
+layout: default
+markdown: kramdown
+kramdown:
+  input: GFM
+highlighter: rouge
+line_numbers: true
