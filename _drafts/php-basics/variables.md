@@ -3,7 +3,7 @@ title: Variables
 layout: default
 categories: php-basics
 
-breadcrumb_url: php-basics
+breadcrumb_url: php-basics/
 breadcrumb_name: PHP Basics
 
 next_url: php-basics/operators.html
@@ -320,7 +320,3 @@ var_dump(ZCEBook::NOME); // string(7) "ZCEBook"
 | **\_\_TRAIT\_\_**     | O nome do trait. O nome do trait inclui o namespace em que foi declarado (por exemplo, Foo\Bar).   |
 | **\_\_METHOD\_\_**     | O nome do método da classe.             |
 | **\_\_NAMESPACE\_\_**     | O nome do namespace atual.             |
-
-***
-
-Próximo assunto: [Operators](operators)

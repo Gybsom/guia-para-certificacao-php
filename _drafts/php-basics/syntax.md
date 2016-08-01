@@ -6,11 +6,13 @@ categories: php-basics
 breadcrumb_url: php-basics
 breadcrumb_name: PHP Basics
 
-next_url: variables
+next_url: php-basics/variables.html
 next_name: Variables
 
-prev_url: variables
-prev_name: Variables
+
+prev_url: php-basics/index.html
+prev_name: PHP Basics
+
 ---
 
 * [PHP](#php)

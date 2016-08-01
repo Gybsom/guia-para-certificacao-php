@@ -23,39 +23,33 @@
   <body>
       
     <h1 class="title-site"><a href="{{  site.baseurl }}">Guia para certificação <span class="php-title">PHP</span></a></h1>
-    
-    {% if page.next_url %}
-      <a class="next-page" href="{{ page.next_url | prepend: site.baseurl }}"><i class="glyphicon glyphicon-chevron-right"></i></a>
-    {% endif %}
-    
-    {% if page.prev_url %}
-      <a class="prev-page" href="{{ page.prev_url | prepend: site.baseurl  }}"><i class="glyphicon glyphicon-chevron-left"></i></a>
-    {% endif %}
-    
+  
     <main>
       
       <div class="container">
         
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="{{  site.baseurl }}">Home</a></li>
-            <li class="breadcrumb-item"><a href="{{  page.breadcrumb_url | prepend: site.baseurl }}">{{  page.breadcrumb_name }}</a></li>
-            <li class="breadcrumb-item active">{{ page.title }}</li>
+            {% if page.breadcrumb_url %}
+              <li class="breadcrumb-item"><a href="{{  page.breadcrumb_url | prepend: site.baseurl }}">{{  page.breadcrumb_name }}</a></li>
+            {% endif %}
+            {% if page.title %}
+              <li class="breadcrumb-item active">{{ page.title }}</li>
+            {% endif %}
         </ol>        
         
         <h2>{{ page.title }}</h2>
         {{ content }}
       </div>
       
-      <hr>
-      
-      <div class="container">  
+      <div class="container container-botton">  
         <div class="cleafix">
-          {% if page.next_url %}
-            <a class="pull-left" href="{{ page.next_url  | prepend: site.baseurl }}">{{ page.next_name }}</a>
+          {% if page.prev_url %}
+            <a class="btn-pages pull-left" href="{{ page.prev_url | prepend: site.baseurl }}"><i class="glyphicon glyphicon-chevron-left"></i> {{ page.prev_name }}</a>
           {% endif %}
           
           {% if page.next_url %}
-            <a class="pull-right" href="{{ page.next_url | prepend: site.baseurl  }}">{{ page.next_name }}</a>
+            <a class="btn-pages pull-right" href="{{ page.next_url | prepend: site.baseurl }}">{{ page.next_name }} <i class="glyphicon glyphicon-chevron-right"></i></a>
           {% endif %}
         </div>
       </div>

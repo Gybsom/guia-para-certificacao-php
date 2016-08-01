@@ -6,10 +6,7 @@ categories: php-basics
 breadcrumb_url: php-basics
 breadcrumb_name: PHP Basics
 
-next_url: variables
-next_name: Variables
-
-prev_url: variables
+prev_url: php-basics/variables.html
 prev_name: Variables
 --- 
 
@@ -40,7 +37,7 @@ Um operador é uma estrutura que recebe um ou mais valores (ou expressões, no j
 ### Operadores Aritméticos
 Acredito que a própria explicação matemática já é o suficiente. Com base no Wikipedia: "A aritmética é o ramo da matemática que lida com números e com as operações possíveis entre eles".
 
-* **Adição** - Utiliza o sinal de (`+`) para expressar que a operação de adição/soma será executada.     
+* **Adição** - Utiliza o sinal de `+` para expressar que a operação de adição/soma será executada.     
 Exemplo:  
 
 ```php
@@ -51,7 +48,7 @@ $c = $a + $b;
 print $c; // 5
 ```
 
-* **Subtração** - Faz uso do sinal de (`-`) para expressar que a operação de subtração será executada.    
+* **Subtração** - Faz uso do sinal de `-` para expressar que a operação de subtração será executada.    
 Exemplo:  
 
 ```php
@@ -62,7 +59,7 @@ $c = $a - $b;
 print $c; // 1
 ```
 
-* **Multiplicação** - Utiliza o sinal de (`*`) para expressar que a operação de multiplicação será executada.  
+* **Multiplicação** - Utiliza o sinal de `*` para expressar que a operação de multiplicação será executada.  
 Exemplo:  
 
 ```php
@@ -73,7 +70,7 @@ $c = $a * $b;
 print $c; // 6
 ```
 
-* **Divisão - Frações** - Faz uso do sinal de (`/`) para expressar que a operação de divisão será executada.  
+* **Divisão - Frações** - Faz uso do sinal de `/` para expressar que a operação de divisão será executada.  
 Exemplo:  
 
 ```php
@@ -84,7 +81,7 @@ $c = $a / $b;
 print $c; // 1.5
 ```
 
-* Um outro operador muito usado é o de **Módulo** (`%`), com esse operador é possível capturar o resto da divisão, diferente do operador de divisão (`/`) que retorna o `quociente da divisão`.   
+* Um outro operador muito usado é o de **Módulo** `%`, com esse operador é possível capturar o resto da divisão, diferente do operador de divisão (`/`) que retorna o `quociente da divisão`.   
 Exemplo:  
 
 ```php
@@ -95,7 +92,7 @@ $c = $a % $b;
 print $c; // 1
 ```
 
-* **Negação** - Faz uso do sinal de (`-`), porém o seu uso é antes do valor/variável, isso faz com que nesse momento o valor seja o oposto do original, fazendo a troca de positivo para negativo ou de negativo para positivo. 
+* **Negação** - Faz uso do sinal de `-`, porém o seu uso é antes do valor/variável, isso faz com que nesse momento o valor seja o oposto do original, fazendo a troca de positivo para negativo ou de negativo para positivo. 
 Exemplo:  
 
 ```php
@@ -134,8 +131,9 @@ print -$c; // 1
 
 ```
 
-* **Exponencial**  - Introduzido no PHP 5.6, faz uso do sinal de (`**`).
+* **Exponencial**  - Introduzido no PHP 5.6, faz uso do sinal de `**`.
 Exemplo:  
+
 ```php
 <?php
 $a = 3;
@@ -143,5 +141,3 @@ $b = 2;
 $c = $a ** $b;
 print $c; // 9
 ```
-
-

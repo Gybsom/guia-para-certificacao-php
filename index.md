@@ -1,16 +1,18 @@
 ---
-title: Sumário
+title: Sobre
 layout: default
 next: php-basics.md
 prev: php-basics.md
 categories: Sumário.md
 ---
 
-Olá, esse e um repositório a qual eu gostaria de falar sobre [PHP](http://www.php.net/), uma especie de blog ou livro, onde eu irei postar sobre conteúdo que acredito que seja importante a todo programador PHP. Então como esse repositório é focado em PHP, tentarei seguir a ementa de estudo para quem quer se torna um [ZCE](http://www.zend.com/en/services/certification/php-5-certification).
+Olá, esse é um site a qual tem com principal objetivo facilitar o estudo sobre a certifição [PHP](http://www.php.net/) o tão sonhado titulo de [ZCE](http://www.zend.com/en/services/certification/php-5-certification).
 
 Aqui está um [link com a minha motivação](motivacao.md) e por que acredito que vale pena tirar certificação.
 
 Outra coisa que gostaria de deixar claro, é o motivo porque nem tudo aqui deixarei em português, por exemplo: os tópicos que serão abordados na prova, `PHP Basics`, `Control Structures` e etc. A prova é totalmente inglês e acredito que no minimo os tópicos devem ser conhecidos em inglês.
+
+### Sumário
 
 * [PHP Basics](php-basics/index.md)
   * [Syntax](php-basics/syntax.md)
@@ -22,7 +24,7 @@ Outra coisa que gostaria de deixar claro, é o motivo porque nem tudo aqui deixa
   * Extensions
   * Config
   * Performance/bytecode caching
-* [Strings & Patterns](strings-&-patterns/README.md)
+* Strings & Patterns
   * Quoting
   * Matching
   * Extracting
@@ -32,13 +34,13 @@ Outra coisa que gostaria de deixar claro, é o motivo porque nem tudo aqui deixa
   * PCRE
   * NOWDOC
   * Encodings
-* [Arrays](arrays/README.md)
+* Arrays
   * Associative Arrays
   * Array Iteration
   * Array Functions
   * SPL, Objects as arrays 
   * Casting
-* [Data Format & Types](data-format-&-types/README.md)
+* Data Format & Types
   * XML Basics
   * SimpleXML
   * XML Extension
@@ -47,7 +49,7 @@ Outra coisa que gostaria de deixar claro, é o motivo porque nem tudo aqui deixa
   * JSON 
   * DateTime 
   * DOMDocument
-* [Web Features](web-features/README.md)
+* Web Features
   * Sessions
   * Forms
   * GET and POST data
@@ -55,21 +57,21 @@ Outra coisa que gostaria de deixar claro, é o motivo porque nem tudo aqui deixa
   * HTTP Headers
   * HTTP Authentication
   * HTTP Status Codes 
-* [Functions](functions/README.md)
+* Functions
   * Arguments
   * Variables
   * References
   * Returns
   * Variable Scope
   * Anonymous Functions, closures
-* [I/O](io/README.md)
+* I/O
   * Files
   * Reading
   * Writing
   * File System Functions
   * Streams
   * Contexts
-* [Object Oriented Programming](object-oriented-programming/README.md)
+* Object Oriented Programming
   * Instantiation
   * Modifiers/Inheritance
   * Interfaces
@@ -83,13 +85,13 @@ Outra coisa que gostaria de deixar claro, é o motivo porque nem tudo aqui deixa
   * Instance Methods & Properties
   * SPL
   * Traits 
-* [Databases & SQL](databases-&-sql/README.md)
+* Databases & SQL
   * SQL
   * Joins
   * Prepared Statements
   * Transactions
   * PDO
-* [Security](security/README.md)
+* Security
   * Configuration
   * Session Security
   * Cross-Site Scripting
@@ -104,4 +106,4 @@ Outra coisa que gostaria de deixar claro, é o motivo porque nem tudo aqui deixa
   * PHP Configuration
   * Password hashing API 
 
-A idéia final é ter um estudo e compartilhamento de conteúdo, para todos aqueles que gostaria de focar o aprendizado rápido do PHP, e também fazer um estudo para quem quer tirar certificação, assim como eu.
+A idéia final é compartilhar e estudar conteúdo que irá trazer conhecimento para certificação PHP.

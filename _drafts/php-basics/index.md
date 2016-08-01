@@ -6,8 +6,9 @@ categories: php-basics
 breadcrumb_url: php-basics
 breadcrumb_name: PHP Basics
 
-next_url: variables
-next_name: Variables
+next_url: php-basics/syntax.html
+next_name: Syntax
+
 --- 
 
 * [Syntax](syntax.md)
