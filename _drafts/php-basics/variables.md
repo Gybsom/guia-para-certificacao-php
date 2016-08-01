@@ -1,4 +1,17 @@
-# Variables
+---
+title: Variables
+layout: default
+categories: php-basics
+
+breadcrumb_url: php-basics
+breadcrumb_name: PHP Basics
+
+next_url: php-basics/operators.html
+next_name: Operators
+
+prev_url: php-basics/syntax.html
+prev_name: Syntax
+---
 
 * [Introdução](#introdução)
 * [Sintaxe Válida](#sintaxe-válida)

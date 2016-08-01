@@ -25,15 +25,23 @@
     <h1 class="title-site"><a href="{{  site.baseurl }}">Guia para certificação <span class="php-title">PHP</span></a></h1>
     
     {% if page.next_url %}
-      <a class="next-page" href="{{ page.next_url  | prepend: site.baseurl }}"><i class="glyphicon glyphicon-chevron-right"></i></a>
+      <a class="next-page" href="{{ page.next_url | prepend: site.baseurl }}"><i class="glyphicon glyphicon-chevron-right"></i></a>
     {% endif %}
     
     {% if page.prev_url %}
       <a class="prev-page" href="{{ page.prev_url | prepend: site.baseurl  }}"><i class="glyphicon glyphicon-chevron-left"></i></a>
     {% endif %}
+    
     <main>
       
-      <div class="container">        
+      <div class="container">
+        
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{{  site.baseurl }}">Home</a></li>
+            <li class="breadcrumb-item"><a href="{{  page.breadcrumb_url | prepend: site.baseurl }}">{{  page.breadcrumb_name }}</a></li>
+            <li class="breadcrumb-item active">{{ page.title }}</li>
+        </ol>        
+        
         <h2>{{ page.title }}</h2>
         {{ content }}
       </div>

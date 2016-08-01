@@ -1,4 +1,17 @@
-## Operators
+---
+title: Operators
+layout: default
+categories: php-basics
+
+breadcrumb_url: php-basics
+breadcrumb_name: PHP Basics
+
+next_url: variables
+next_name: Variables
+
+prev_url: variables
+prev_name: Variables
+--- 
 
 * [O que são operadores?](#o-que-são-operadores)
 * [Operadores de Atribuição](#operadores-de-atribuição)

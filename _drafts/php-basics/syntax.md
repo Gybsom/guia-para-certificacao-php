@@ -2,8 +2,13 @@
 title: Syntax
 layout: default
 categories: php-basics
+
+breadcrumb_url: php-basics
+breadcrumb_name: PHP Basics
+
 next_url: variables
 next_name: Variables
+
 prev_url: variables
 prev_name: Variables
 ---
@@ -200,7 +205,7 @@ Como já foi dito PHP consegue se mistura com outros tipos de arquivos ou docume
 
 usuarios.xml
 
-```XML
+```php
 <?php foreach(['Alef', 'Sara', 'Liana'] as $nome): ?>
     <usuario nome="<?php print $nome ?>" />
 <?php endforeach; ?>
@@ -208,7 +213,7 @@ usuarios.xml
 
 index.php
 
-```PHP
+```php
 <?php
 header("Content-type: text/xml");
 // Cabeçalho XML
@@ -223,7 +228,7 @@ print "</lista-usuarios>";
 
 Saída:
 
-```XML
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <lista-usuarios>
     <usuario nome="Alef" />
