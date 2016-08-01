@@ -4,7 +4,7 @@ categories: php-basics
 ---
 
 
-# PHP Basics
+## PHP Basics
 
 * [Syntax](syntax.md)
 * [Variables](variables.md)
