@@ -24,12 +24,21 @@
       
     <h1 class="title-site"><a href="{{  site.baseurl }}">Guia para certificação <span class="php-title">PHP</span></a><br>{{ page.title }}</h1>
     
+    {% if page.next_url %}
+      <a class="next-page" href="{{ page.next_url }}">{{ page.next_name }} <i class="glyphicon glyphicon-chevron-right"></i></a>
+    {% endif %}
+    
+    {% if page.prev_url %}
+      <a class="prev-page" href="{{ page.prev_url }}">{{ page.prev_name }} <i class="glyphicon glyphicon-chevron-left"></i></a>
+    {% endif %}
+    
     <main>  
       <div class="container">
         {{ content }}
       </div>
     </main>
     
+
     
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

@@ -9,7 +9,7 @@ body{
 }
 h1.title-site{
     padding: 20px 0 ;
-    margin: 0px;
+    margin: 0 0 50px 0;
     background: #4F5B93; 
     font-size: 3em;
     text-align: center;
@@ -62,4 +62,28 @@ a:hover, a:active{
 
 code {
     color: #373737;
+}
+
+a.next-page{
+    position: fixed;
+    top: 50%;
+    right: 0px;
+    width: 200px;
+    background: #333;
+    display: block;
+    text-align: left;
+    line-height: 40px;
+    padding: 10px 30px;
+}
+
+a.prev-page{
+    position: fixed;
+    top: 50%;
+    left: 0px;
+    width: 200px;
+    background: #333;
+    display: block;
+    text-align: right;
+    line-height: 40px;
+    padding: 10px 30px;
 }

@@ -4,8 +4,8 @@ layout: default
 categories: php-basics
 next_url: variables
 next_name: Variables
-prev_url: 
-prev_name: 
+prev_url: variables
+prev_name: Variables
 ---
 
 * [PHP](#php)
