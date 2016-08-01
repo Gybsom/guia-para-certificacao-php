@@ -22,21 +22,40 @@
   </head>
   <body>
       
-    <h1 class="title-site"><a href="{{  site.baseurl }}">Guia para certificação <span class="php-title">PHP</span></a><br>{{ page.title }}</h1>
+    <h1 class="title-site"><a href="{{  site.baseurl }}">Guia para certificação <span class="php-title">PHP</span></a></h1>
     
     {% if page.next_url %}
-      <a class="next-page" href="{{ page.next_url }}">{{ page.next_name }} <i class="glyphicon glyphicon-chevron-right"></i></a>
+      <a class="next-page" href="{{ page.next_url  | prepend: site.baseurl }}"><i class="glyphicon glyphicon-chevron-right"></i></a>
     {% endif %}
     
     {% if page.prev_url %}
-      <a class="prev-page" href="{{ page.prev_url }}">{{ page.prev_name }} <i class="glyphicon glyphicon-chevron-left"></i></a>
+      <a class="prev-page" href="{{ page.prev_url | prepend: site.baseurl  }}"><i class="glyphicon glyphicon-chevron-left"></i></a>
     {% endif %}
-    
-    <main>  
-      <div class="container">
+    <main>
+      
+      <div class="container">        
+        <h2>{{ page.title }}</h2>
         {{ content }}
       </div>
+      
+      <hr>
+      
+      <div class="container">  
+        <div class="cleafix">
+          {% if page.next_url %}
+            <a class="pull-left" href="{{ page.next_url  | prepend: site.baseurl }}">{{ page.next_name }}</a>
+          {% endif %}
+          
+          {% if page.next_url %}
+            <a class="pull-right" href="{{ page.next_url | prepend: site.baseurl  }}">{{ page.next_name }}</a>
+          {% endif %}
+        </div>
+      </div>
     </main>
+    
+    <footer>
+       <center>Feito com ❤ by AlefCastelo</center>
+    </footer>
     
 
     
