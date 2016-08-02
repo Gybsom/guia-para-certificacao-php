@@ -138,9 +138,7 @@ Constante, é um identificador para uma variável a qual seu valor não poderá 
 
 <script src="https://gist.github.com/alefcastelo/90e67cf4e236e40bfed5aa164db9d853.js"></script>
 
-> Você pode definir as constante em caixa baixa, porém por conversão elas devem ser criadas em caixa alta.
-
-Usando `define('CONSTANTE', 'valor da constante')` dentro de uma classe não funciona, você precisa usar a palavra reservada `const`.
+> Você pode definir as constante em caixa baixa, porém por conversão elas devem ser criadas em caixa alta. Usando `define('CONSTANTE', 'valor da constante')` dentro de uma classe não funciona, você precisa usar a palavra reservada `const`.
 
 <script src="https://gist.github.com/alefcastelo/219cfa0b910d1d618573b9bc5e4dcbcb.js"></script>
 
