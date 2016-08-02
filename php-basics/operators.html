@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Chewy|Passion+One|Rubik" rel="stylesheet">
-    <link rel="stylesheet" href="/guia-para-certificacao-php/css/style.css">
+    <link rel="stylesheet" href="watchcss/style.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -24,15 +24,15 @@
     
     <a href="https://github.com/alefcastelo/guia-para-certificacao-php"><img style="position: absolute; top: 0; right: 0; border: 0; width: 149px; height: 149px;" src="http://aral.github.com/fork-me-on-github-retina-ribbons/right-white@2x.png" alt="Fork me on GitHub"></a>
       
-    <h1 class="title-site"><a href="/guia-para-certificacao-php/">Guia para certificação <span class="php-title">PHP</span></a></h1>
+    <h1 class="title-site"><a href="watch">Guia para certificação <span class="php-title">PHP</span></a></h1>
   
     <main>
       <div class="container">
         
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="/guia-para-certificacao-php/">Home</a></li>
+            <li class="breadcrumb-item"><a href="watch">Home</a></li>
             
-              <li class="breadcrumb-item"><a href="/guia-para-certificacao-php/php-basics">PHP Basics</a></li>
+              <li class="breadcrumb-item"><a href="watchphp-basics">PHP Basics</a></li>
             
             
               <li class="breadcrumb-item active">Operators</li>
@@ -76,126 +76,57 @@
 Exemplo:</li>
 </ul>
 
-<div class="language-php highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?php</span>
-<span class="nv">$a</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
-<span class="nv">$b</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
-<span class="nv">$c</span> <span class="o">=</span> <span class="nv">$a</span> <span class="o">+</span> <span class="nv">$b</span><span class="p">;</span>
-<span class="k">print</span> <span class="nv">$c</span><span class="p">;</span> <span class="c1">// 5
-</span></code></pre>
-</div>
+<script src="https://gist.github.com/alefcastelo/296ad64f36e7f4ee7fe0d2b5f112fdfb.js"></script>
 
 <ul>
   <li><strong>Subtração</strong> - Faz uso do sinal de <code class="highlighter-rouge">-</code> para expressar que a operação de subtração será executada.  <br />
 Exemplo:</li>
 </ul>
 
-<div class="language-php highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?php</span>
-<span class="nv">$a</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
-<span class="nv">$b</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
-<span class="nv">$c</span> <span class="o">=</span> <span class="nv">$a</span> <span class="o">-</span> <span class="nv">$b</span><span class="p">;</span>
-<span class="k">print</span> <span class="nv">$c</span><span class="p">;</span> <span class="c1">// 1
-</span></code></pre>
-</div>
+<script src="https://gist.github.com/alefcastelo/c21358006b665e944a0808c147805bc2.js"></script>
 
 <ul>
   <li><strong>Multiplicação</strong> - Utiliza o sinal de <code class="highlighter-rouge">*</code> para expressar que a operação de multiplicação será executada.<br />
 Exemplo:</li>
 </ul>
 
-<div class="language-php highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?php</span>
-<span class="nv">$a</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
-<span class="nv">$b</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
-<span class="nv">$c</span> <span class="o">=</span> <span class="nv">$a</span> <span class="o">*</span> <span class="nv">$b</span><span class="p">;</span>
-<span class="k">print</span> <span class="nv">$c</span><span class="p">;</span> <span class="c1">// 6
-</span></code></pre>
-</div>
+<script src="https://gist.github.com/alefcastelo/7479c6a0a895a9b5adb56ecdee4d3265.js"></script>
 
 <ul>
   <li><strong>Divisão - Frações</strong> - Faz uso do sinal de <code class="highlighter-rouge">/</code> para expressar que a operação de divisão será executada.<br />
 Exemplo:</li>
 </ul>
 
-<div class="language-php highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?php</span>
-<span class="nv">$a</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
-<span class="nv">$b</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
-<span class="nv">$c</span> <span class="o">=</span> <span class="nv">$a</span> <span class="o">/</span> <span class="nv">$b</span><span class="p">;</span>
-<span class="k">print</span> <span class="nv">$c</span><span class="p">;</span> <span class="c1">// 1.5
-</span></code></pre>
-</div>
+<script src="https://gist.github.com/alefcastelo/9c7a3e62107bc1cd2b3f97b855fca633.js"></script>
 
 <ul>
   <li>Um outro operador muito usado é o de <strong>Módulo</strong> <code class="highlighter-rouge">%</code>, com esse operador é possível capturar o resto da divisão, diferente do operador de divisão (<code class="highlighter-rouge">/</code>) que retorna o <code class="highlighter-rouge">quociente da divisão</code>. <br />
 Exemplo:</li>
 </ul>
 
-<div class="language-php highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?php</span>
-<span class="nv">$a</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
-<span class="nv">$b</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
-<span class="nv">$c</span> <span class="o">=</span> <span class="nv">$a</span> <span class="o">%</span> <span class="nv">$b</span><span class="p">;</span>
-<span class="k">print</span> <span class="nv">$c</span><span class="p">;</span> <span class="c1">// 1
-</span></code></pre>
-</div>
+<script src="https://gist.github.com/alefcastelo/f334f5e1cf629e7d04b308960813f645.js"></script>
 
 <ul>
   <li><strong>Negação</strong> - Faz uso do sinal de <code class="highlighter-rouge">-</code>, porém o seu uso é antes do valor/variável, isso faz com que nesse momento o valor seja o oposto do original, fazendo a troca de positivo para negativo ou de negativo para positivo. 
 Exemplo:</li>
 </ul>
 
-<div class="language-php highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?php</span>
-<span class="nv">$a</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
-<span class="nv">$b</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
-<span class="nv">$c</span> <span class="o">=</span> <span class="nv">$a</span> <span class="o">+</span> <span class="o">-</span><span class="nv">$b</span><span class="p">;</span>
-
-<span class="cm">/*
-Repare que $b possui o sinal (-) entes do sinal ($), isso indica
-que a variável inverterá o seu valor fazendo com que o retorno
-da soma seja 1, diferente do exemplo do operador de adição.
-*/</span>
-<span class="k">print</span> <span class="nv">$c</span><span class="p">;</span> <span class="c1">// 1
-</span> 
-<span class="cm">/*
-Mais uma vez se nergamos o valor de $c, ele de positivo ficará negativo
-*/</span>
-<span class="k">print</span> <span class="o">-</span><span class="nv">$c</span><span class="p">;</span> <span class="c1">// -1
-</span>
-<span class="cm">/*
-Mais uma vez se nergamos o valor de $c o seu resultado continuará
-negativo. Isso acontece por causa do escopo que está sendo usando
-em print, que não permite que o valor original de $c seja alterado,
-somente sua saida irá sofrermudanças.
-*/</span>
-<span class="k">print</span> <span class="o">-</span><span class="nv">$c</span><span class="p">;</span> <span class="c1">// -1
-</span>
-<span class="cm">/*
-Porém ao fazer isso o valor original será trocado pois o escopo mudou
-e agora você está informando que está mudando o valor da variável e
-não da saida dela.
-*/</span>
-<span class="nv">$c</span> <span class="o">=</span> <span class="o">-</span><span class="nv">$c</span><span class="p">;</span>  
-<span class="k">print</span> <span class="o">-</span><span class="nv">$c</span><span class="p">;</span> <span class="c1">// 1 
-</span>
-</code></pre>
-</div>
+<script src="https://gist.github.com/alefcastelo/ac962bd9c99b5608881e1c64cd91794f.js"></script>
 
 <ul>
   <li><strong>Exponencial</strong>  - Introduzido no PHP 5.6, faz uso do sinal de <code class="highlighter-rouge">**</code>.
 Exemplo:</li>
 </ul>
 
-<div class="language-php highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?php</span>
-<span class="nv">$a</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
-<span class="nv">$b</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
-<span class="nv">$c</span> <span class="o">=</span> <span class="nv">$a</span> <span class="o">**</span> <span class="nv">$b</span><span class="p">;</span>
-<span class="k">print</span> <span class="nv">$c</span><span class="p">;</span> <span class="c1">// 9
-</span></code></pre>
-</div>
+<script src="https://gist.github.com/alefcastelo/85345c8ef58367b6254ef57082f1d1ae.js"></script>
+
 
       </div>
       
       <div class="container container-botton">  
         <div class="cleafix">
           
-            <a class="btn-pages pull-left" href="/guia-para-certificacao-php/php-basics/variables.html"><i class="glyphicon glyphicon-chevron-left"></i> Variables</a>
+            <a class="btn-pages pull-left" href="watchphp-basics/variables.html"><i class="glyphicon glyphicon-chevron-left"></i> Variables</a>
           
           
           
