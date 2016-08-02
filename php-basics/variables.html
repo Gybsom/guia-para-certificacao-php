@@ -56,26 +56,14 @@
 <h2 id="introduo">Introdução</h2>
 <p>As variáveis no PHP são representadas por um cifrão ($) seguido pelo nome da variável. Os nomes de variável são case-sensitive (isso significa que as variaveis fazem diferença do maiúsculo do minusculo). O PHP é uma linguagem de tipagem dinâmica. Assim sendo, o valor que o programador atribuir a variável é que vai determinar o tipo de dado que ela irá armazenar.</p>
 
-<div class="language-php highlighter-rouge"><pre class="highlight"><code>$nome = "Alef";
-$NOME = 4134;
-print $nome; // Alef (string)
-print $NOME; // 4137 (int)
-</code></pre>
-</div>
+<script src="https://gist.github.com/alefcastelo/df36ce3a3ff82bd32d9974af4492c51b.js"></script>
 
 <hr />
 
 <h2 id="sintaxe-vlida">Sintaxe Válida</h2>
 <p>As variáveis no PHP só podem começar com letras e underscore, variáveis que começam com números o PHP lançará um erro informando que a variavel é invalida.</p>
 
-<div class="language-php highlighter-rouge"><pre class="highlight"><code>print $1banana; // PHP Parse error
-print $banana; // valido
-print $_banana; // valido
-print $_banana; // valido
-print $_maçã; // valido
-print $maçã; // valido
-</code></pre>
-</div>
+<script src="https://gist.github.com/alefcastelo/63e274a2420e2065fa93a3d50ab9460e.js"></script>
 
 <p><code class="highlighter-rouge">$this</code> é uma variável especial que não pode ser atribuída. Caso queira atribuir um valor para ela, o PHP lançará o seguinte erro: <code class="highlighter-rouge">PHP Fatal error:  Cannot re-assign $this</code>;</p>
 
