@@ -156,35 +156,18 @@ Outra forma valida e a mais usada é quando se usa chaves envolvendo a variável
 
 <p>Como já foi dito PHP consegue se mistura com outros tipos de arquivos ou documentos e o interpretador consegue detectar comandos PHP dentro desse arquivo, até mesmo não sendo um arquivo com a extensão <code class="highlighter-rouge">.php</code> veja:</p>
 
-<p>usuarios.xml</p>
+<p>syntax-example-8.xml</p>
 
 <script src="https://gist.github.com/alefcastelo/ad5212bdf1e8ca395ecf95fbc645a010.js"></script>
 
 <p>index.php</p>
 
-<div class="language-php highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?php</span>
-<span class="nb">header</span><span class="p">(</span><span class="s2">"Content-type: text/xml"</span><span class="p">);</span>
-<span class="c1">// Cabeçalho XML
-</span><span class="k">print</span> <span class="s2">"&lt;?xml version=</span><span class="se">\"</span><span class="s2">1.0</span><span class="se">\"</span><span class="s2"> encoding=</span><span class="se">\"</span><span class="s2">UTF-8</span><span class="se">\"</span><span class="s2">?&gt;"</span><span class="p">;</span>
-<span class="c1">// Abrindo tag que contém a lista de usuários
-</span><span class="k">print</span> <span class="s2">"&lt;lista-usuarios&gt;"</span><span class="p">;</span>
-<span class="c1">// repare que está sendo incluindo um arquivo do tipo XML com código PHP dentro.
-</span><span class="k">require_once</span> <span class="s1">'usuarios.xml'</span><span class="p">;</span> 
-<span class="c1">// Fechando tag que contém a lista de usuários
-</span><span class="k">print</span> <span class="s2">"&lt;/lista-usuarios&gt;"</span><span class="p">;</span>
-</code></pre>
-</div>
+<script src="https://gist.github.com/alefcastelo/547e4aec365dd6595181b58fa07745af.js"></script>
 
 <p>Saída:</p>
 
-<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
-<span class="nt">&lt;lista-usuarios&gt;</span>
-    <span class="nt">&lt;usuario</span> <span class="na">nome=</span><span class="s">"Alef"</span> <span class="nt">/&gt;</span>
-    <span class="nt">&lt;usuario</span> <span class="na">nome=</span><span class="s">"Sara"</span> <span class="nt">/&gt;</span>
-    <span class="nt">&lt;usuario</span> <span class="na">nome=</span><span class="s">"Liana"</span> <span class="nt">/&gt;</span>
-<span class="nt">&lt;/lista-usuarios&gt;</span>
-</code></pre>
-</div>
+<script src="https://gist.github.com/alefcastelo/accaabffdb26cac8127098226b239340.js"></script>
+
 
       </div>
       
