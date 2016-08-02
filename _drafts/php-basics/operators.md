@@ -40,104 +40,34 @@ Acredito que a própria explicação matemática já é o suficiente. Com base n
 * **Adição** - Utiliza o sinal de `+` para expressar que a operação de adição/soma será executada.     
 Exemplo:  
 
-```php
-<?php
-$a = 3;
-$b = 2;
-$c = $a + $b;
-print $c; // 5
-```
+<script src="https://gist.github.com/alefcastelo/296ad64f36e7f4ee7fe0d2b5f112fdfb.js"></script>
 
 * **Subtração** - Faz uso do sinal de `-` para expressar que a operação de subtração será executada.    
 Exemplo:  
 
-```php
-<?php
-$a = 3;
-$b = 2;
-$c = $a - $b;
-print $c; // 1
-```
+<script src="https://gist.github.com/alefcastelo/c21358006b665e944a0808c147805bc2.js"></script>
 
 * **Multiplicação** - Utiliza o sinal de `*` para expressar que a operação de multiplicação será executada.  
 Exemplo:  
 
-```php
-<?php
-$a = 3;
-$b = 2;
-$c = $a * $b;
-print $c; // 6
-```
+<script src="https://gist.github.com/alefcastelo/7479c6a0a895a9b5adb56ecdee4d3265.js"></script>
 
 * **Divisão - Frações** - Faz uso do sinal de `/` para expressar que a operação de divisão será executada.  
 Exemplo:  
 
-```php
-<?php
-$a = 3;
-$b = 2;
-$c = $a / $b;
-print $c; // 1.5
-```
+<script src="https://gist.github.com/alefcastelo/9c7a3e62107bc1cd2b3f97b855fca633.js"></script>
 
 * Um outro operador muito usado é o de **Módulo** `%`, com esse operador é possível capturar o resto da divisão, diferente do operador de divisão (`/`) que retorna o `quociente da divisão`.   
 Exemplo:  
 
-```php
-<?php
-$a = 3;
-$b = 2;
-$c = $a % $b;
-print $c; // 1
-```
+<script src="https://gist.github.com/alefcastelo/f334f5e1cf629e7d04b308960813f645.js"></script>
 
 * **Negação** - Faz uso do sinal de `-`, porém o seu uso é antes do valor/variável, isso faz com que nesse momento o valor seja o oposto do original, fazendo a troca de positivo para negativo ou de negativo para positivo. 
 Exemplo:  
 
-```php
-<?php
-$a = 3;
-$b = 2;
-$c = $a + -$b;
-
-/*
-Repare que $b possui o sinal (-) entes do sinal ($), isso indica
-que a variável inverterá o seu valor fazendo com que o retorno
-da soma seja 1, diferente do exemplo do operador de adição.
-*/
-print $c; // 1
- 
-/*
-Mais uma vez se nergamos o valor de $c, ele de positivo ficará negativo
-*/
-print -$c; // -1
-
-/*
-Mais uma vez se nergamos o valor de $c o seu resultado continuará
-negativo. Isso acontece por causa do escopo que está sendo usando
-em print, que não permite que o valor original de $c seja alterado,
-somente sua saida irá sofrermudanças.
-*/
-print -$c; // -1
-
-/*
-Porém ao fazer isso o valor original será trocado pois o escopo mudou
-e agora você está informando que está mudando o valor da variável e
-não da saida dela.
-*/
-$c = -$c;  
-print -$c; // 1 
-
-```
+<script src="https://gist.github.com/alefcastelo/ac962bd9c99b5608881e1c64cd91794f.js"></script>
 
 * **Exponencial**  - Introduzido no PHP 5.6, faz uso do sinal de `**`.
 Exemplo:  
 
-```php
-<?php
-$a = 3;
-$b = 2;
-$c = $a ** $b;
-print $c; // 9
-```
+<script src="https://gist.github.com/alefcastelo/85345c8ef58367b6254ef57082f1d1ae.js"></script>
