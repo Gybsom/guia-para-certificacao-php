@@ -3,7 +3,7 @@ title: Variables
 layout: default
 categories: php-basics
 
-breadcrumb_url: php-basics/
+breadcrumb_url: php-basics
 breadcrumb_name: PHP Basics
 
 next_url: php-basics/operators.html

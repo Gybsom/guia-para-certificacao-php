@@ -36,31 +36,11 @@ O PHP tem como sintaxe básica, tags de abertura representado por `<?php` e fech
 
 Exemplo da mesclagem com HTML:
  
-```php
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><?php print "Titulo da pagina" ?></title>
-  </head>
-  <body>
-    <?= "conteúdo do site" ?>
-  </body>
-</html>
-```
+<script src="https://gist.github.com/alefcastelo/cfbe2e7a3b25825dd3e9a3a46e39cf14.js"></script>
 
 A saída desse código é: 
 
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Titulo da pagina</title>
-  </head>
-  <body>
-    conteúdo do site
-  </body>
-</html>
-```
+<script src="https://gist.github.com/alefcastelo/d63afe9cf4ce4fd1c3eb23e997b47121.js"></script>
 
 Repare também que foi usado duas formas diferente de exibir uma string na saída do interpretador. A primeira foi `<?php print "Titulo da pagina" ?>` e a segunda foi `<?= "conteúdo do site" ?>`. 
 Isso só é possível por que o PHP possui outros tipos de tags a qual o interpretador entende que naquele bloco é um código php.
@@ -102,28 +82,14 @@ No PHP para exibir um texto qualquer, você pode usar tanto aspas duplas `"` qua
 
 A diferença acontece quando você tenta mescla esse texto com uma variável, exemplo:
 
-```php
-<?php 
-
-$variael = "texto qualquer";
-
-print "variável: $variavel"; // variável: texto qualquer
-print 'variável: $variavel'; // variável: $variavel
-```
+<script src="https://gist.github.com/alefcastelo/4705de72268d3d683946c2b1806598c5.js"></script>
 
 Repare que na primeira exibição, a variável foi reconhecida e seu valor foi impresso na resposta junto com o texto, já na segunda exibição, foi impresso o texto puro e a variável não foi reconhecida. Quando se usa aspas duplas, você consegue mesclar variáveis em strings.
 
 O PHP consegue identificar a variável fazendo com que seu valor seja retornado na exibição, assim evitando está concatenando string com variáveis.   
 Outra forma valida e a mais usada é quando se usa chaves envolvendo a variável.
 
-```php
-<?php 
-
-$variavel = "texto qualquer";
-
-print "variável: {$variavel}"; // variável: texto qualquer
-print 'variável: {$variavel}'; // variável: {$variavel}
-```
+<script src="https://gist.github.com/alefcastelo/decedac228ccebbf7bc4d05da0be9405.js"></script>
 
 
 > As palavas reservadas `print` e `echo` são as mais usadas para exibir algo na resposta da requisição.
@@ -133,44 +99,20 @@ print 'variável: {$variavel}'; // variável: {$variavel}
 ### Concatenação de Strings
 Para fazer uso da concatenação (ou junção de strings), você precisa usar o ponto `.`, sempre colocando entre duas variáveis ou entre duas strings, entre uma string e o retorno de uma função/método.
 
-```php
-<?php 
-
-$string_1 = "texto";
-$string_2 = " qualquer";
-function funcao(){ return 'texto' . " qualquer"; }
-
-print $string_1 . $string_2; // texto qualquer
-print "texto" . $string_2; // texto qualquer
-print "texto" . " qualquer"; // texto qualquer
-print "retorno: " . funcao(); // retorno: texto qualquer
-
-```
+<script src="https://gist.github.com/alefcastelo/5a992f8b52f2b35d2915a1e0f195c1a2.js"></script>
 
 ***
 
 ### Comentários
 Assim como em outras linguagens, o PHP possui dois tipo de comentários, de "uma linha" e de "varias linhas". O PHP suporta comentários no estilo 'C', 'C++' e do Unix shell (estilo Perl). Por exemplo:
 
-```php
-<?php
-    echo 'Isto é um teste'; // Estilo de comentário de uma linha em  c++
-    /* Este é um comentário de múltiplas linhas
-       ainda outra linha de comentário */
-    echo 'Isto é ainda outro teste';
-    echo 'Um teste final'; # Este é um comentário de uma linha no estilo shell
-```
+<script src="https://gist.github.com/alefcastelo/f3efe2f030ce2d7d6ba71eee259351a2.js"></script>
 
 Os comentários de estilo "uma linha" apenas comentam até o final da linha ou do bloco PHP de código corrente
 
 Ao tentar comentar grandes blocos de código, podemos cometer o seguinte equivoco:
 
-```php
-<?php
- /*
-    echo 'Isto é um teste'; /* Este comentário irá causar um problema */
- */
-```
+<script src="https://gist.github.com/alefcastelo/40d7d75e9757a1a1f974b17973c6d62c.js"></script>
 
 ***
 
@@ -178,26 +120,7 @@ Ao tentar comentar grandes blocos de código, podemos cometer o seguinte equivoc
 
 O PHP usa como delimitador de bloco de código as chaves `{}` exemplo:
 
-```php
-<?php
-
-interface ZCE {
-  # bloco de código  
-}
-
-class Programador implements ZCE {
-    # bloco de código
-}
-
-$programador = new Programador();
-
-if($programador instanceof ZCE){
-    # bloco de código
-} else {
-    # bloco de código
-}
-
-```
+<script src="https://gist.github.com/alefcastelo/f67996fd770329e3c7d898cd30bbd0bd.js"></script>
 
 ***
 
@@ -207,11 +130,7 @@ Como já foi dito PHP consegue se mistura com outros tipos de arquivos ou docume
 
 usuarios.xml
 
-```php
-<?php foreach(['Alef', 'Sara', 'Liana'] as $nome): ?>
-    <usuario nome="<?php print $nome ?>" />
-<?php endforeach; ?>
-```
+<script src="https://gist.github.com/alefcastelo/ad5212bdf1e8ca395ecf95fbc645a010.js"></script>
 
 index.php
 
