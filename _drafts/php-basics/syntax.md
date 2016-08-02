@@ -132,7 +132,7 @@ syntax-example-8.xml
 
 <script src="https://gist.github.com/alefcastelo/ad5212bdf1e8ca395ecf95fbc645a010.js"></script>
 
-index.php
+syntax-example-9.php
 
 <script src="https://gist.github.com/alefcastelo/547e4aec365dd6595181b58fa07745af.js"></script>
 
