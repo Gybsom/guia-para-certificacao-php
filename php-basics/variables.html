@@ -118,53 +118,18 @@
 <h2 id="passagem-de-valor">Passagem de valor</h2>
 <p>Você pode usar duas formas de atribuir um valor a uma variável, a passagem por valor e por referência. A passagem por valor continua da forma a qual já virmos anteriormente, porém a passagem por referencia, precisamos colocar o caractere <code class="highlighter-rouge">&amp;</code> antes do <code class="highlighter-rouge">$</code> para informa que aquela variável irá receber uma referência e não a copia do valor.</p>
 
-<div class="language-php highlighter-rouge"><pre class="highlight"><code>// Passagem por valor
-$a = 1;
-$b = $a;
-$b = 8;
-$a = 2;
-print $a; // 2
-print $b; // 8
-
-// Passagem por Referência
-$a = 1;
-$b = <span class="ni">&amp;$a;</span>
-$b = 8;
-$a = 2;
-print $a; // 2
-print $b; // 2
-</code></pre>
-</div>
+<script src="https://gist.github.com/alefcastelo/4aa4d283e182836780b6b0139a86392d.js"></script>
 
 <hr />
 
 <h2 id="converso-de-tipos">Conversão de tipos</h2>
 <p>O PHP não obriga (ou suporta) a definição de tipo explícita na declaração de variáveis: o tipo de uma variável é determinado pelo contexto em que a variável é utilizada. Um exemplo da conversão automática do PHP é o operador de adição ‘+’.</p>
 
-<div class="language-php highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?php</span>
-<span class="nv">$var</span> <span class="o">=</span> <span class="s2">"0"</span><span class="p">;</span>  <span class="c1">// $var é string (ASCII 48)
-</span><span class="nv">$var</span> <span class="o">+=</span> <span class="mi">2</span><span class="p">;</span>   <span class="c1">// $var é agora um interio (2)
-</span><span class="nv">$var</span> <span class="o">=</span> <span class="nv">$var</span> <span class="o">+</span> <span class="mf">1.3</span><span class="p">;</span>  <span class="c1">// $var é agora um float (3.3)
-</span><span class="nv">$var</span> <span class="o">=</span> <span class="mi">5</span> <span class="o">+</span> <span class="s2">"10 pequenos porcos"</span><span class="p">;</span>   <span class="c1">// $var é inteiro (15)
-</span><span class="nv">$var</span> <span class="o">=</span> <span class="mi">5</span> <span class="o">+</span> <span class="s2">"10 minúsculos porcos"</span><span class="p">;</span> <span class="c1">// $var é inteiro (15)
-</span></code></pre>
-</div>
+<script src="https://gist.github.com/alefcastelo/ae54ebeb0434076ed49778362f9c132d.js"></script>
+
 <p>A conversão de tipos no PHP funciona como no C: o nome de um tipo desejado é escrito entre parênteses antes da variável que se deseja converter.</p>
 
-<div class="language-php highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?php</span>
-
-<span class="nb">print_r</span><span class="p">(</span> <span class="p">(</span><span class="nx">object</span><span class="p">)</span> <span class="p">[</span><span class="s1">'esporte'</span> <span class="o">=&gt;</span> <span class="s1">'Judô'</span><span class="p">,</span> <span class="s1">'atleta'</span> <span class="o">=&gt;</span> <span class="s1">'Alef'</span><span class="p">]</span> <span class="p">);</span>
-
-<span class="cm">/*
-  O resultado da conversão retornará um objeto do tipo stdClass
-  stdClass Object
-  (
-    [esporte] =&gt; Judô
-    [atleta] =&gt; Alef
-  )
-*/</span>
-</code></pre>
-</div>
+<script src="https://gist.github.com/alefcastelo/2eb14e4c10f5109da400b5b96b4291ab.js"></script>
 
 <p>As conversões permitidas são:
 * (int), (integer) - molde para inteiro
@@ -210,19 +175,7 @@ print $b; // 2
 
 <p>Exemplo:</p>
 
-<div class="language-php highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?php</span>
-<span class="nv">$var</span> <span class="o">=</span> <span class="mi">12</span><span class="p">;</span>
-
-<span class="nb">boolval</span><span class="p">(</span><span class="nv">$var</span><span class="p">);</span>
-<span class="nb">var_dump</span><span class="p">(</span><span class="nv">$var</span><span class="p">);</span> <span class="c1">// bool(true)
-</span>
-<span class="nb">settype</span><span class="p">(</span><span class="nv">$var</span><span class="p">,</span> <span class="s2">"int"</span><span class="p">);</span>
-<span class="nb">var_dump</span><span class="p">(</span><span class="nv">$var</span><span class="p">);</span> <span class="c1">// int(1)
-</span>
-<span class="nb">settype</span><span class="p">(</span><span class="nv">$var</span><span class="p">,</span> <span class="s2">"double"</span><span class="p">);</span>
-<span class="nb">var_dump</span><span class="p">(</span><span class="nv">$var</span><span class="p">);</span> <span class="c1">// double(1)
-</span></code></pre>
-</div>
+<script src="https://gist.github.com/alefcastelo/ff5ae199a77c4637d624dbabc45c54dd.js"></script>
 
 <hr />
 
@@ -273,81 +226,22 @@ print $b; // 2
 <h2 id="variveis-variveis">Variáveis Variáveis</h2>
 <p>As vezes, é conveniente possuir variáveis com nomes variáveis. Isto é, o nome de uma variável que pode ser definido e utilizado dinamicamente.</p>
 
-<div class="language-php highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?php</span>
-
-<span class="nv">$nome</span> <span class="o">=</span> <span class="s1">'Alef'</span><span class="p">;</span>
-<span class="nv">$$nome</span> <span class="o">=</span> <span class="s1">'Castelo'</span><span class="p">;</span>
-<span class="nv">$nomecompleto</span> <span class="o">=</span> <span class="s2">"</span><span class="nv">$nome</span><span class="s2"> ${$nome}"</span><span class="p">;</span>
-
-<span class="k">print</span> <span class="nv">$nomecompleto</span><span class="p">;</span> <span class="c1">// Alef Castelo
-</span></code></pre>
-</div>
+<script src="https://gist.github.com/alefcastelo/e5202ddf82268c546f7261ad07c55765.js"></script>
 
 <p>Porém seu uso fica mais claro, quando se tenta definir o valor de uma propriedade de uma classe de forma dinâmica.</p>
 
-<div class="language-php highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?php</span> 
-
-<span class="c1">// Suponha que Você recebeu uma requisição GET com a URI: http://localhost/index.php?var=nome&amp;valor=alef
-</span>
-<span class="k">class</span> <span class="nc">Usuario</span> <span class="p">{</span>
-    <span class="k">public</span> <span class="nv">$nome</span><span class="p">;</span>
-    <span class="k">public</span> <span class="nv">$sobrenome</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="nv">$usuario</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Usuario</span><span class="p">;</span> 
-
-<span class="k">if</span><span class="p">(</span><span class="nx">isSet</span><span class="p">(</span><span class="nv">$_GET</span><span class="p">[</span><span class="s1">'var'</span><span class="p">]))</span> 
-   <span class="nv">$var</span> <span class="o">=</span> <span class="nv">$_GET</span><span class="p">[</span><span class="s1">'var'</span><span class="p">];</span>
-    
-<span class="nv">$usuario</span><span class="o">-&gt;</span><span class="nv">$var</span> <span class="o">=</span> <span class="nv">$_GET</span><span class="p">[</span><span class="s1">'valor'</span><span class="p">];</span>
-
-<span class="cm">/*
-    isso =&gt; $usuario-&gt;$var = $_GET['valor'];
-    é a mesma coisa disso =&gt; $usuario-&gt;nome = $_GET['valor']; 
-*/</span>
-
-<span class="nb">var_dump</span><span class="p">(</span><span class="nv">$usuario</span><span class="p">);</span>
-
-<span class="cm">/*
-  A Saida será:
-  object(Usuario)[1]
-    public 'nome' =&gt; string 'alef' (length=4)
-    public 'sobrenome' =&gt; null
-  
-*/</span>
-
-</code></pre>
-</div>
+<script src="https://gist.github.com/alefcastelo/bbba65ac9ad55344b8534d61cb575a8a.js"></script>
 
 <p>Outra forma de acessa essas variaveis são:</p>
 
-<div class="language-php highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?php</span>
-<span class="nv">$var</span> <span class="o">=</span> <span class="s1">'nome'</span><span class="p">;</span>
-<span class="nv">$$var</span> <span class="o">=</span> <span class="s1">'Alef Castelo'</span><span class="p">;</span>
-<span class="k">echo</span> <span class="err">$</span><span class="p">{</span><span class="s1">'nome'</span><span class="p">};</span>   <span class="c1">// Alef Castelo
-</span><span class="k">echo</span> <span class="s2">"${$var}"</span><span class="p">;</span>   <span class="c1">// Alef Castelo
-</span><span class="k">echo</span> <span class="s2">"</span><span class="si">{${</span><span class="nv">$var</span><span class="si">}}</span><span class="s2">"</span><span class="p">;</span> <span class="c1">// Alef Castelo
-</span></code></pre>
-</div>
+<script src="https://gist.github.com/alefcastelo/8496d51de74fa29e456eede7fdd168d0.js"></script>
 
 <hr />
 
 <h2 id="constantes">Constantes</h2>
 <p>Constante, é um identificador para uma variável a qual seu valor não poderá ser alterado depois de sua declaração. Exceto as constantes mágicas, que não são constantes de verdade. As constantes são case-sensitive por padrão. Por convenção, identificadores de constantes são sempre em maiúsculas. Sua declaração é simples, veja:</p>
 
-<div class="language-php highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?php</span>
-<span class="nb">define</span><span class="p">(</span><span class="s2">"URL"</span><span class="p">,</span> <span class="s2">"http://google.com"</span><span class="p">);</span>
-<span class="nb">define</span><span class="p">(</span><span class="s2">"VERSAO"</span><span class="p">,</span> <span class="s2">"v1"</span><span class="p">);</span>
-
-<span class="k">print</span> <span class="nx">URL</span><span class="p">;</span>    <span class="c1">// http://google.com
-</span><span class="k">print</span> <span class="nx">VERSAO</span><span class="p">;</span> <span class="c1">// v1
-</span>
-<span class="nb">define</span><span class="p">(</span><span class="s2">"CONSTANTE"</span><span class="p">,</span> <span class="s2">"Constante"</span><span class="p">);</span>
-<span class="k">print</span> <span class="nx">CONSTANTE</span><span class="p">;</span>                <span class="c1">// Constante
-</span><span class="k">print</span> <span class="nb">constant</span><span class="p">(</span><span class="s2">"CONSTANTE"</span><span class="p">);</span>    <span class="c1">// mesma coisa que a linha anterior
-</span>
-</code></pre>
-</div>
+<script src="https://gist.github.com/alefcastelo/90e67cf4e236e40bfed5aa164db9d853.js"></script>
 
 <blockquote>
   <p>Você pode definir as constante em caixa baixa, porém por conversão elas devem ser criadas em caixa alta.</p>
@@ -355,55 +249,15 @@ print $b; // 2
 
 <p>Usando <code class="highlighter-rouge">define('CONSTANTE', 'valor da constante')</code> dentro de uma classe não funciona, você precisa usar a palavra reservada <code class="highlighter-rouge">const</code>.</p>
 
-<div class="language-php highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?php</span>
-
-<span class="k">interface</span> <span class="nx">Projeto</span> <span class="p">{</span>
-    <span class="k">const</span> <span class="no">NOME</span> <span class="o">=</span> <span class="s1">'Projeto'</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="k">class</span> <span class="nc">Livro</span> <span class="p">{</span>
-    <span class="k">const</span> <span class="no">NOME</span> <span class="o">=</span> <span class="s1">'Livro'</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="nv">$const</span> <span class="o">=</span> <span class="s1">'NOME'</span><span class="p">;</span>
-
-<span class="nb">var_dump</span><span class="p">(</span><span class="nb">constant</span><span class="p">(</span><span class="s1">'Projeto::'</span><span class="o">.</span> <span class="nv">$const</span><span class="p">));</span> <span class="c1">// string(7) "Projeto"
-</span><span class="nb">var_dump</span><span class="p">(</span><span class="nx">Projeto</span><span class="o">::</span><span class="na">NOME</span><span class="p">);</span> <span class="c1">// string(7) "Projeto"
-</span><span class="nb">var_dump</span><span class="p">(</span><span class="nb">constant</span><span class="p">(</span><span class="s1">'Livro::'</span><span class="o">.</span> <span class="nv">$const</span><span class="p">));</span> <span class="c1">// string(5) "Livro"
-</span><span class="nb">var_dump</span><span class="p">(</span><span class="nx">Livro</span><span class="o">::</span><span class="na">NOME</span><span class="p">);</span> <span class="c1">// string(5) "Livro"
-</span>
-</code></pre>
-</div>
+<script src="https://gist.github.com/alefcastelo/219cfa0b910d1d618573b9bc5e4dcbcb.js"></script>
 
 <p>Fora do escopo da classe a palavra reservada <code class="highlighter-rouge">const</code> também ira criar uma constante.</p>
 
-<div class="language-php highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?php</span>
-<span class="k">const</span> <span class="no">NOME</span> <span class="o">=</span> <span class="k">__LINE__</span><span class="p">;</span>
-<span class="k">print</span> <span class="nx">NOME</span><span class="p">;</span> <span class="c1">// 2
-</span></code></pre>
-</div>
+<script src="https://gist.github.com/alefcastelo/2ab0e9aeae04fe4e76343513c5d89111.js"></script>
 
 <p>O PHP possui oito constantes mágicas, sua característica é que o valor muda de acordo com o contexto que ela é usada. Por exemplo, o valor de <strong>__LINE__</strong> depende da linha em que é utilizada em seu script. Essas constantes especiais são case-insentitive:</p>
 
-<div class="language-php highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?php</span>
-
-<span class="k">interface</span> <span class="nx">IConstante</span> <span class="p">{</span>
-    <span class="k">const</span> <span class="no">NOME</span> <span class="o">=</span> <span class="nx">__CLASS__</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="k">class</span> <span class="nc">ZCEBook</span> <span class="p">{</span>
-    <span class="k">const</span> <span class="no">NOME</span> <span class="o">=</span> <span class="nx">__CLASS__</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="nv">$const</span> <span class="o">=</span> <span class="s1">'NOME'</span><span class="p">;</span>
-
-<span class="nb">var_dump</span><span class="p">(</span><span class="nb">constant</span><span class="p">(</span><span class="s1">'IConstante::'</span><span class="o">.</span> <span class="nv">$const</span><span class="p">));</span> <span class="c1">// string(10) "IConstante"
-</span><span class="nb">var_dump</span><span class="p">(</span><span class="nx">IConstante</span><span class="o">::</span><span class="na">NOME</span><span class="p">);</span> <span class="c1">// string(10) "IConstante"
-</span><span class="nb">var_dump</span><span class="p">(</span><span class="nb">constant</span><span class="p">(</span><span class="s1">'ZCEBook::'</span><span class="o">.</span> <span class="nv">$const</span><span class="p">));</span> <span class="c1">// string(7) "ZCEBook"
-</span><span class="nb">var_dump</span><span class="p">(</span><span class="nx">ZCEBook</span><span class="o">::</span><span class="na">NOME</span><span class="p">);</span> <span class="c1">// string(7) "ZCEBook"
-</span>
-</code></pre>
-</div>
+<script src="https://gist.github.com/alefcastelo/eb0b17818698e3c1d10a3936c29a2cac.js"></script>
 
 <table>
   <thead>
