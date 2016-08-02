@@ -134,25 +134,13 @@ Outra forma valida e a mais usada é quando se usa chaves envolvendo a variável
 <h3 id="comentrios">Comentários</h3>
 <p>Assim como em outras linguagens, o PHP possui dois tipo de comentários, de “uma linha” e de “varias linhas”. O PHP suporta comentários no estilo ‘C’, ‘C++’ e do Unix shell (estilo Perl). Por exemplo:</p>
 
-<div class="language-php highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?php</span>
-    <span class="k">echo</span> <span class="s1">'Isto é um teste'</span><span class="p">;</span> <span class="c1">// Estilo de comentário de uma linha em  c++
-</span>    <span class="cm">/* Este é um comentário de múltiplas linhas
-       ainda outra linha de comentário */</span>
-    <span class="k">echo</span> <span class="s1">'Isto é ainda outro teste'</span><span class="p">;</span>
-    <span class="k">echo</span> <span class="s1">'Um teste final'</span><span class="p">;</span> <span class="c1"># Este é um comentário de uma linha no estilo shell
-</span></code></pre>
-</div>
+<script src="https://gist.github.com/alefcastelo/f3efe2f030ce2d7d6ba71eee259351a2.js"></script>
 
 <p>Os comentários de estilo “uma linha” apenas comentam até o final da linha ou do bloco PHP de código corrente</p>
 
 <p>Ao tentar comentar grandes blocos de código, podemos cometer o seguinte equivoco:</p>
 
-<div class="language-php highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?php</span>
- <span class="cm">/*
-    echo 'Isto é um teste'; /* Este comentário irá causar um problema */</span>
- <span class="o">*/</span>
-</code></pre>
-</div>
+<script src="https://gist.github.com/alefcastelo/40d7d75e9757a1a1f974b17973c6d62c.js"></script>
 
 <hr />
 
@@ -160,26 +148,7 @@ Outra forma valida e a mais usada é quando se usa chaves envolvendo a variável
 
 <p>O PHP usa como delimitador de bloco de código as chaves <code class="highlighter-rouge"><span class="p">{}</span></code> exemplo:</p>
 
-<div class="language-php highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?php</span>
-
-<span class="k">interface</span> <span class="nx">ZCE</span> <span class="p">{</span>
-  <span class="c1"># bloco de código  
-</span><span class="p">}</span>
-
-<span class="k">class</span> <span class="nc">Programador</span> <span class="k">implements</span> <span class="nx">ZCE</span> <span class="p">{</span>
-    <span class="c1"># bloco de código
-</span><span class="p">}</span>
-
-<span class="nv">$programador</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Programador</span><span class="p">();</span>
-
-<span class="k">if</span><span class="p">(</span><span class="nv">$programador</span> <span class="nx">instanceof</span> <span class="nx">ZCE</span><span class="p">){</span>
-    <span class="c1"># bloco de código
-</span><span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-    <span class="c1"># bloco de código
-</span><span class="p">}</span>
-
-</code></pre>
-</div>
+<script src="https://gist.github.com/alefcastelo/f67996fd770329e3c7d898cd30bbd0bd.js"></script>
 
 <hr />
 
@@ -189,11 +158,7 @@ Outra forma valida e a mais usada é quando se usa chaves envolvendo a variável
 
 <p>usuarios.xml</p>
 
-<div class="language-php highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?php</span> <span class="k">foreach</span><span class="p">([</span><span class="s1">'Alef'</span><span class="p">,</span> <span class="s1">'Sara'</span><span class="p">,</span> <span class="s1">'Liana'</span><span class="p">]</span> <span class="k">as</span> <span class="nv">$nome</span><span class="p">)</span><span class="o">:</span> <span class="cp">?&gt;</span>
-    <span class="nt">&lt;usuario</span> <span class="na">nome=</span><span class="s">"</span><span class="cp">&lt;?php</span> <span class="k">print</span> <span class="nv">$nome</span> <span class="cp">?&gt;</span><span class="s">"</span> <span class="nt">/&gt;</span>
-<span class="cp">&lt;?php</span> <span class="k">endforeach</span><span class="p">;</span> <span class="cp">?&gt;</span>
-</code></pre>
-</div>
+<script src="https://gist.github.com/alefcastelo/ad5212bdf1e8ca395ecf95fbc645a010.js"></script>
 
 <p>index.php</p>
 
