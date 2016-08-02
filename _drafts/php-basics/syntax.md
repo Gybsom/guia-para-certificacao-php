@@ -19,8 +19,8 @@ prev_name: PHP Basics
 * [Tags](#tags)
 * [Problema com as Tags](#problema-com-as-tags)
 * [Aspas](#aspas)
-* [Concatenação de Strings](#concatenação-de-strings)
-* [Comentários](#comentários)
+* [Concatenação de Strings](#concatenao-de-strings)
+* [Comentários](#comentrios)
 * [Bloco de código](#bloco-de-codigo)
 * [O interpretador PHP](#o-interpretador-php)
 

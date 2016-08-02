@@ -21,6 +21,8 @@
     <![endif]-->
   </head>
   <body>
+    
+    <a href="https://github.com/alefcastelo/guia-para-certificacao-php"><img style="position: absolute; top: 0; right: 0; border: 0; width: 149px; height: 149px;" src="http://aral.github.com/fork-me-on-github-retina-ribbons/right-white@2x.png" alt="Fork me on GitHub"></a>
       
     <h1 class="title-site"><a href="{{  site.baseurl }}">Guia para certificação <span class="php-title">PHP</span></a></h1>
   
@@ -30,7 +32,7 @@
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="{{  site.baseurl }}">Home</a></li>
             {% if page.breadcrumb_url %}
-              <li class="breadcrumb-item"><a href="{{  page.breadcrumb_url | prepend: site.baseurl }}">{{  page.breadcrumb_name }}</a></li>
+              <li class="breadcrumb-item"><a href="{{ page.breadcrumb_url | prepend: site.baseurl }}">{{  page.breadcrumb_name }}</a></li>
             {% endif %}
             {% if page.title %}
               <li class="breadcrumb-item active">{{ page.title }}</li>
@@ -57,8 +59,6 @@
     <footer>
        <center>Feito com ❤ por <a target="blank" href="https://github.com/alefcastelo">Alef Castelo</a></center>
     </footer>
-    
-
     
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

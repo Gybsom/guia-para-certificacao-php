@@ -13,13 +13,13 @@ prev_url: php-basics/syntax.html
 prev_name: Syntax
 ---
 
-* [Introdução](#introdução)
-* [Sintaxe Válida](#sintaxe-válida)
-* [Tipo de variáveis](#tipo-de-variáveis)
+* [Introdução](#introduo)
+* [Sintaxe Válida](#sintaxe-vlida)
+* [Tipo de variáveis](#tipo-de-variveis)
 * [Passagem de valor](#passagem-de-valor)
-* [Conversão de tipos](#conversão-de-tipos)
+* [Conversão de tipos](#converso-de-tipos)
 * [Detectando tipos](#detectando-tipos)
-* [Variáveis Variáveis](#variáveis-variáveis)
+* [Variáveis Variáveis](#variveis-variveis)
 * [Constantes](#constantes)
 
 ***
@@ -27,26 +27,14 @@ prev_name: Syntax
 ## Introdução
 As variáveis no PHP são representadas por um cifrão ($) seguido pelo nome da variável. Os nomes de variável são case-sensitive (isso significa que as variaveis fazem diferença do maiúsculo do minusculo). O PHP é uma linguagem de tipagem dinâmica. Assim sendo, o valor que o programador atribuir a variável é que vai determinar o tipo de dado que ela irá armazenar.
 
-```php
-$nome = "Alef";
-$NOME = 4134;
-print $nome; // Alef (string)
-print $NOME; // 4137 (int)
-```
+<script src="https://gist.github.com/alefcastelo/df36ce3a3ff82bd32d9974af4492c51b.js"></script>
 
 ***
 
 ## Sintaxe Válida
 As variáveis no PHP só podem começar com letras e underscore, variáveis que começam com números o PHP lançará um erro informando que a variavel é invalida.
 
-```php
-print $1banana; // PHP Parse error
-print $banana; // valido
-print $_banana; // valido
-print $_banana; // valido
-print $_maçã; // valido
-print $maçã; // valido
-```
+<script src="https://gist.github.com/alefcastelo/63e274a2420e2065fa93a3d50ab9460e.js"></script>
 
 `$this` é uma variável especial que não pode ser atribuída. Caso queira atribuir um valor para ela, o PHP lançará o seguinte erro: `PHP Fatal error:  Cannot re-assign $this`;
 
