@@ -64,53 +64,18 @@ Veja mais em http://php.net/manual/pt_BR/language.types.intro.php
 ## Passagem de valor
 Você pode usar duas formas de atribuir um valor a uma variável, a passagem por valor e por referência. A passagem por valor continua da forma a qual já virmos anteriormente, porém a passagem por referencia, precisamos colocar o caractere `&` antes do `$` para informa que aquela variável irá receber uma referência e não a copia do valor.
 
-```php
-// Passagem por valor
-$a = 1;
-$b = $a;
-$b = 8;
-$a = 2;
-print $a; // 2
-print $b; // 8
-
-// Passagem por Referência
-$a = 1;
-$b = &$a;
-$b = 8;
-$a = 2;
-print $a; // 2
-print $b; // 2
-```
+<script src="https://gist.github.com/alefcastelo/4aa4d283e182836780b6b0139a86392d.js"></script>
 
 ***
 
 ## Conversão de tipos 
 O PHP não obriga (ou suporta) a definição de tipo explícita na declaração de variáveis: o tipo de uma variável é determinado pelo contexto em que a variável é utilizada. Um exemplo da conversão automática do PHP é o operador de adição '+'.
 
-```php
-<?php
-$var = "0";  // $var é string (ASCII 48)
-$var += 2;   // $var é agora um interio (2)
-$var = $var + 1.3;  // $var é agora um float (3.3)
-$var = 5 + "10 pequenos porcos";   // $var é inteiro (15)
-$var = 5 + "10 minúsculos porcos"; // $var é inteiro (15)
-```
+<script src="https://gist.github.com/alefcastelo/ae54ebeb0434076ed49778362f9c132d.js"></script>
+
 A conversão de tipos no PHP funciona como no C: o nome de um tipo desejado é escrito entre parênteses antes da variável que se deseja converter.
 
-```php
-<?php
-
-print_r( (object) ['esporte' => 'Judô', 'atleta' => 'Alef'] );
-
-/*
-  O resultado da conversão retornará um objeto do tipo stdClass
-  stdClass Object
-  (
-    [esporte] => Judô
-    [atleta] => Alef
-  )
-*/
-```
+<script src="https://gist.github.com/alefcastelo/2eb14e4c10f5109da400b5b96b4291ab.js"></script>
 
 As conversões permitidas são:
 * (int), (integer) - molde para inteiro
@@ -133,19 +98,7 @@ Porém existe outras funções que permite fazer a conversão dessas variáveis.
 
 Exemplo: 
 
-```php 
-<?php
-$var = 12;
-
-boolval($var);
-var_dump($var); // bool(true)
-
-settype($var, "int");
-var_dump($var); // int(1)
-
-settype($var, "double");
-var_dump($var); // double(1)
-```
+<script src="https://gist.github.com/alefcastelo/ff5ae199a77c4637d624dbabc45c54dd.js"></script>
 
 ***
 
@@ -168,143 +121,44 @@ O PHP possui funções que permite detectar o tipo de cada variável. Se a vari�
 ##  Variáveis Variáveis
 As vezes, é conveniente possuir variáveis com nomes variáveis. Isto é, o nome de uma variável que pode ser definido e utilizado dinamicamente. 
 
-```php
-<?php
-
-$nome = 'Alef';
-$$nome = 'Castelo';
-$nomecompleto = "$nome ${$nome}";
-
-print $nomecompleto; // Alef Castelo
-```
+<script src="https://gist.github.com/alefcastelo/e5202ddf82268c546f7261ad07c55765.js"></script>
 
 Porém seu uso fica mais claro, quando se tenta definir o valor de uma propriedade de uma classe de forma dinâmica.
 
-```php
-<?php 
-
-// Suponha que Você recebeu uma requisição GET com a URI: http://localhost/index.php?var=nome&valor=alef
-
-class Usuario {
-    public $nome;
-    public $sobrenome;
-}
-
-$usuario = new Usuario; 
-
-if(isSet($_GET['var'])) 
-   $var = $_GET['var'];
-    
-$usuario->$var = $_GET['valor'];
-
-/*
-    isso => $usuario->$var = $_GET['valor'];
-    é a mesma coisa disso => $usuario->nome = $_GET['valor']; 
-*/
-
-var_dump($usuario);
-
-/*
-  A Saida será:
-  object(Usuario)[1]
-    public 'nome' => string 'alef' (length=4)
-    public 'sobrenome' => null
-  
-*/
-
-```
+<script src="https://gist.github.com/alefcastelo/bbba65ac9ad55344b8534d61cb575a8a.js"></script>
 
 Outra forma de acessa essas variaveis são:
 
-```php
-<?php
-$var = 'nome';
-$$var = 'Alef Castelo';
-echo ${'nome'};   // Alef Castelo
-echo "${$var}";   // Alef Castelo
-echo "{${$var}}"; // Alef Castelo
-```
+<script src="https://gist.github.com/alefcastelo/8496d51de74fa29e456eede7fdd168d0.js"></script>
 
 ***
 
 ## Constantes
 Constante, é um identificador para uma variável a qual seu valor não poderá ser alterado depois de sua declaração. Exceto as constantes mágicas, que não são constantes de verdade. As constantes são case-sensitive por padrão. Por convenção, identificadores de constantes são sempre em maiúsculas. Sua declaração é simples, veja:
 
-```php
-<?php
-define("URL", "http://google.com");
-define("VERSAO", "v1");
-
-print URL;    // http://google.com
-print VERSAO; // v1
-
-define("CONSTANTE", "Constante");
-print CONSTANTE;                // Constante
-print constant("CONSTANTE");    // mesma coisa que a linha anterior
-
-```
+<script src="https://gist.github.com/alefcastelo/90e67cf4e236e40bfed5aa164db9d853.js"></script>
 
 > Você pode definir as constante em caixa baixa, porém por conversão elas devem ser criadas em caixa alta.
 
 Usando `define('CONSTANTE', 'valor da constante')` dentro de uma classe não funciona, você precisa usar a palavra reservada `const`.
 
-```php
-<?php
-
-interface Projeto {
-    const NOME = 'Projeto';
-}
-
-class Livro {
-    const NOME = 'Livro';
-}
-
-$const = 'NOME';
-
-var_dump(constant('Projeto::'. $const)); // string(7) "Projeto"
-var_dump(Projeto::NOME); // string(7) "Projeto"
-var_dump(constant('Livro::'. $const)); // string(5) "Livro"
-var_dump(Livro::NOME); // string(5) "Livro"
-
-```
+<script src="https://gist.github.com/alefcastelo/219cfa0b910d1d618573b9bc5e4dcbcb.js"></script>
 
 Fora do escopo da classe a palavra reservada `const` também ira criar uma constante.
 
-```php
-<?php
-const NOME = __LINE__;
-print NOME; // 2
-```
+<script src="https://gist.github.com/alefcastelo/2ab0e9aeae04fe4e76343513c5d89111.js"></script>
 
 O PHP possui oito constantes mágicas, sua característica é que o valor muda de acordo com o contexto que ela é usada. Por exemplo, o valor de **\_\_LINE\_\_** depende da linha em que é utilizada em seu script. Essas constantes especiais são case-insentitive:
 
-```php
-<?php
+<script src="https://gist.github.com/alefcastelo/eb0b17818698e3c1d10a3936c29a2cac.js"></script>
 
-interface IConstante {
-    const NOME = __CLASS__;
-}
-
-class ZCEBook {
-    const NOME = __CLASS__;
-}
-
-$const = 'NOME';
-
-var_dump(constant('IConstante::'. $const)); // string(10) "IConstante"
-var_dump(IConstante::NOME); // string(10) "IConstante"
-var_dump(constant('ZCEBook::'. $const)); // string(7) "ZCEBook"
-var_dump(ZCEBook::NOME); // string(7) "ZCEBook"
-
-```
-
-| Constante       | Resultado                               |
-|:------------:| --------------------------------------- |
-| **\_\_LINE\_\_**     | O número da linha corrente do arquivo.             |
-| **\_\_FILE\_\_**     | O caminho completo e nome do arquivo com links simbólicos resolvidos. Se utilizado dentro de um include, o nome do arquivo incluído será retornado. |
-| **\_\_DIR\_\_**     |  O diretório do arquivo. Se usado dentro de um include, o diretório do arquivo incluído é retornado. É equivalente a dirname(**\_\_FILE\_\_**). O nome do diretório não possui barra no final, a não ser que seja o diretório raiz. |
-| **\_\_FUNCTION\_\_**     | O nome da função. |
+| Constante             | Resultado                               |
+|:---------------------:| --------------------------------------- |
+| **\_\_LINE\_\_**      | O número da linha corrente do arquivo.             |
+| **\_\_FILE\_\_**      | O caminho completo e nome do arquivo com links simbólicos resolvidos. Se utilizado dentro de um include, o nome do arquivo incluído será retornado. |
+| **\_\_DIR\_\_**       |  O diretório do arquivo. Se usado dentro de um include, o diretório do arquivo incluído é retornado. É equivalente a dirname(**\_\_FILE\_\_**). O nome do diretório não possui barra no final, a não ser que seja o diretório raiz. |
+| **\_\_FUNCTION\_\_**  | O nome da função. |
 | **\_\_CLASS\_\_**     | O nome da classe. O nome da classe inclui o namespace em que foi declarado (por exemplo, Foo\Bar). Note que a partir do PHP 5.4, **\_\_CLASS\_\_** também funcionará em traits. Quando utilizada em um método trait, \_\_CLASS\_\_ é o nome da classe que está utilizando a trait. |
 | **\_\_TRAIT\_\_**     | O nome do trait. O nome do trait inclui o namespace em que foi declarado (por exemplo, Foo\Bar).   |
-| **\_\_METHOD\_\_**     | O nome do método da classe.             |
-| **\_\_NAMESPACE\_\_**     | O nome do namespace atual.             |
+| **\_\_METHOD\_\_**    | O nome do método da classe.             |
+| **\_\_NAMESPACE\_\_** | O nome do namespace atual.             |
