@@ -61,21 +61,11 @@
 
 <p>Exemplo da mesclagem com HTML:</p>
 
-<script src="https://gist.github.com/alefcastelo/6d3d64c0b693854f3827040c62403dd1.js"></script>
+<script src="https://gist.github.com/alefcastelo/cfbe2e7a3b25825dd3e9a3a46e39cf14.js"></script>
 
 <p>A saída desse código é:</p>
 
-<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="nt">&lt;html&gt;</span>
-  <span class="nt">&lt;head&gt;</span>
-    <span class="nt">&lt;title&gt;</span>Titulo da pagina<span class="nt">&lt;/title&gt;</span>
-  <span class="nt">&lt;/head&gt;</span>
-  <span class="nt">&lt;body&gt;</span>
-    conteúdo do site
-  <span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span>
-</code></pre>
-</div>
+<script src="https://gist.github.com/alefcastelo/d63afe9cf4ce4fd1c3eb23e997b47121.js"></script>
 
 <p>Repare também que foi usado duas formas diferente de exibir uma string na saída do interpretador. A primeira foi <code class="highlighter-rouge">&lt;?php print "Titulo da pagina" ?&gt;</code> e a segunda foi <code class="highlighter-rouge">&lt;?= "conteúdo do site" ?&gt;</code>. 
 Isso só é possível por que o PHP possui outros tipos de tags a qual o interpretador entende que naquele bloco é um código php.</p>
@@ -119,28 +109,14 @@ Também foi removido da versão 7 do  PHP.</p>
 
 <p>A diferença acontece quando você tenta mescla esse texto com uma variável, exemplo:</p>
 
-<div class="language-php highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?php</span> 
-
-<span class="nv">$variael</span> <span class="o">=</span> <span class="s2">"texto qualquer"</span><span class="p">;</span>
-
-<span class="k">print</span> <span class="s2">"variável: </span><span class="nv">$variavel</span><span class="s2">"</span><span class="p">;</span> <span class="c1">// variável: texto qualquer
-</span><span class="k">print</span> <span class="s1">'variável: $variavel'</span><span class="p">;</span> <span class="c1">// variável: $variavel
-</span></code></pre>
-</div>
+<script src="https://gist.github.com/alefcastelo/4705de72268d3d683946c2b1806598c5.js"></script>
 
 <p>Repare que na primeira exibição, a variável foi reconhecida e seu valor foi impresso na resposta junto com o texto, já na segunda exibição, foi impresso o texto puro e a variável não foi reconhecida. Quando se usa aspas duplas, você consegue mesclar variáveis em strings.</p>
 
 <p>O PHP consegue identificar a variável fazendo com que seu valor seja retornado na exibição, assim evitando está concatenando string com variáveis. <br />
 Outra forma valida e a mais usada é quando se usa chaves envolvendo a variável.</p>
 
-<div class="language-php highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?php</span> 
-
-<span class="nv">$variavel</span> <span class="o">=</span> <span class="s2">"texto qualquer"</span><span class="p">;</span>
-
-<span class="k">print</span> <span class="s2">"variável: </span><span class="si">{</span><span class="nv">$variavel</span><span class="si">}</span><span class="s2">"</span><span class="p">;</span> <span class="c1">// variável: texto qualquer
-</span><span class="k">print</span> <span class="s1">'variável: {$variavel}'</span><span class="p">;</span> <span class="c1">// variável: {$variavel}
-</span></code></pre>
-</div>
+<script src="https://gist.github.com/alefcastelo/decedac228ccebbf7bc4d05da0be9405.js"></script>
 
 <blockquote>
   <p>As palavas reservadas <code class="highlighter-rouge">print</code> e <code class="highlighter-rouge">echo</code> são as mais usadas para exibir algo na resposta da requisição.</p>
@@ -151,19 +127,7 @@ Outra forma valida e a mais usada é quando se usa chaves envolvendo a variável
 <h3 id="concatenao-de-strings">Concatenação de Strings</h3>
 <p>Para fazer uso da concatenação (ou junção de strings), você precisa usar o ponto <code class="highlighter-rouge">.</code>, sempre colocando entre duas variáveis ou entre duas strings, entre uma string e o retorno de uma função/método.</p>
 
-<div class="language-php highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?php</span> 
-
-<span class="nv">$string_1</span> <span class="o">=</span> <span class="s2">"texto"</span><span class="p">;</span>
-<span class="nv">$string_2</span> <span class="o">=</span> <span class="s2">" qualquer"</span><span class="p">;</span>
-<span class="k">function</span> <span class="nf">funcao</span><span class="p">(){</span> <span class="k">return</span> <span class="s1">'texto'</span> <span class="o">.</span> <span class="s2">" qualquer"</span><span class="p">;</span> <span class="p">}</span>
-
-<span class="k">print</span> <span class="nv">$string_1</span> <span class="o">.</span> <span class="nv">$string_2</span><span class="p">;</span> <span class="c1">// texto qualquer
-</span><span class="k">print</span> <span class="s2">"texto"</span> <span class="o">.</span> <span class="nv">$string_2</span><span class="p">;</span> <span class="c1">// texto qualquer
-</span><span class="k">print</span> <span class="s2">"texto"</span> <span class="o">.</span> <span class="s2">" qualquer"</span><span class="p">;</span> <span class="c1">// texto qualquer
-</span><span class="k">print</span> <span class="s2">"retorno: "</span> <span class="o">.</span> <span class="nx">funcao</span><span class="p">();</span> <span class="c1">// retorno: texto qualquer
-</span>
-</code></pre>
-</div>
+<script src="https://gist.github.com/alefcastelo/5a992f8b52f2b35d2915a1e0f195c1a2.js"></script>
 
 <hr />
 
