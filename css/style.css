@@ -113,3 +113,9 @@ footer{
 .gist * {
     text-shadow: none;
 }
+
+table tbody tr td,
+table thead tr th {
+    padding: 5px 10px 5px 10px;
+    border: 1px solid;
+}
