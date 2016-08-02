@@ -128,32 +128,14 @@ O PHP usa como delimitador de bloco de código as chaves `{}` exemplo:
 
 Como já foi dito PHP consegue se mistura com outros tipos de arquivos ou documentos e o interpretador consegue detectar comandos PHP dentro desse arquivo, até mesmo não sendo um arquivo com a extensão `.php` veja:
 
-usuarios.xml
+syntax-example-8.xml
 
 <script src="https://gist.github.com/alefcastelo/ad5212bdf1e8ca395ecf95fbc645a010.js"></script>
 
 index.php
 
-```php
-<?php
-header("Content-type: text/xml");
-// Cabeçalho XML
-print "<?xml version=\"1.0\" encoding=\"UTF-8\"?>";
-// Abrindo tag que contém a lista de usuários
-print "<lista-usuarios>";
-// repare que está sendo incluindo um arquivo do tipo XML com código PHP dentro.
-require_once 'usuarios.xml'; 
-// Fechando tag que contém a lista de usuários
-print "</lista-usuarios>";
-```
+<script src="https://gist.github.com/alefcastelo/547e4aec365dd6595181b58fa07745af.js"></script>
 
 Saída:
 
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<lista-usuarios>
-    <usuario nome="Alef" />
-    <usuario nome="Sara" />
-    <usuario nome="Liana" />
-</lista-usuarios>
-```
+<script src="https://gist.github.com/alefcastelo/accaabffdb26cac8127098226b239340.js"></script>
