@@ -3,21 +3,20 @@ title: Sobre
 layout: default
 next: php-basics.md
 prev: php-basics.md
-categories: Sumário.md
 ---
 
-Olá, esse é um site a qual tem com principal objetivo facilitar o estudo sobre a certifição [PHP](http://www.php.net/) o tão sonhado titulo de [ZCE](http://www.zend.com/en/services/certification/php-5-certification).
+Olá, esse é um site a qual tem como principal objetivo facilitar o estudo da certificação [PHP](http://www.php.net/), o tão sonhado título de [ZCE](http://www.zend.com/en/services/certification/php-5-certification).
 
-Aqui está um [link com a minha motivação](motivacao.md) e por que acredito que vale pena tirar certificação.
+Aqui está um [link com a minha motivação](motivacao.md) e porque acredito que vale a pena fazer o exame de certificação.
 
-Outra coisa que gostaria de deixar claro, é o motivo porque nem tudo aqui deixarei em português, por exemplo: os tópicos que serão abordados na prova, `PHP Basics`, `Control Structures` e etc. A prova é totalmente inglês e acredito que no minimo os tópicos devem ser conhecidos em inglês.
+Outra coisa que gostaria de deixar claro é o motivo porque nem tudo aqui deixarei em português, por exemplo: os tópicos que serão abordados na prova, `PHP Basics`, `Control Structures` e etc, pois a prova é totalmente inglês e acredito que no minimo os tópicos devem ser conhecidos em inglês.
 
 ### Sumário
 
 * [PHP Basics](php-basics/index.md)
   * [Syntax](php-basics/syntax.md)
   * [Variables](php-basics/variables.md)
-  * Operators
+  * [Operators](php-basics/operators.md)
   * Control Structures
   * Language Constructs and Functions
   * Namespaces 
@@ -104,6 +103,6 @@ Outra coisa que gostaria de deixar claro, é o motivo porque nem tudo aqui deixa
   * Encryption, Hashing algorithms
   * File uploads
   * PHP Configuration
-  * Password hashing API 
+  * Password hashing API
 
 A idéia final é compartilhar e estudar conteúdo que irá trazer conhecimento para certificação PHP.
