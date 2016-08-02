@@ -109,3 +109,7 @@ footer{
     width: 220px;
     text-align: center;
 }
+
+.gist * {
+    text-shadow: none;
+}
