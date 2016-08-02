@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Chewy|Passion+One|Rubik" rel="stylesheet">
-    <link rel="stylesheet" href="/guia-para-certificacao-php/css/style.css">
+    <link rel="stylesheet" href="/guia-para-certificacao-phpcss/style.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -70,116 +70,123 @@
 <p>Acredito que a própria explicação matemática já é o suficiente. Com base no Wikipedia: “A aritmética é o ramo da matemática que lida com números e com as operações possíveis entre eles”.</p>
 
 <ul>
-  <li><strong>Adição</strong> - Utiliza o sinal de <code>+</code> para expressar que a operação de adição/soma será executada.   <br />
+  <li><strong>Adição</strong> - Utiliza o sinal de <code class="highlighter-rouge">+</code> para expressar que a operação de adição/soma será executada.   <br />
 Exemplo:</li>
 </ul>
 
-<pre><code class="language-php">&lt;?php
-$a = 3;
-$b = 2;
-$c = $a + $b;
-print $c; // 5
-</code></pre>
+<div class="language-php highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="nv">$a</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+<span class="nv">$b</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+<span class="nv">$c</span> <span class="o">=</span> <span class="nv">$a</span> <span class="o">+</span> <span class="nv">$b</span><span class="p">;</span>
+<span class="k">print</span> <span class="nv">$c</span><span class="p">;</span> <span class="c1">// 5
+</span></code></pre>
+</div>
 
 <ul>
-  <li><strong>Subtração</strong> - Faz uso do sinal de <code>-</code> para expressar que a operação de subtração será executada.  <br />
+  <li><strong>Subtração</strong> - Faz uso do sinal de <code class="highlighter-rouge">-</code> para expressar que a operação de subtração será executada.  <br />
 Exemplo:</li>
 </ul>
 
-<pre><code class="language-php">&lt;?php
-$a = 3;
-$b = 2;
-$c = $a - $b;
-print $c; // 1
-</code></pre>
+<div class="language-php highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="nv">$a</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+<span class="nv">$b</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+<span class="nv">$c</span> <span class="o">=</span> <span class="nv">$a</span> <span class="o">-</span> <span class="nv">$b</span><span class="p">;</span>
+<span class="k">print</span> <span class="nv">$c</span><span class="p">;</span> <span class="c1">// 1
+</span></code></pre>
+</div>
 
 <ul>
-  <li><strong>Multiplicação</strong> - Utiliza o sinal de <code>*</code> para expressar que a operação de multiplicação será executada.<br />
+  <li><strong>Multiplicação</strong> - Utiliza o sinal de <code class="highlighter-rouge">*</code> para expressar que a operação de multiplicação será executada.<br />
 Exemplo:</li>
 </ul>
 
-<pre><code class="language-php">&lt;?php
-$a = 3;
-$b = 2;
-$c = $a * $b;
-print $c; // 6
-</code></pre>
+<div class="language-php highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="nv">$a</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+<span class="nv">$b</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+<span class="nv">$c</span> <span class="o">=</span> <span class="nv">$a</span> <span class="o">*</span> <span class="nv">$b</span><span class="p">;</span>
+<span class="k">print</span> <span class="nv">$c</span><span class="p">;</span> <span class="c1">// 6
+</span></code></pre>
+</div>
 
 <ul>
-  <li><strong>Divisão - Frações</strong> - Faz uso do sinal de <code>/</code> para expressar que a operação de divisão será executada.<br />
+  <li><strong>Divisão - Frações</strong> - Faz uso do sinal de <code class="highlighter-rouge">/</code> para expressar que a operação de divisão será executada.<br />
 Exemplo:</li>
 </ul>
 
-<pre><code class="language-php">&lt;?php
-$a = 3;
-$b = 2;
-$c = $a / $b;
-print $c; // 1.5
-</code></pre>
+<div class="language-php highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="nv">$a</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+<span class="nv">$b</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+<span class="nv">$c</span> <span class="o">=</span> <span class="nv">$a</span> <span class="o">/</span> <span class="nv">$b</span><span class="p">;</span>
+<span class="k">print</span> <span class="nv">$c</span><span class="p">;</span> <span class="c1">// 1.5
+</span></code></pre>
+</div>
 
 <ul>
-  <li>Um outro operador muito usado é o de <strong>Módulo</strong> <code>%</code>, com esse operador é possível capturar o resto da divisão, diferente do operador de divisão (<code>/</code>) que retorna o <code>quociente da divisão</code>. <br />
+  <li>Um outro operador muito usado é o de <strong>Módulo</strong> <code class="highlighter-rouge">%</code>, com esse operador é possível capturar o resto da divisão, diferente do operador de divisão (<code class="highlighter-rouge">/</code>) que retorna o <code class="highlighter-rouge">quociente da divisão</code>. <br />
 Exemplo:</li>
 </ul>
 
-<pre><code class="language-php">&lt;?php
-$a = 3;
-$b = 2;
-$c = $a % $b;
-print $c; // 1
-</code></pre>
+<div class="language-php highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="nv">$a</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+<span class="nv">$b</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+<span class="nv">$c</span> <span class="o">=</span> <span class="nv">$a</span> <span class="o">%</span> <span class="nv">$b</span><span class="p">;</span>
+<span class="k">print</span> <span class="nv">$c</span><span class="p">;</span> <span class="c1">// 1
+</span></code></pre>
+</div>
 
 <ul>
-  <li><strong>Negação</strong> - Faz uso do sinal de <code>-</code>, porém o seu uso é antes do valor/variável, isso faz com que nesse momento o valor seja o oposto do original, fazendo a troca de positivo para negativo ou de negativo para positivo. 
+  <li><strong>Negação</strong> - Faz uso do sinal de <code class="highlighter-rouge">-</code>, porém o seu uso é antes do valor/variável, isso faz com que nesse momento o valor seja o oposto do original, fazendo a troca de positivo para negativo ou de negativo para positivo. 
 Exemplo:</li>
 </ul>
 
-<pre><code class="language-php">&lt;?php
-$a = 3;
-$b = 2;
-$c = $a + -$b;
+<div class="language-php highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="nv">$a</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+<span class="nv">$b</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+<span class="nv">$c</span> <span class="o">=</span> <span class="nv">$a</span> <span class="o">+</span> <span class="o">-</span><span class="nv">$b</span><span class="p">;</span>
 
-/*
+<span class="cm">/*
 Repare que $b possui o sinal (-) entes do sinal ($), isso indica
 que a variável inverterá o seu valor fazendo com que o retorno
 da soma seja 1, diferente do exemplo do operador de adição.
-*/
-print $c; // 1
- 
-/*
+*/</span>
+<span class="k">print</span> <span class="nv">$c</span><span class="p">;</span> <span class="c1">// 1
+</span> 
+<span class="cm">/*
 Mais uma vez se nergamos o valor de $c, ele de positivo ficará negativo
-*/
-print -$c; // -1
-
-/*
+*/</span>
+<span class="k">print</span> <span class="o">-</span><span class="nv">$c</span><span class="p">;</span> <span class="c1">// -1
+</span>
+<span class="cm">/*
 Mais uma vez se nergamos o valor de $c o seu resultado continuará
 negativo. Isso acontece por causa do escopo que está sendo usando
 em print, que não permite que o valor original de $c seja alterado,
 somente sua saida irá sofrermudanças.
-*/
-print -$c; // -1
-
-/*
+*/</span>
+<span class="k">print</span> <span class="o">-</span><span class="nv">$c</span><span class="p">;</span> <span class="c1">// -1
+</span>
+<span class="cm">/*
 Porém ao fazer isso o valor original será trocado pois o escopo mudou
 e agora você está informando que está mudando o valor da variável e
 não da saida dela.
-*/
-$c = -$c;  
-print -$c; // 1 
-
+*/</span>
+<span class="nv">$c</span> <span class="o">=</span> <span class="o">-</span><span class="nv">$c</span><span class="p">;</span>  
+<span class="k">print</span> <span class="o">-</span><span class="nv">$c</span><span class="p">;</span> <span class="c1">// 1 
+</span>
 </code></pre>
+</div>
 
 <ul>
-  <li><strong>Exponencial</strong>  - Introduzido no PHP 5.6, faz uso do sinal de <code>**</code>.
+  <li><strong>Exponencial</strong>  - Introduzido no PHP 5.6, faz uso do sinal de <code class="highlighter-rouge">**</code>.
 Exemplo:</li>
 </ul>
 
-<pre><code class="language-php">&lt;?php
-$a = 3;
-$b = 2;
-$c = $a ** $b;
-print $c; // 9
-</code></pre>
+<div class="language-php highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="nv">$a</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+<span class="nv">$b</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+<span class="nv">$c</span> <span class="o">=</span> <span class="nv">$a</span> <span class="o">**</span> <span class="nv">$b</span><span class="p">;</span>
+<span class="k">print</span> <span class="nv">$c</span><span class="p">;</span> <span class="c1">// 9
+</span></code></pre>
+</div>
 
       </div>
       
