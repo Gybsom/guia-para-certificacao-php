@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Guia para cerficação PHP</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/styles/default.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Chewy|Passion+One|Rubik" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+      
+    <h1 class="title-site"><a href="/">Guia para certificação <span class="php-title">PHP</span></a></h1>
+  
+    <main>
+      <div class="container">
+        
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/">Home</a></li>
+            
+              <li class="breadcrumb-item"><a href="/php-basics">PHP Basics</a></li>
+            
+            
+              <li class="breadcrumb-item active">Operators</li>
+            
+        </ol>        
+        
+        <h2>Operators</h2>
+        <ul>
+  <li><a href="#o-que-são-operadores">O que são operadores?</a></li>
+  <li><a href="#operadores-de-atribuição">Operadores de Atribuição</a></li>
+  <li><a href="#operadores-aritméticos">Operadores Aritméticos</a></li>
+  <li><a href="#operadores-de-comparação">Operadores de Comparação</a></li>
+  <li><a href="#precedência-de-operadores">Precedência de Operadores</a></li>
+  <li><a href="#operadores-bit-a-bit-bitwise">Operadores bit a bit - bitwise</a></li>
+  <li><a href="#operadores-de-controle-de-erro">Operadores de controle de erro</a></li>
+  <li><a href="#operadores-de-execução">Operadores de Execução</a></li>
+  <li><a href="#operadores-de-incremento-decremento">Operadores de Incremento/Decremento</a></li>
+  <li><a href="#operadores-lógicos">Operadores Lógicos</a></li>
+  <li><a href="#operadores-de-string">Operadores de String</a></li>
+  <li><a href="#operadores-de-arrays">Operadores de Arrays</a></li>
+  <li><a href="#operadores-de-tipo">Operadores de tipo</a></li>
+</ul>
+
+<h3 id="o-que-so-operadores">O que são operadores?</h3>
+
+<p>Um operador é uma estrutura que recebe um ou mais valores (ou expressões, no jargão de programação) e que devolve outro valor. O conhecimento desses operadores é de fundamental importância para todo programador que deseja possuir certificação. E o PHP possui muito desses operadores, os mais usados são:</p>
+
+<ul>
+  <li><a href="#operadores-de-atribuição">Operadores de Atribuição</a></li>
+  <li><a href="#operadores-aritméticos">Operadores Aritméticos</a></li>
+  <li><a href="#operadores-de-string">Operadores de String</a></li>
+  <li><a href="#operadores-de-comparação">Operadores de Comparação</a></li>
+  <li><a href="#operadores-lógicos">Operadores Lógicos</a></li>
+</ul>
+
+<h3 id="operadores-aritmticos">Operadores Aritméticos</h3>
+<p>Acredito que a própria explicação matemática já é o suficiente. Com base no Wikipedia: “A aritmética é o ramo da matemática que lida com números e com as operações possíveis entre eles”.</p>
+
+<ul>
+  <li><strong>Adição</strong> - Utiliza o sinal de <code>+</code> para expressar que a operação de adição/soma será executada.   <br />
+Exemplo:</li>
+</ul>
+
+<pre><code class="language-php">&lt;?php
+$a = 3;
+$b = 2;
+$c = $a + $b;
+print $c; // 5
+</code></pre>
+
+<ul>
+  <li><strong>Subtração</strong> - Faz uso do sinal de <code>-</code> para expressar que a operação de subtração será executada.  <br />
+Exemplo:</li>
+</ul>
+
+<pre><code class="language-php">&lt;?php
+$a = 3;
+$b = 2;
+$c = $a - $b;
+print $c; // 1
+</code></pre>
+
+<ul>
+  <li><strong>Multiplicação</strong> - Utiliza o sinal de <code>*</code> para expressar que a operação de multiplicação será executada.<br />
+Exemplo:</li>
+</ul>
+
+<pre><code class="language-php">&lt;?php
+$a = 3;
+$b = 2;
+$c = $a * $b;
+print $c; // 6
+</code></pre>
+
+<ul>
+  <li><strong>Divisão - Frações</strong> - Faz uso do sinal de <code>/</code> para expressar que a operação de divisão será executada.<br />
+Exemplo:</li>
+</ul>
+
+<pre><code class="language-php">&lt;?php
+$a = 3;
+$b = 2;
+$c = $a / $b;
+print $c; // 1.5
+</code></pre>
+
+<ul>
+  <li>Um outro operador muito usado é o de <strong>Módulo</strong> <code>%</code>, com esse operador é possível capturar o resto da divisão, diferente do operador de divisão (<code>/</code>) que retorna o <code>quociente da divisão</code>. <br />
+Exemplo:</li>
+</ul>
+
+<pre><code class="language-php">&lt;?php
+$a = 3;
+$b = 2;
+$c = $a % $b;
+print $c; // 1
+</code></pre>
+
+<ul>
+  <li><strong>Negação</strong> - Faz uso do sinal de <code>-</code>, porém o seu uso é antes do valor/variável, isso faz com que nesse momento o valor seja o oposto do original, fazendo a troca de positivo para negativo ou de negativo para positivo. 
+Exemplo:</li>
+</ul>
+
+<pre><code class="language-php">&lt;?php
+$a = 3;
+$b = 2;
+$c = $a + -$b;
+
+/*
+Repare que $b possui o sinal (-) entes do sinal ($), isso indica
+que a variável inverterá o seu valor fazendo com que o retorno
+da soma seja 1, diferente do exemplo do operador de adição.
+*/
+print $c; // 1
+ 
+/*
+Mais uma vez se nergamos o valor de $c, ele de positivo ficará negativo
+*/
+print -$c; // -1
+
+/*
+Mais uma vez se nergamos o valor de $c o seu resultado continuará
+negativo. Isso acontece por causa do escopo que está sendo usando
+em print, que não permite que o valor original de $c seja alterado,
+somente sua saida irá sofrermudanças.
+*/
+print -$c; // -1
+
+/*
+Porém ao fazer isso o valor original será trocado pois o escopo mudou
+e agora você está informando que está mudando o valor da variável e
+não da saida dela.
+*/
+$c = -$c;  
+print -$c; // 1 
+
+</code></pre>
+
+<ul>
+  <li><strong>Exponencial</strong>  - Introduzido no PHP 5.6, faz uso do sinal de <code>**</code>.
+Exemplo:</li>
+</ul>
+
+<pre><code class="language-php">&lt;?php
+$a = 3;
+$b = 2;
+$c = $a ** $b;
+print $c; // 9
+</code></pre>
+
+      </div>
+      
+      <div class="container container-botton">  
+        <div class="cleafix">
+          
+            <a class="btn-pages pull-left" href="/php-basics/variables.html"><i class="glyphicon glyphicon-chevron-left"></i> Variables</a>
+          
+          
+          
+        </div>
+      </div>
+    </main>
+    
+    <footer>
+       <center>Feito com ❤ por <a target="blank" href="https://github.com/alefcastelo">Alef Castelo</a></center>
+    </footer>
+    
+
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/highlight.min.js"></script>
+  </body>
+</html>

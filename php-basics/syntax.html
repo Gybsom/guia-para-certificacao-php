@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Guia para cerficação PHP</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/styles/default.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Chewy|Passion+One|Rubik" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+      
+    <h1 class="title-site"><a href="/">Guia para certificação <span class="php-title">PHP</span></a></h1>
+  
+    <main>
+      <div class="container">
+        
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/">Home</a></li>
+            
+              <li class="breadcrumb-item"><a href="/php-basics">PHP Basics</a></li>
+            
+            
+              <li class="breadcrumb-item active">Syntax</li>
+            
+        </ol>        
+        
+        <h2>Syntax</h2>
+        <ul>
+  <li><a href="#php">PHP</a></li>
+  <li><a href="#tags">Tags</a></li>
+  <li><a href="#problema-com-as-tags">Problema com as Tags</a></li>
+  <li><a href="#aspas">Aspas</a></li>
+  <li><a href="#concatenação-de-strings">Concatenação de Strings</a></li>
+  <li><a href="#comentários">Comentários</a></li>
+  <li><a href="#bloco-de-codigo">Bloco de código</a></li>
+  <li><a href="#o-interpretador-php">O interpretador PHP</a></li>
+</ul>
+
+<hr />
+
+<h3 id="php">PHP</h3>
+<p>O PHP (um acrônimo recursivo para PHP: Hypertext Preprocessor) é uma linguagem de script open source de uso geral, muito utilizada, e especialmente adequada para o desenvolvimento web. A melhor coisa em usar o PHP é que ele é extremamente simples para um iniciante, mas oferece muitos recursos para um programador profissional.</p>
+
+<hr />
+
+<h3 id="tags">Tags</h3>
+<p>O PHP tem como sintaxe básica, tags de abertura representado por <code class="highlighter-rouge">&lt;?php</code> e fechamento <code class="highlighter-rouge">?&gt;</code> como default do interpretador. O interpretador busca por essas tags dentro do arquivo e se achar ele interpreta os comandos dentro das tags e retorna a resposta na saida do documento. Com essa forma de interpretar, o PHP possui a possibilidade de ser facilmente incluído em vários tipos de documento.</p>
+
+<p>Exemplo da mesclagem com HTML:</p>
+
+<div class="language-php highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;title&gt;</span><span class="cp">&lt;?php</span> <span class="k">print</span> <span class="s2">"Titulo da pagina"</span> <span class="cp">?&gt;</span><span class="nt">&lt;/title&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="cp">&lt;?=</span> <span class="s2">"conteúdo do site"</span> <span class="cp">?&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre>
+</div>
+
+<p>A saída desse código é:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;title&gt;</span>Titulo da pagina<span class="nt">&lt;/title&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    conteúdo do site
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre>
+</div>
+
+<p>Repare também que foi usado duas formas diferente de exibir uma string na saída do interpretador. A primeira foi <code class="highlighter-rouge">&lt;?php print "Titulo da pagina" ?&gt;</code> e a segunda foi <code class="highlighter-rouge">&lt;?= "conteúdo do site" ?&gt;</code>. 
+Isso só é possível por que o PHP possui outros tipos de tags a qual o interpretador entende que naquele bloco é um código php.</p>
+
+<p><strong>Standard Tags or Open Tags</strong><br />
+<code class="highlighter-rouge">&lt;?php ?&gt;</code><br />
+O mais usado usado, e com certeza a melhor solução, por causa da compatibilidade com versões anteriores, e é garantido que não poderão ser desabilitado alterando o arquivo de configuração do php.</p>
+
+<p><strong>Short Open Tags</strong> <br />
+<code class="highlighter-rouge">&lt;? ?&gt;</code> <br />
+Seu uso é desencorajado pois esse recurso só está disponível quando é habilitado a diretiva <code class="highlighter-rouge">short_open_tag</code> no <em>php.ini</em>.</p>
+
+<p><strong>Echo tag</strong>  <br />
+<code class="highlighter-rouge">&lt;?= ?&gt;</code>  <br />
+Comummente usado em arquivo de template. A parti da versão 5.4.0 sempre estará disponível, independente do da configuração <code class="highlighter-rouge">short_open_tag</code> no <em>php.ini</em>.</p>
+
+<p><strong>ASP Tags</strong>  <br />
+<code class="highlighter-rouge">&lt;% %&gt;</code>  <br />
+É considerado obsoleto, e seu uso é desencorajado pois na verão 7 ele foi removido, por motivos de causar conflitos com linguagens de marcação como XML.</p>
+
+<p><strong>Script Tags</strong> <br />
+<code class="highlighter-rouge">&lt;script language="php"&gt;&lt;/script&gt;</code>  <br />
+Também foi removido da versão 7 do  PHP.</p>
+
+<hr />
+
+<h3 id="problema-com-as-tags">Problema com as Tags</h3>
+
+<p>Ao criar arquivos PHP que não se misturam com HTML ou arquivos de template, geralmente em arquivos de classes, configurações e etc, recomenda-se não usar tag de fechamento <code class="highlighter-rouge">?&gt;</code>. Pois caso exista um espaço ou quebra de linha após a tag de fechamento, essa espaço ou quebra de linha será exibido na resposta da requisição, e é algo bem difícil de se acha quando se tem um projeto com muitos arquivos, e isso pode trazer algumas horas de dor de cabeça.</p>
+
+<hr />
+
+<h3 id="aspas">Aspas</h3>
+
+<p>No PHP para exibir um texto qualquer, você pode usar tanto aspas duplas <code class="highlighter-rouge">"</code> quanto aspas simples <code class="highlighter-rouge">'</code>, exemplo:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">&lt;?="PHP BOOK"?&gt;</code> saida: <code class="highlighter-rouge">PHP BOOK</code></li>
+  <li><code class="highlighter-rouge">&lt;?='PHP BOOK'?&gt;</code> saida: <code class="highlighter-rouge">PHP BOOK</code></li>
+</ul>
+
+<p>A diferença acontece quando você tenta mescla esse texto com uma variável, exemplo:</p>
+
+<div class="language-php highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?php</span> 
+
+<span class="nv">$variael</span> <span class="o">=</span> <span class="s2">"texto qualquer"</span><span class="p">;</span>
+
+<span class="k">print</span> <span class="s2">"variável: </span><span class="nv">$variavel</span><span class="s2">"</span><span class="p">;</span> <span class="c1">// variável: texto qualquer
+</span><span class="k">print</span> <span class="s1">'variável: $variavel'</span><span class="p">;</span> <span class="c1">// variável: $variavel
+</span></code></pre>
+</div>
+
+<p>Repare que na primeira exibição, a variável foi reconhecida e seu valor foi impresso na resposta junto com o texto, já na segunda exibição, foi impresso o texto puro e a variável não foi reconhecida. Quando se usa aspas duplas, você consegue mesclar variáveis em strings.</p>
+
+<p>O PHP consegue identificar a variável fazendo com que seu valor seja retornado na exibição, assim evitando está concatenando string com variáveis. <br />
+Outra forma valida e a mais usada é quando se usa chaves envolvendo a variável.</p>
+
+<div class="language-php highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?php</span> 
+
+<span class="nv">$variavel</span> <span class="o">=</span> <span class="s2">"texto qualquer"</span><span class="p">;</span>
+
+<span class="k">print</span> <span class="s2">"variável: </span><span class="si">{</span><span class="nv">$variavel</span><span class="si">}</span><span class="s2">"</span><span class="p">;</span> <span class="c1">// variável: texto qualquer
+</span><span class="k">print</span> <span class="s1">'variável: {$variavel}'</span><span class="p">;</span> <span class="c1">// variável: {$variavel}
+</span></code></pre>
+</div>
+
+<blockquote>
+  <p>As palavas reservadas <code class="highlighter-rouge">print</code> e <code class="highlighter-rouge">echo</code> são as mais usadas para exibir algo na resposta da requisição.</p>
+</blockquote>
+
+<hr />
+
+<h3 id="concatenao-de-strings">Concatenação de Strings</h3>
+<p>Para fazer uso da concatenação (ou junção de strings), você precisa usar o ponto <code class="highlighter-rouge">.</code>, sempre colocando entre duas variáveis ou entre duas strings, entre uma string e o retorno de uma função/método.</p>
+
+<div class="language-php highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?php</span> 
+
+<span class="nv">$string_1</span> <span class="o">=</span> <span class="s2">"texto"</span><span class="p">;</span>
+<span class="nv">$string_2</span> <span class="o">=</span> <span class="s2">" qualquer"</span><span class="p">;</span>
+<span class="k">function</span> <span class="nf">funcao</span><span class="p">(){</span> <span class="k">return</span> <span class="s1">'texto'</span> <span class="o">.</span> <span class="s2">" qualquer"</span><span class="p">;</span> <span class="p">}</span>
+
+<span class="k">print</span> <span class="nv">$string_1</span> <span class="o">.</span> <span class="nv">$string_2</span><span class="p">;</span> <span class="c1">// texto qualquer
+</span><span class="k">print</span> <span class="s2">"texto"</span> <span class="o">.</span> <span class="nv">$string_2</span><span class="p">;</span> <span class="c1">// texto qualquer
+</span><span class="k">print</span> <span class="s2">"texto"</span> <span class="o">.</span> <span class="s2">" qualquer"</span><span class="p">;</span> <span class="c1">// texto qualquer
+</span><span class="k">print</span> <span class="s2">"retorno: "</span> <span class="o">.</span> <span class="nx">funcao</span><span class="p">();</span> <span class="c1">// retorno: texto qualquer
+</span>
+</code></pre>
+</div>
+
+<hr />
+
+<h3 id="comentrios">Comentários</h3>
+<p>Assim como em outras linguagens, o PHP possui dois tipo de comentários, de “uma linha” e de “varias linhas”. O PHP suporta comentários no estilo ‘C’, ‘C++’ e do Unix shell (estilo Perl). Por exemplo:</p>
+
+<div class="language-php highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+    <span class="k">echo</span> <span class="s1">'Isto é um teste'</span><span class="p">;</span> <span class="c1">// Estilo de comentário de uma linha em  c++
+</span>    <span class="cm">/* Este é um comentário de múltiplas linhas
+       ainda outra linha de comentário */</span>
+    <span class="k">echo</span> <span class="s1">'Isto é ainda outro teste'</span><span class="p">;</span>
+    <span class="k">echo</span> <span class="s1">'Um teste final'</span><span class="p">;</span> <span class="c1"># Este é um comentário de uma linha no estilo shell
+</span></code></pre>
+</div>
+
+<p>Os comentários de estilo “uma linha” apenas comentam até o final da linha ou do bloco PHP de código corrente</p>
+
+<p>Ao tentar comentar grandes blocos de código, podemos cometer o seguinte equivoco:</p>
+
+<div class="language-php highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+ <span class="cm">/*
+    echo 'Isto é um teste'; /* Este comentário irá causar um problema */</span>
+ <span class="o">*/</span>
+</code></pre>
+</div>
+
+<hr />
+
+<h3 id="bloco-de-codigo">Bloco de codigo</h3>
+
+<p>O PHP usa como delimitador de bloco de código as chaves <code class="highlighter-rouge"><span class="p">{}</span></code> exemplo:</p>
+
+<div class="language-php highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+
+<span class="k">interface</span> <span class="nx">ZCE</span> <span class="p">{</span>
+  <span class="c1"># bloco de código  
+</span><span class="p">}</span>
+
+<span class="k">class</span> <span class="nc">Programador</span> <span class="k">implements</span> <span class="nx">ZCE</span> <span class="p">{</span>
+    <span class="c1"># bloco de código
+</span><span class="p">}</span>
+
+<span class="nv">$programador</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Programador</span><span class="p">();</span>
+
+<span class="k">if</span><span class="p">(</span><span class="nv">$programador</span> <span class="nx">instanceof</span> <span class="nx">ZCE</span><span class="p">){</span>
+    <span class="c1"># bloco de código
+</span><span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="c1"># bloco de código
+</span><span class="p">}</span>
+
+</code></pre>
+</div>
+
+<hr />
+
+<h3 id="o-interpretador-php">O interpretador PHP</h3>
+
+<p>Como já foi dito PHP consegue se mistura com outros tipos de arquivos ou documentos e o interpretador consegue detectar comandos PHP dentro desse arquivo, até mesmo não sendo um arquivo com a extensão <code class="highlighter-rouge">.php</code> veja:</p>
+
+<p>usuarios.xml</p>
+
+<div class="language-php highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?php</span> <span class="k">foreach</span><span class="p">([</span><span class="s1">'Alef'</span><span class="p">,</span> <span class="s1">'Sara'</span><span class="p">,</span> <span class="s1">'Liana'</span><span class="p">]</span> <span class="k">as</span> <span class="nv">$nome</span><span class="p">)</span><span class="o">:</span> <span class="cp">?&gt;</span>
+    <span class="nt">&lt;usuario</span> <span class="na">nome=</span><span class="s">"</span><span class="cp">&lt;?php</span> <span class="k">print</span> <span class="nv">$nome</span> <span class="cp">?&gt;</span><span class="s">"</span> <span class="nt">/&gt;</span>
+<span class="cp">&lt;?php</span> <span class="k">endforeach</span><span class="p">;</span> <span class="cp">?&gt;</span>
+</code></pre>
+</div>
+
+<p>index.php</p>
+
+<div class="language-php highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="nb">header</span><span class="p">(</span><span class="s2">"Content-type: text/xml"</span><span class="p">);</span>
+<span class="c1">// Cabeçalho XML
+</span><span class="k">print</span> <span class="s2">"&lt;?xml version=</span><span class="se">\"</span><span class="s2">1.0</span><span class="se">\"</span><span class="s2"> encoding=</span><span class="se">\"</span><span class="s2">UTF-8</span><span class="se">\"</span><span class="s2">?&gt;"</span><span class="p">;</span>
+<span class="c1">// Abrindo tag que contém a lista de usuários
+</span><span class="k">print</span> <span class="s2">"&lt;lista-usuarios&gt;"</span><span class="p">;</span>
+<span class="c1">// repare que está sendo incluindo um arquivo do tipo XML com código PHP dentro.
+</span><span class="k">require_once</span> <span class="s1">'usuarios.xml'</span><span class="p">;</span> 
+<span class="c1">// Fechando tag que contém a lista de usuários
+</span><span class="k">print</span> <span class="s2">"&lt;/lista-usuarios&gt;"</span><span class="p">;</span>
+</code></pre>
+</div>
+
+<p>Saída:</p>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="nt">&lt;lista-usuarios&gt;</span>
+    <span class="nt">&lt;usuario</span> <span class="na">nome=</span><span class="s">"Alef"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;usuario</span> <span class="na">nome=</span><span class="s">"Sara"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;usuario</span> <span class="na">nome=</span><span class="s">"Liana"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/lista-usuarios&gt;</span>
+</code></pre>
+</div>
+
+      </div>
+      
+      <div class="container container-botton">  
+        <div class="cleafix">
+          
+            <a class="btn-pages pull-left" href="/php-basics/index.html"><i class="glyphicon glyphicon-chevron-left"></i> PHP Basics</a>
+          
+          
+          
+            <a class="btn-pages pull-right" href="/php-basics/variables.html">Variables <i class="glyphicon glyphicon-chevron-right"></i></a>
+          
+        </div>
+      </div>
+    </main>
+    
+    <footer>
+       <center>Feito com ❤ por <a target="blank" href="https://github.com/alefcastelo">Alef Castelo</a></center>
+    </footer>
+    
+
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/highlight.min.js"></script>
+  </body>
+</html>
